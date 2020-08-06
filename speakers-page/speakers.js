@@ -96,7 +96,23 @@ window.onscroll = function () { scrollFunction() };
   }
 
 
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.height = "560px";
+    document.getElementById("Btn-home").style.opacity = "0";
+    document.getElementById("slider-au").style.opacity = "0";
+    document.getElementById("home-text").style.opacity = "0";
+  
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
 
+    document.getElementById("Btn-home").style.opacity = "1";
+    document.getElementById("slider-au").style.opacity = "1";
+    document.getElementById("home-text").style.opacity = "1";
+  
+  }
 //first-items player
 let now_playing1 = document.querySelector(".now-playing1");
 let playpause_btn1 = document.querySelector(".playpause-track1");

@@ -147,7 +147,8 @@ function mouseOut() {
   //burger menu
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
-    document.getElementById("myNav").style.height = "700px";
+    document.getElementById("myNav").style.height = "500px";
+    document.getElementById("menufixed").style.zIndex = "0";
     document.getElementById("Btn-home").style.opacity = "0";
     document.getElementById("slider-au").style.opacity = "0";
     document.getElementById("home-text").style.opacity = "0";
@@ -155,6 +156,7 @@ function mouseOut() {
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    document.getElementById("menufixed").style.zIndex = "1";
     document.getElementById("Btn-home").style.opacity = "1";
     document.getElementById("slider-au").style.opacity = "1";
     document.getElementById("home-text").style.opacity = "1";
