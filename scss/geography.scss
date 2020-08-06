@@ -1,0 +1,1240 @@
+.geography {
+    background-image: linear-gradient(
+            110.34deg,
+            rgba(74, 51, 91, 0.8) -10.09%,
+            rgba(47, 61, 83, 0.8) 22.66%,
+            rgba(17, 48, 62, 0.8) 58.86%,
+            rgba(76, 50, 90, 0.8) 98.42%
+        ),
+        url(../img/geography.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #c7dee1;
+    height: 860px;
+    font-family: Arial;
+    padding-top: 74px;
+
+    h2 {
+        font-weight: bold;
+        padding-left: 195px;
+        font-size: 60px;
+        line-height: 69px;
+        letter-spacing: 0.08em;
+    }
+    h3 {
+        padding-left: 195px;
+        font-size: 65px;
+        line-height: 75px;
+    }
+    .number {
+        font-size: 71px;
+        line-height: 82px;
+        margin-left: 195px;
+        width: 308px;
+    }
+    .map-km {
+        font-size: 51px;
+        width: 50px;
+    }
+    .geography-text-down {
+        position: absolute;
+        margin-left: 455px;
+        margin-top: -68px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        width: 279px;
+        border-left: 1px solid #b6e1e8;
+        padding-left: 27px;
+    }
+}
+.svg-sula {
+    margin-top: -152px;
+    float: right;
+    margin-left: 80px;
+    padding-right: 10px;
+}
+.map-whith-marks {
+    display: none;
+}
+.map-box {
+    text-align: right;
+    margin-top: 30px;
+    svg {
+        position: absolute;
+        animation: marker 1s linear;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    @keyframes marker {
+        from {
+            margin-top: 0px;
+        }
+        to {
+            margin-top: 10px;
+        }
+    }
+    .svg-map1 {
+        margin-left: -654px;
+        padding-top: 130px;
+    }
+    .svg-map2 {
+        margin-left: -564px;
+        padding-top: 110px;
+    }
+    .svg-map3 {
+        margin-left: -544px;
+        padding-top: 140px;
+    }
+    .svg-map4 {
+        margin-left: -564px;
+        padding-top: 150px;
+    }
+    .svg-map5 {
+        margin-left: -500px;
+        padding-top: 200px;
+    }
+    .svg-map5 {
+        margin-left: -800px;
+        padding-top: 450px;
+    }
+    .svg-map6 {
+        margin-left: -730px;
+        padding-top: 360px;
+    }
+    .svg-map7 {
+        margin-left: -872px;
+        padding-top: 210px;
+    }
+    .svg-map8 {
+        margin-left: -770px;
+        padding-top: 390px;
+    }
+    .svg-map9 {
+        margin-left: -794px;
+        padding-top: 140px;
+    }
+    .svg-map10 {
+        margin-left: -834px;
+        padding-top: 175px;
+    }
+    .svg-map11 {
+        margin-left: -604px;
+        padding-top: 115px;
+    }
+    .svg-map12 {
+        margin-left: -534px;
+        padding-top: 175px;
+    }
+    .svg-map13 {
+        margin-left: -552px;
+        padding-top: 205px;
+    }
+    .svg-map14 {
+        margin-left: -502px;
+        padding-top: 215px;
+    }
+    .svg-map15 {
+        margin-left: -462px;
+        padding-top: 185px;
+    }
+    .svg-map16 {
+        margin-left: -494px;
+        padding-top: 393px;
+    }
+    .svg-map17 {
+        margin-left: -535px;
+        padding-top: 410px;
+    }
+    .svg-map18 {
+        margin-left: -232px;
+        padding-top: 169px;
+    }
+    .svg-map19 {
+        margin-left: -270px;
+        padding-top: 260px;
+    }
+    .svg-map20 {
+        margin-left: -255px;
+        padding-top: 208px;
+    }
+    .svg-map21 {
+        margin-left: -355px;
+        padding-top: 100px;
+    }
+    .svg-map22 {
+        margin-left: -405px;
+        padding-top: 108px;
+    }
+    .svg-map23 {
+        margin-left: -380px;
+        padding-top: 238px;
+    }
+    .svg-map24 {
+        margin-left: -140px;
+        padding-top: 438px;
+    } .svg-map25 {
+        margin-left: -210px;
+        padding-top: 330px;
+    } .svg-map26 {
+        margin-left: -160px;
+        padding-top: 400px;
+    }
+    .svg-map27 {
+        margin-left: -160px;
+        padding-top: 200px;
+    }
+    .svg-map28 {
+        margin-left: -110px;
+        padding-top: 130px;
+    }
+}
+.img-map {
+    z-index: 1;
+}
+.what-we-do {
+    height: 900px;
+    background: #ecf6f8;
+    padding-top: 92px;
+    font-family: Arial;
+    hr {
+        margin-left: 0px;
+        width: 93px;
+        height: 2px;
+        border: none;
+        background-color: #39516e;
+    }
+}
+.text-do {
+    width: 1448px;
+}
+.txt-what-we-do {
+    color: #39516e;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 40px;
+    padding-top: 41px;
+    padding-bottom: 39px;
+}
+.flex-sound {
+    display: flex;
+    width: 1470px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sound-items {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 470px;
+    height: 319px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    P {
+        padding: 206px 32px;
+        text-transform: uppercase;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0.1em;
+        color: #c7dee1;
+    }
+}
+.other-picture1 {
+    background-image: linear-gradient(
+            110.34deg,
+            rgba(74, 51, 91, 0.8) -10.09%,
+            rgba(47, 61, 83, 0.8) 22.66%,
+            rgba(17, 48, 62, 0.8) 58.86%,
+            rgba(76, 50, 90, 0.8) 98.42%
+        ),
+        url(../img/soundfirst.png);
+        
+}
+.other-picture2 {
+    background-image: linear-gradient(
+            110.34deg,
+            rgba(74, 51, 91, 0.8) -10.09%,
+            rgba(47, 61, 83, 0.8) 22.66%,
+            rgba(17, 48, 62, 0.8) 58.86%,
+            rgba(76, 50, 90, 0.8) 98.42%
+        ),
+        url(../img/soundsecond.png);
+}
+.other-picture3 {
+    background-image: linear-gradient(
+            110.34deg,
+            rgba(74, 51, 91, 0.8) -10.09%,
+            rgba(47, 61, 83, 0.8) 22.66%,
+            rgba(17, 48, 62, 0.8) 58.86%,
+            rgba(76, 50, 90, 0.8) 98.42%
+        ),
+        url(../img/sound3.png);
+}
+
+.our-principles {
+    margin-top: -240px;
+    background-color: white;
+    font-family: Arial;
+    svg {
+        width: 100%;
+        path {
+            stroke-dasharray: 1000;
+            animation: dash 5s linear;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 2000;
+            }
+        }
+    }
+}
+.flex-circle {
+    display: flex;
+    width: 1560px;
+    flex-wrap: wrap;
+    margin-top: -480px;
+}
+.circle-items {
+    margin-right: 34px;
+    width: 354px;
+    height: 354px;
+    background: linear-gradient(31.25deg, #483156 0%, #39516e 80.3%);
+    border-radius: 4000px;
+}
+.counter {
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 85px;
+    text-align: center;
+    color: #c7dee1;
+    margin-top: 99px;
+    padding-bottom: 11px;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.year-text {
+    width: 164px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #c7dee1;
+}
+footer {
+    margin-top: 104px;
+    background: #13283a;
+}
+.btn-over {
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    background: #671627;
+    border: 2px solid #711f30;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 0;
+    position: absolute;
+}
+.box-btn-over {
+    margin-left: 90%;
+}
+.footer-flex {
+    display: flex;
+    font-family: Arial;
+    width: 1524px;
+}
+.footer-element {
+    padding-top: 37px;
+    width: 360px;
+
+    hr {
+        margin-top: 70px;
+        margin-left: 0px;
+        margin-bottom: 41px;
+        width: 93px;
+        height: 2px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    h5 {
+        font-weight: bold;
+        font-size: 29px;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 36px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 26px;
+        color: rgba(246, 246, 246, 0.8);
+    }
+    .text-element {
+        width: 292px;
+        text-align: left;
+    }
+}
+.element-items {
+    width: 292px;
+}
+.for-botton-icon {
+    padding-bottom: 44px;
+}
+.svg-boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 177.02px;
+    margin-left: 0px;
+    svg {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.5s ease;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+.footer-btn {
+    width: 390px;
+    height: 70px;
+    background: #671627;
+    border: 2px solid #711f30;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    &:hover {
+        box-shadow: 10px 10px 15px rgba(163, 152, 152, 0.5), -16px 20px 20px rgba(0, 0, 0, 0.1);
+    }
+    svg {
+        position: absolute;
+        margin-top: 2px;
+        margin-left: 15px;
+    }
+}
+.footer-hr {
+    margin-top: 98px;
+}
+.copyright {
+    padding-top: 29px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+.see-more {
+    display: none;
+}
+#myBtn {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 4px 11px;
+    background-color: transparent;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    margin-top: 20px;
+    svg {
+        margin-left: 6px;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .map-box {
+        text-align: center;
+    }
+    .svg-sula {
+        margin-top: -140px;
+        float: right;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 1565px) {
+    .geography {
+    .geography-text-down {
+     
+        margin-left: 495px;
+     
+    }}}
+@media screen and (max-width: 1762px) {
+    .text-do {
+        width: 85%;
+    }
+    .flex-sound {
+        width: 86%;
+    }
+    .sound-items {
+        margin-top: 20px;
+         margin-left: 10px;
+    }
+    .flex-circle {
+        width: 1200px;
+        margin-top: -200px;
+    }
+    .circle-items {
+        margin-right: 34px;
+        width: 254px;
+        height: 254px;
+        background: linear-gradient(31.25deg, #483156 0%, #39516e 80.3%);
+        border-radius: 4000px;
+    }
+    .counter {
+        font-size: 60px;
+        margin-top: 43px;
+    }
+}
+@media screen and (max-width: 1564px) {
+    .flex-sound {
+        width: 85%;
+        justify-self: center;
+    }
+    .sound-items {
+        margin-right: 20px;
+        width: 360px;
+        height: 319px;
+        P {
+            font-size: 22px;
+        }
+    }
+    .text-do {
+        width: 83%;
+    }
+
+    .footer-flex {
+        display: flex;
+        font-family: Arial;
+        width: 77%;
+    }
+    .footer-element {
+        padding-top: 37px;
+        width: 30%;
+    }
+    .element-items {
+        width: 30%;
+    }
+    .map-box {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .svg-sula {
+        display: none;
+    }
+    .geography {
+        h2 {
+            font-size: 55px;
+            line-height: 60px;
+        }
+        h3 {
+            font-size: 60px;
+            line-height: 70px;
+        }
+        .number {
+            font-size: 60px;
+            line-height: 82px;
+            margin-left: 195px;
+            width: 338px;
+        }
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    .flex-circle {
+        width: 1100px;
+    }
+    .circle-items {
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 1341px) {
+    .flex-sound {
+        width: 76%;
+    }
+    .sound-items {
+        background-size: cover;
+        margin-right: 30px;
+        margin-bottom: 15px;
+        width: 290px;
+        height: 249px;
+        P {
+            padding-top: 180px;
+            line-height: 27px;
+            font-size: 22px;
+        }
+    }
+    .text-do {
+        width: 77%;
+    }
+    .what-we-do {
+        height: 990px;
+    }
+    .our-principles {
+        svg {
+            margin-top: -130px;
+        }
+    }
+}
+@media screen and (max-width: 1263px) {
+    .flex-sound {
+        width: 85%;
+    }
+    .sound-items {
+        background-size: cover;
+        margin-right: 20px;
+        width: 290px;
+        height: 249px;
+        P {
+            padding-top: 180px;
+            line-height: 27px;
+            font-size: 22px;
+        }
+    }
+    .text-do {
+        width: 80%;
+    }
+    .flex-circle {
+        width: 960px;
+        margin-top: -290px;
+    }
+    .circle-items {
+        width: 224px;
+        height: 224px;
+    }
+    .counter {
+        font-size: 50px;
+        margin-top: 43px;
+    }
+    .year-text {
+        width: 164px;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .what-we-do {
+        background: #ffffff;
+    }
+    .txt-what-we-do {
+        font-size: 22px;
+    }
+    .footer-element {
+        h5 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .text-element {
+            width: 292px;
+            text-align: left;
+        }
+    }
+    .footer-btn {
+        width: 270px;
+        height: 70px;
+        padding-right: 20px;
+        font-size: 18px;
+
+        svg {
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 15px;
+        }
+    }
+    .geography {
+        h2 {
+            font-size: 45px;
+            line-height: 50px;
+        }
+        h3 {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        .number {
+            font-size: 60px;
+            line-height: 82px;
+            margin-left: 195px;
+            width: 338px;
+        }
+        .geography-text-down {
+            font-size: 16px;
+        }
+    }
+}
+#more {
+    display: none;
+}
+@media screen and (max-width: 1170px) {
+    .footer-flex {
+        flex-wrap: wrap;
+        width: 85%;
+        justify-content: center;
+    }
+    .footer-element {
+        margin-left: 20px;
+    }
+    .element-items {
+        width: 30%;
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 1158px) {
+    .flex-sound {
+        width: 670px;
+        align-items: center;
+    }
+    .sound-items {
+        background-size: cover;
+        margin-right: 20px;
+        width: 290px;
+        height: 249px;
+    }
+    .text-do {
+        width: 620px;
+    }
+    .flex-circle {
+        width: 900px;
+        margin-top: -290px;
+    }
+    .circle-items {
+        width: 194px;
+        height: 194px;
+    }
+    .counter {
+        font-size: 46px;
+        margin-top: 43px;
+        padding-bottom: 1px;
+    }
+    .year-text {
+        width: 164px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: -9px;
+    }
+    .our-principles {
+        svg {
+            margin-top: -20px;
+        }
+    }
+    .box-btn-over {
+        margin-left: 80%;
+    }
+}
+@media screen and (max-width: 1106px) {
+    .map-box {
+        display: none;
+    }
+    .map-whith-marks {
+        display: block;
+        text-align: center;
+        img {
+            width: 90%;
+        }
+    }
+    .geography {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 1056px) {
+    .flex-circle {
+        width: 750px;
+        margin-top: -290px;
+    }
+    .circle-items {
+        width: 164px;
+        height: 164px;
+    }
+    .counter {
+        margin-top: 2px;
+        font-size: 33px;
+        margin-top: 15px;
+        padding-bottom: 1px;
+    }
+    .year-text {
+        width: 144px;
+        font-size: 13px;
+        line-height: 21px;
+        margin-top: -9px;
+    }
+    .for-adaptive {
+        display: none;
+    }
+    .see-more {
+        display: block;
+    }
+    .footer-flex {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-element {
+        margin-left: 35%;
+    }
+    .element-items {
+        width: 30%;
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 909px) {
+    .flex-circle {
+        width: 400px;
+        margin-top: -380px;
+    }
+    .circle-items {
+        width: 164px;
+        height: 164px;
+        margin-bottom: 20px;
+    }
+    .geography {
+        height: 800px;
+        h2 {
+            padding-left: 105px;
+            font-size: 45px;
+            line-height: 50px;
+        }
+        h3 {
+            padding-left: 105px;
+            font-size: 50px;
+            line-height: 60px;
+        }
+        .number {
+            font-size: 60px;
+            line-height: 82px;
+            margin-left: 105px;
+            width: 338px;
+        }
+        .geography-text-down {
+            font-size: 16px;
+            margin-left: 375px;
+        }
+    }
+    .txt-what-we-do {
+        font-size: 20px;
+    }
+    .footer-element {
+        padding-top: 7px;
+        width: 360px;
+
+        hr {
+            margin-top: 30px;
+        }
+        h5 {
+            font-size: 22px;
+
+            margin-bottom: 36px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .text-element {
+            width: 100%;
+            text-align: left;
+        }
+    }
+    .element-items {
+        width: 292px;
+    }
+
+    .footer-btn {
+        width: 260px;
+        height: 60px;
+
+        font-size: 18px;
+
+        margin-top: 14px;
+
+        svg {
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 15px;
+        }
+    }
+    .footer-hr {
+        margin-top: 98px;
+    }
+    .btn-over {
+        width: 42px;
+        height: 42px;
+        margin-top: -22px;
+    }
+}
+@media screen and (max-width: 837px) {
+    .flex-sound {
+        width: 600px;
+        align-items: center;
+    }
+    .sound-items {
+        margin-right: 20px;
+        width: 240px;
+        height: 219px;
+        P {
+            padding-top: 150px;
+            line-height: 27px;
+            font-size: 18px;
+        }
+    }
+    .text-do {
+        width: 520px;
+    }
+    .geography {
+        height: 700px;
+    }
+    .our-principles {
+        svg {
+            margin-top: -150px;
+        }
+    }
+}
+@media screen and (max-width: 726px) {
+    .flex-sound {
+        width: 50%;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .sound-items {
+        width: 250px;
+        height: 229px;
+        margin-bottom: 5px;
+        border: 2px solid #b6e1e8;
+        P {
+            padding-top: 150px;
+            line-height: 27px;
+            font-size: 18px;
+        }
+    }
+    .text-do {
+        width: 40%;
+    }
+    .what-we-do {
+        height: 1790px;
+    }
+    .our-principles {
+        margin-top: -80px;
+        svg {
+            margin-top: -390px;
+        }
+    }
+    .geography {
+        height: 640px;
+
+        h2 {
+            padding-left: 105px;
+            font-size: 40px;
+            line-height: 50px;
+        }
+        h3 {
+            padding-left: 105px;
+            font-size: 45px;
+            line-height: 60px;
+        }
+        .number {
+            font-size: 50px;
+            line-height: 82px;
+            margin-left: 105px;
+            width: 338px;
+            margin-top: -40px;
+        }
+        .geography-text-down {
+            font-size: 15px;
+            margin-left: 345px;
+            width: 260px;
+        }
+    }
+  
+    .footer-element {
+        padding-top: 7px;
+        width: 50%;
+    p{
+        width: 98%;
+    }
+    }
+        .element-items {
+            width: 33%;
+        }
+}
+@media screen and (max-width: 658px) {
+    .geography {
+        height: 640px;
+        h2 {
+            margin-left: 20%;
+            padding-left: 0px;
+            font-size: 35px;
+            line-height: 50px;
+        }
+        h3 {
+            text-align: left;
+            padding-left: 0px;
+            margin-left: 20%;
+            font-size: 40px;
+            line-height: 60px;
+        }
+        .number {
+            font-size: 45px;
+            line-height: 82px;
+            margin-left: 20%;
+            width: 300px;
+            margin-top: -50px;
+        }
+        .geography-text-down {
+            font-size: 15px;
+            margin-left: 20%;
+            border-left: none;
+            padding-left: 3px;
+            text-align: left;
+            border-top: 1px solid #b6e1e8;
+            width: 230px;
+            margin-top: -7px;
+        }
+    }
+    .flex-circle {
+        width: 250px;
+        margin-top: -380px;
+        justify-content: center;
+    }
+    .circle-items {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 154px;
+        height: 154px;
+        margin-bottom: 20px;
+    }
+    .footer-element {
+        padding-top: 7px;
+        width: 250px;
+
+        hr {
+            margin-top: 30px;
+        }
+        h5 {
+            font-size: 20px;
+
+            margin-bottom: 26px;
+        }
+        p {
+            
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    .element-items {
+        width: 252px;
+    }
+
+    .footer-btn {
+        width: 200px;
+        height: 60px;
+padding: 0px 10px 0px 0px;
+        font-size: 14px;
+
+        margin-top: 14px;
+
+        svg {
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 15px;
+        }
+    }
+    .footer-hr {
+        margin-top: 98px;
+    }
+    .btn-over {
+        width: 42px;
+        height: 42px;
+        margin-top: -22px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .geography {
+        height: 600px;
+        h2 {
+            margin-left: 25%;
+            padding-left: 0px;
+            font-size: 30px;
+        }
+        h3 {
+            padding-left: 0px;
+            margin-left: 25%;
+            font-size: 27px;
+        }
+        .number {
+            font-size: 35px;
+            line-height: 82px;
+            margin-left: 25%;
+            width: 300px;
+            margin-top: -50px;
+        }
+        .map-km {
+            font-size: 25px;
+        }
+        .geography-text-down {
+            margin-left: 25%;
+        }
+    }
+    .txt-what-we-do {
+        width: 250px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .geography {
+        height: 560px;
+        h2 {
+            margin-left: 25%;
+            padding-left: 0px;
+            font-size: 30px;
+        }
+        h3 {
+            padding-left: 0px;
+            margin-left: 25%;
+            font-size: 27px;
+        }
+        .number {
+            font-size: 35px;
+            line-height: 82px;
+            margin-left: 25%;
+            width: 300px;
+            margin-top: -50px;
+        }
+        .map-km {
+            font-size: 25px;
+        }
+        .geography-text-down {
+            font-size: 12px;
+            width: 180px;
+            padding-top: 5px;
+            line-height: 20px;
+            margin-left: 25%;
+        }
+    }
+    .footer-element {
+        padding-top: 7px;
+        width: 50%;
+
+        hr {
+            margin-top: 30px;
+        }
+        h5 {
+            font-size: 16px;
+
+            margin-bottom: 26px;
+        }
+        p {
+            
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    .element-items {
+        width: 50%;
+    }
+
+    .footer-btn {
+        width: 160px;
+        height: 60px;
+padding: 0px 15px 0px 0px;
+        font-size: 12px;
+
+        margin-top: 14px;
+
+        svg {
+            width: 9px;
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 9px;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .geography {
+        height: 450px;
+        h2 {
+            margin-left: 0%;
+            text-align: right;
+            padding-left: 0px;
+            font-size: 25px;
+            margin-right: 4%;
+        }
+        h3 {
+            padding-left: 0px;
+            margin-left: 0%;
+            text-align: right;
+            font-size: 20px;
+            margin-right: 4%;
+            line-height: 20px;
+        }
+        .number {
+            font-size: 30px;
+            line-height: 82px;
+            margin-left: 31%;
+            width: 200px;
+        }
+
+        .geography-text-down {
+            font-size: 12px;
+            width: 180px;
+            padding-top: 5px;
+            line-height: 20px;
+            margin-left: 31%;
+        }
+    }
+    .txt-what-we-do {
+        width: 200px;
+        font-size: 16px;
+    }
+    .flex-sound {
+        width: 40%;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .sound-items {
+        width: 180px;
+        height: 189px;
+        margin-bottom: 5px;
+
+        P {
+            padding-top: 130px;
+            padding-left: 20px;
+            line-height: 27px;
+            font-size: 14px;
+        }
+    }
+    .our-principles {
+        svg {
+            margin-top: -570px;
+        }
+    }
+    .flex-circle {
+        width: 250px;
+        margin-top: -380px;
+        justify-content: center;
+    }
+    .circle-items {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 154px;
+        height: 154px;
+        margin-bottom: 20px;
+    }
+    .year-text {
+        font-size: 12px;
+        width: 100px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+}
+ 

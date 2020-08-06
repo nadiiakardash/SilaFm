@@ -1,0 +1,13 @@
+.bg-games-page{
+    padding-left: 195px;
+    height: 440px;
+    background:linear-gradient(119.3deg, rgba(74, 51, 91, 0.6) -10.09%, rgba(47, 61, 83, 0.6) 22.66%, rgba(17, 48, 62, 0.6) 58.86%, rgba(76, 50, 90, 0.6) 98.42%), url(../img-audio/games.png) no-repeat;
+    backdrop-filter: blur(2px);
+    background-size: cover;
+}
+.txt-games{
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 1824px) {
+    .bg-games-page {
+       padding-left: 60px;}}
