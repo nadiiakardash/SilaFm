@@ -314,18 +314,18 @@ function seekUpdate() {
 loadTrack(track_index);
  
  //preloader
- function loadData() {
-  return new Promise((resolve, reject) => {
-      setTimeout(resolve, 2000);
-  })
-}
+//  function loadData() {
+//   return new Promise((resolve, reject) => {
+//       setTimeout(resolve, 2000);
+//   })
+// }
 
-loadData()
-  .then(() => {
-    let preloaderEl = document.getElementById('preloader');
-    preloaderEl.classList.add('hidden');
-    preloaderEl.classList.remove('visible');
-  });
+// loadData()
+//   .then(() => {
+//     let preloaderEl = document.getElementById('preloader');
+//     preloaderEl.classList.add('hidden');
+//     preloaderEl.classList.remove('visible');
+//   });
   
 
   //first-items player
@@ -838,14 +838,14 @@ let track_listh = [
 ];
 
 function loadTrackh(track_indexh) {
-  resetValuesh();
+  // resetValuesh();
   curr_trackh.src = track_listh[track_indexh].path;
   curr_trackh.load();
   updateTimerh = setInterval(seekUpdateh, 1000);
 }
-function resetValuesh() {
-  seek_sliderh.value = 0;
-}
+// function resetValuesh() {
+//   seek_sliderh.value = 0;
+// }
 
 function playpauseTrackh() {
   if (!isPlayingh) playTrackh();
@@ -885,7 +885,8 @@ function seekUpdateh() {
 
   if (!isNaN(curr_trackh.duration)) {
     seekPositionh = curr_trackh.currentTime * (100 / curr_trackh.duration);
-    seek_sliderh.value = seekPositionh;
+    // seek_sliderh.value = seekPositionh;
   }
 }
 loadTrackh(track_indexh);
+  

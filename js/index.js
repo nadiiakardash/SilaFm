@@ -1,4 +1,4 @@
-//c
+//
 $(document).ready(function () {
   $("#menu").on("click", "a", function (event) {
     event.preventDefault();
@@ -217,18 +217,18 @@ function seemore() {
 }
 
 //preloader
-function loadData() {
-  return new Promise((resolve, reject) => {
-    setTimeout(resolve, 2000);
-  })
-}
+// function loadData() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(resolve, 2000);
+//   })
+// }
 
-loadData()
-  .then(() => {
-    let preloaderEl = document.getElementById('preloader');
-    preloaderEl.classList.add('hidden');
-    preloaderEl.classList.remove('visible');
-  });
+// loadData()
+//   .then(() => {
+//     let preloaderEl = document.getElementById('preloader');
+//     preloaderEl.classList.add('hidden');
+//     preloaderEl.classList.remove('visible');
+//   });
 
 //left-menu
 function mouseOverbtn() {
@@ -337,7 +337,8 @@ function mouseOutaddress() {
   document.getElementById("base-svg-ad").style.display = "none";
 }
 
-//playyer
+//playyer 
+if ($('*').is('.player')) {
 let now_playing = document.querySelector(".now-playing");
 let playpause_btn = document.querySelector(".playpause-track");
 let playrepeat_btn = document.querySelector(".playrepeat-track");
@@ -430,6 +431,7 @@ function seekUpdate() {
   }
 }
 loadTrack(track_index);
+}
 //burger menu
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
@@ -451,6 +453,7 @@ function closeNav() {
 
 
 //slider About us
+if ($('*').is('#showThird')) {
 function Sim(sldrId) {
 
   let id = document.getElementById(sldrId);
@@ -584,6 +587,9 @@ Sim.initialize = function (that) {
   }
 };
 new Sim();
+}
+
+
 // for fixed left menu
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {

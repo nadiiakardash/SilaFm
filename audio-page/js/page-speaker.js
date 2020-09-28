@@ -287,18 +287,18 @@ $(document).ready(function(){
   loadTrack(track_index);
    
    //preloader
-   function loadData() {
-    return new Promise((resolve, reject) => {
-        setTimeout(resolve, 2000);
-    })
-  }
+  //  function loadData() {
+  //   return new Promise((resolve, reject) => {
+  //       setTimeout(resolve, 2000);
+  //   })
+  // }
   
-  loadData()
-    .then(() => {
-      let preloaderEl = document.getElementById('preloader');
-      preloaderEl.classList.add('hidden');
-      preloaderEl.classList.remove('visible');
-    });
+  // loadData()
+  //   .then(() => {
+  //     let preloaderEl = document.getElementById('preloader');
+  //     preloaderEl.classList.add('hidden');
+  //     preloaderEl.classList.remove('visible');
+  //   });
     
   
     //first-items player
@@ -878,14 +878,14 @@ let track_listJeck = [
 ];
 
 function loadTrackJeck(track_indexJeck) {
-    resetValuesJeck();
+    // resetValuesJeck();
     curr_trackJeck.src = track_listJeck[track_indexJeck].path;
     curr_trackJeck.load();
     updateTimer = setInterval(seekUpdate, 1000);
 }
-function resetValuesJeck() {
-    seek_sliderJeck.value = 0;
-}
+// function resetValuesJeck() {
+//     seek_sliderJeck.value = 0;
+// }
 
 function playpauseTrackJeck() {
     if (!isPlayingJeck) playTrackJeck();
@@ -920,7 +920,7 @@ let track_listTor = [
 ];
 
 function loadTrackTor(track_indexTor) {
-  resetValuesTor();
+  // resetValuesTor();
   curr_trackTor.src = track_listTor[track_indexTor].path;
   curr_trackTor.load();
   updateTimer = setInterval(seekUpdate, 1000);
@@ -961,7 +961,7 @@ let track_listsh = [
 ];
 
 function loadTracksh(track_indexsh) {
-  resetValuessh();
+  // resetValuessh();
   curr_tracksh.src = track_listsh[track_indexsh].path;
   curr_tracksh.load();
   updateTimer = setInterval(seekUpdate, 1000);
@@ -1001,7 +1001,7 @@ let track_listKit = [
 ];
 
 function loadTrackKit(track_indexKit) {
-  resetValuesKit();
+  // resetValuesKit();
   curr_trackKit.src = track_listKit[track_indexKit].path;
   curr_trackKit.load();
   updateTimer = setInterval(seekUpdate, 1000);
