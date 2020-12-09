@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СИЛА FM</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="audio_cont">
+  <header>
+    <img onclick="window.location.href='/silaFM/index.html'" class="menu-logo" src="img/SilaFM_logo.png"
+      alt="logotip-Sila-FM">
+    <ul class="menu">
+      <div class="menu-dropdown">
+        <li onclick="window.location.href='/silaFM/speakers-page/speakers.html'" class="menu-item dropbtn">
+          <svg class="menu-polygon" width="16" height="18" viewBox="0 0 11 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#671627"
+              stroke-width="1.5">
+          </svg>
+          ДИКТОРЫ
+          <div class="dropdown-content">
+            <svg class="dropsvg" width="16" height="18" viewBox="0 0 16 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.98529 14.2265L9.98525 5.90892L1.7924 5.90889L9.98529 14.2265Z" stroke="#671627"
+                stroke-width="1.5" />
+            </svg>
+            <ul class="content-items">
+              <li class="down-item">ДИКТОРЫ РОССИИ</li>
+              <li class="down-item">ДИКТОРЫ УКРАИНЫ</li>
+              <li class="down-item">ИНОСТРАННЫЕ ДИКТОРЫ</li>
+              <li class="down-item">ВОКАЛИСТЫ</li>
+              <li class="down-item">ПАРОДИСТЫ</li>
+              <li class="down-item">ДЕТСКИЕ ГОЛОСА</li>
+            </ul>
+          </div>
+        </li>
+      </div>
+
+      <li class="menu-item active-page-col">
+        <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#671627"
+            stroke-width="1.5" />
+        </svg>
+        УСЛУГИ</li>
+      <li onclick="window.location.href='/silaFM/pay-page/pay.html'" class="menu-item">ОПЛАТА</li>
+      <li onclick="window.location.href='/silaFM/contact-page/contact.html'" class="menu-item">КОНТАКТЫ</li>
+    </ul>
+    <ul class="header-number">
+      <li class="number-city">Киев<span class="phone-number">+38 /044/ 545 77 13</span></li>
+      <li class="number-city">Москва <span class="phone-number">+7 /800/ 551 0 551</span></li>
+    </ul>
+    <div class="burger">
+      <div id="myNav" class="overlay">
+        <a class="closebtn" onclick="closeNav()"><svg width="22" height="22" viewBox="0 0 22 22" fill="white"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21 2.17838L19.8216 1L11 9.82162L2.17838 1L1 2.17838L9.82162 11L1 19.8216L2.17838 21L11 12.1784L19.8216 21L21 19.8216L12.1784 11L21 2.17838Z"
+              stroke-width="0.5" />
+          </svg></a>
+        <div class="overlay-content">
+          <div class="dropdown-burger">
+            <a onclick="window.location.href='/silaFM/speakers-page/speakers.html'"
+              class="for-droptmenu dropbtn-burger"><svg class="menu-polygon-burger" width="16" height="18"
+                viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
+                  stroke-width="1.5">
+              </svg>ДИКТОРЫ</a>
+            <div class="dropdown-content-burger">
+              <a>ДИКТОРЫ РОССИИ</a>
+              <a>ДИКТОРЫ УКРАИНЫ</a>
+              <a>ИНОСТРАННЫЕ ДИКТОРЫ</a>
+              <a>ВОКАЛИСТЫ</a>
+              <a>ПАРОДИСТЫ</a>
+              <a>ДЕТСКИЕ ГОЛОСА</a>
+            </div>
+          </div>
+          <a class="for-droptmenu"> <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
+                stroke-width="1.5">
+            </svg>УСЛУГИ</a>
+          <a onclick="window.location.href='/silaFM/pay-page/pay.html'">ОПЛАТА</a>
+          <a onclick="window.location.href='/silaFM/contact-page/contact.html'">КОНТАКТЫ</a>
+
+          <div class="contacts">
+            <p class="contact-elem">Киев<span class="phone-number">+38 /044/ 545 77 13</span></p>
+            <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span></p>
+          </div>
+        </div>
+      </div>
+      <p class="icon-menu" onclick="openNav()"><svg width="42" height="27" viewBox="0 0 32 17" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <line x1="6" y1="1" x2="32" y2="1" stroke="#404040" stroke-width="2" />
+          <line x1="6" y1="8.27979" x2="32" y2="8.27979" stroke="#404040" stroke-width="2" />
+          <line y1="8.27979" x2="4" y2="8.27979" stroke="#A31734" stroke-width="2" />
+          <line x1="6" y1="15.5601" x2="32" y2="15.5601" stroke="#A31734" stroke-width="2" />
+          <line y1="1" x2="4" y2="1" stroke="#404040" stroke-width="2" />
+        </svg>
+      </p>
+    </div>
+  </header>
+  <main id="menu">
+    <section id="1" class="home-page">
+      <div class="home-box-text">
+        <p class="sila-fm-txt">СИЛА FM</p>
+        <h2 class="professional-txt">АУДИОРОЛИКИ</h2>
+        <p class="txt-production">Производство и запись рекламных аудиороликов качественно и по доступным ценам</p>
+        <button class="home-btn">СДЕЛАТЬ ЗАКАЗ <img class="btn-svg" src="img/btn_svg.svg" alt="">
+        </button>
+      </div>
+      <img class="audiopage-sila" src="img/sila.svg" alt="">
+
+    </section>
+    <section class="player">
+      <div class="details">
+        <div class="now-playing"></div>
+        <div class="track-art"></div>
+        <div class="track-name"></div>
+        <div class="track-artist"></div>
+      </div>
+      <div class="buttons">
+        <div class="playpause-track" onclick="playpauseTrack()"><img src="img/play.png"></div>
+      </div>
+      <div class="slider_container">
+        <input type="range" id="range-player" min="1" max="100" value="100" class="seek_slider" onchange="seekTo()">
+      </div>
+      <div class="slider_container">
+        <img class="icon-volume" src="img/volume.png">
+        <input type="range" min="1" max="100" value="99" id="rng" name="rng" class="volume_slider __range"
+          onchange="setVolume()">
+      </div>
+      <div>
+        <div class="playrepeat-track" onclick="playTrackRepeat()"><img src="img/repeat.png"></div>
+      </div>
+    </section>
+    <section class="services">
+
+      <div class="modal-overlay">
+        <div class="modal">
+          <a class="close-modal">
+            <img src="img/close-modal.svg" alt="">
+          </a>
+          <div class="modal-content">
+            <h3 class="txt-chronomer"><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M40.8833 11.5835C36.988 7.68018 31.9136 5.38857 26.4648 5.03936V2.92969H28.6133C29.4223 2.92969 30.0781 2.27383 30.0781 1.46484C30.0781 0.655859 29.4223 0 28.6133 0H21.3867C20.5777 0 19.9219 0.655859 19.9219 1.46484C19.9219 2.27383 20.5777 2.92969 21.3867 2.92969H23.5351V5.03936C19.7991 5.27881 16.2394 6.43164 13.1149 8.39131L11.7234 6.99697C11.0462 6.31836 10.1453 5.94473 9.18661 5.94473C8.22792 5.94473 7.32704 6.31846 6.6499 6.99697L4.53359 9.11787C3.14052 10.5137 3.14052 12.785 4.53359 14.1809L5.93456 15.5848C3.72333 19.1229 2.53915 23.2179 2.53915 27.4955C2.53915 33.5061 4.87509 39.1571 9.11669 43.4075C13.3591 47.6587 18.9999 50 25 50C31.0001 50 36.6409 47.6587 40.8833 43.4075C45.1249 39.1571 47.4608 33.5061 47.4608 27.4955C47.4608 21.485 45.1249 15.8339 40.8833 11.5835ZM6.60732 11.1874L8.72372 9.0666C8.89052 8.89951 9.08535 8.87451 9.18671 8.87451C9.28808 8.87451 9.483 8.89941 9.6498 9.0666L10.7113 10.1303C10.1608 10.5866 9.62841 11.0709 9.11679 11.5836C8.60663 12.0948 8.1247 12.6268 7.6705 13.1768L6.60732 12.1114C6.35302 11.8566 6.35302 11.4421 6.60732 11.1874ZM25 47.0703C14.2305 47.0703 5.46884 38.2891 5.46884 27.4955C5.46884 16.702 14.2305 7.9207 25 7.9207C35.7695 7.9207 44.5311 16.7019 44.5311 27.4955C44.5311 38.2892 35.7695 47.0703 25 47.0703Z"
+                  fill="url(#ypaint0_linear)" />
+                <path
+                  d="M25 10.6666C15.7381 10.6666 8.20303 18.216 8.20303 27.4955C8.20303 36.775 15.7381 44.3244 25 44.3244C34.2619 44.3244 41.797 36.775 41.797 27.4955C41.797 18.216 34.2619 10.6666 25 10.6666ZM26.4649 41.3172V39.605C26.4649 38.796 25.809 38.1402 25 38.1402C24.191 38.1402 23.5352 38.796 23.5352 39.605V41.3172C17.0551 40.6322 11.8916 35.4558 11.2097 28.9604H12.8906C13.6996 28.9604 14.3555 28.3045 14.3555 27.4955C14.3555 26.6865 13.6996 26.0307 12.8906 26.0307H11.2098C11.8916 19.5353 17.0551 14.3589 23.5352 13.6739V15.3861C23.5352 16.195 24.191 16.8509 25 16.8509C25.809 16.8509 26.4649 16.195 26.4649 15.3861V13.6739C32.9449 14.3589 38.1084 19.5353 38.7903 26.0307H37.1094C36.3004 26.0307 35.6445 26.6865 35.6445 27.4955C35.6445 28.3045 36.3004 28.9604 37.1094 28.9604H38.7902C38.1084 35.4558 32.9449 40.6322 26.4649 41.3172Z"
+                  fill="url(#ypaint1_linear)" />
+                <path
+                  d="M28.6134 26.6501H26.5468V20.7256C26.5468 19.9166 25.8909 19.2607 25.0819 19.2607C24.2729 19.2607 23.6171 19.9166 23.6171 20.7256V28.115C23.6171 28.9239 24.2729 29.5798 25.0819 29.5798H28.6134C29.4224 29.5798 30.0782 28.9239 30.0782 28.115C30.0782 27.306 29.4224 26.6501 28.6134 26.6501Z"
+                  fill="url(#ypaint2_linear)" />
+                <defs>
+                  <linearGradient id="ypaint0_linear" x1="2.53915" y1="50" x2="32.4643" y2="5.70122"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="ypaint1_linear" x1="8.20303" y1="44.3244" x2="27.482" y2="12.6194"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="ypaint2_linear" x1="23.6171" y1="29.5798" x2="30.2711" y2="22.7151"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                </defs>
+              </svg>ХРОНОМЕР</h3>
+            <p class="text-definition">Определение хронометража рекламного текста</p>
+            <div class="chronomer-block">
+              <div class="chronomer-element">
+                <input type="checkbox"><span class="txt-required">Требуемый хронометраж</span><br>
+                <input type="Text" class="chrono-time" name="iHronMin" value="0"><span class="txt-specks">:</span>
+                <input type="Text" class="chrono-time" name="iHronSek" value="0"><br>
+                <label class="txt-minutes" for="iHronMin">минут</label> <label class="txt-minutes"
+                  for="iHronSek">секунд</label>
+              </div>
+              <div class="chronomer-element">
+                <p class="vocabulary-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.0161 0H7.1894C6.31912 0 5.61112 0.708047 5.61112 1.57828V1.60331H5.58609C4.71581 1.60331 4.00781 2.31136 4.00781 3.18159V3.20662H3.98278C3.1125 3.20662 2.4045 3.91467 2.4045 4.78491V22.4216C2.4045 23.2919 3.11254 23.9999 3.98278 23.9999H16.8095C17.6798 23.9999 18.3878 23.2919 18.3878 22.4216V22.3966H18.4128C19.2831 22.3966 19.9911 21.6885 19.9911 20.8183V20.7933H20.0161C20.8864 20.7933 21.5944 20.0852 21.5944 19.215V1.57828C21.5944 0.708047 20.8864 0 20.0161 0ZM17.6362 22.4217C17.6362 22.8776 17.2653 23.2485 16.8095 23.2485H3.98273C3.52687 23.2485 3.156 22.8776 3.156 22.4217V15.9833H17.6362V22.4217H17.6362ZM17.6362 15.2317H3.156V4.78495C3.156 4.32909 3.52687 3.95822 3.98273 3.95822H16.8095C17.2653 3.95822 17.6362 4.32909 17.6362 4.78495V15.2317ZM19.2395 20.8184C19.2395 21.2742 18.8686 21.6451 18.4128 21.6451H18.3877V14.3799H19.2395V20.8184ZM19.2395 13.6284H18.3877V4.78495C18.3877 3.91467 17.6797 3.20667 16.8095 3.20667H4.75935V3.18164C4.75935 2.72578 5.13023 2.35491 5.58609 2.35491H18.4128C18.8687 2.35491 19.2396 2.72578 19.2396 3.18164V13.6284H19.2395ZM20.8429 19.215C20.8429 19.6709 20.472 20.0418 20.0161 20.0418H19.9911V12.7766H20.8429V19.215ZM20.8429 12.025H19.9911V3.18164C19.9911 2.31136 19.2831 1.60336 18.4128 1.60336H6.36267V1.57828C6.36267 1.12242 6.73354 0.751547 7.1894 0.751547H20.0161C20.472 0.751547 20.8429 1.12242 20.8429 1.57828V12.025Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M11.1589 13.1019L9.31783 6.47405C9.17683 5.9663 8.71033 5.61169 8.18336 5.61169H7.39788C6.87091 5.61169 6.40441 5.9663 6.26336 6.47401L4.4222 13.1019C4.3667 13.3019 4.48375 13.509 4.68377 13.5646C4.88378 13.6201 5.09088 13.503 5.14642 13.3031L5.62666 11.5741H9.95448L10.4347 13.303C10.4809 13.4694 10.632 13.5784 10.7966 13.5784C10.8299 13.5784 10.8638 13.5739 10.8974 13.5646C11.0974 13.509 11.2145 13.3019 11.1589 13.1019ZM5.83544 10.8225L6.98753 6.67515C7.03853 6.49154 7.20728 6.36324 7.39788 6.36324H8.18336C8.37395 6.36324 8.5427 6.49149 8.59366 6.67515L9.7457 10.8225H5.83544Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M16.0079 12.8268C15.9941 12.8268 15.9829 12.8156 15.9829 12.8018V11.3989V10.998V9.19428C15.9829 8.98676 15.8147 8.81848 15.6071 8.81848C15.3995 8.81848 15.2313 8.98672 15.2313 9.19428V9.35356C14.8485 9.0207 14.3492 8.81848 13.8033 8.81848C12.6015 8.81848 11.6237 9.7962 11.6237 10.998V11.3989C11.6237 12.6006 12.6015 13.5784 13.8033 13.5784C14.3639 13.5784 14.8756 13.3655 15.2621 13.0166C15.3557 13.3405 15.6542 13.5784 16.0079 13.5784C16.2154 13.5784 16.3837 13.4102 16.3837 13.2026C16.3837 12.995 16.2155 12.8268 16.0079 12.8268ZM15.2313 11.3988C15.2313 12.1862 14.5907 12.8268 13.8033 12.8268C13.0159 12.8268 12.3754 12.1862 12.3754 11.3988V10.998C12.3754 10.2106 13.016 9.57003 13.8033 9.57003C14.5907 9.57003 15.2313 10.2106 15.2313 10.998V11.3988Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M15.6072 17.6368H5.18552C4.978 17.6368 4.80972 17.8051 4.80972 18.0126C4.80972 18.2202 4.97796 18.3884 5.18552 18.3884H15.6072C15.8148 18.3884 15.983 18.2202 15.983 18.0126C15.983 17.8051 15.8148 17.6368 15.6072 17.6368Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M11.5989 20.8434H5.18552C4.978 20.8434 4.80972 21.0116 4.80972 21.2192C4.80972 21.4267 4.97796 21.595 5.18552 21.595H11.5989C11.8064 21.595 11.9747 21.4267 11.9747 21.2192C11.9747 21.0116 11.8064 20.8434 11.5989 20.8434Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M7.59039 19.2401H5.18552C4.978 19.2401 4.80972 19.4083 4.80972 19.6159C4.80972 19.8234 4.97796 19.9917 5.18552 19.9917H7.59039C7.7979 19.9917 7.96618 19.8235 7.96618 19.6159C7.96618 19.4083 7.79795 19.2401 7.59039 19.2401Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M15.6075 19.2401H9.19416C8.98664 19.2401 8.81836 19.4083 8.81836 19.6159C8.81836 19.8234 8.98659 19.9917 9.19416 19.9917H15.6075C15.815 19.9917 15.9833 19.8235 15.9833 19.6159C15.9833 19.4083 15.8151 19.2401 15.6075 19.2401Z"
+                      fill="#C7DEE1" />
+                  </svg>
+                  <span class="txt-vocabulary">РУССКИЙ СЛОВАРЬ</span><svg width="11" height="17" viewBox="0 0 11 17"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.73931 2.65887L8.53919 8.62078L2.66678 14.3337L2.73931 2.65887Z" stroke="#C7DEE1"
+                      stroke-width="1.5" />
+                  </svg>
+                </p>
+                <p class="vocabulary-box2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.0161 0H7.1894C6.31912 0 5.61112 0.708047 5.61112 1.57828V1.60331H5.58609C4.71581 1.60331 4.00781 2.31136 4.00781 3.18159V3.20662H3.98278C3.1125 3.20662 2.4045 3.91467 2.4045 4.78491V22.4216C2.4045 23.2919 3.11254 23.9999 3.98278 23.9999H16.8095C17.6798 23.9999 18.3878 23.2919 18.3878 22.4216V22.3966H18.4128C19.2831 22.3966 19.9911 21.6885 19.9911 20.8183V20.7933H20.0161C20.8864 20.7933 21.5944 20.0852 21.5944 19.215V1.57828C21.5944 0.708047 20.8864 0 20.0161 0ZM17.6362 22.4217C17.6362 22.8776 17.2653 23.2485 16.8095 23.2485H3.98273C3.52687 23.2485 3.156 22.8776 3.156 22.4217V15.9833H17.6362V22.4217H17.6362ZM17.6362 15.2317H3.156V4.78495C3.156 4.32909 3.52687 3.95822 3.98273 3.95822H16.8095C17.2653 3.95822 17.6362 4.32909 17.6362 4.78495V15.2317ZM19.2395 20.8184C19.2395 21.2742 18.8686 21.6451 18.4128 21.6451H18.3877V14.3799H19.2395V20.8184ZM19.2395 13.6284H18.3877V4.78495C18.3877 3.91467 17.6797 3.20667 16.8095 3.20667H4.75935V3.18164C4.75935 2.72578 5.13023 2.35491 5.58609 2.35491H18.4128C18.8687 2.35491 19.2396 2.72578 19.2396 3.18164V13.6284H19.2395ZM20.8429 19.215C20.8429 19.6709 20.472 20.0418 20.0161 20.0418H19.9911V12.7766H20.8429V19.215ZM20.8429 12.025H19.9911V3.18164C19.9911 2.31136 19.2831 1.60336 18.4128 1.60336H6.36267V1.57828C6.36267 1.12242 6.73354 0.751547 7.1894 0.751547H20.0161C20.472 0.751547 20.8429 1.12242 20.8429 1.57828V12.025Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M11.1589 13.1019L9.31783 6.47405C9.17683 5.9663 8.71033 5.61169 8.18336 5.61169H7.39788C6.87091 5.61169 6.40441 5.9663 6.26336 6.47401L4.4222 13.1019C4.3667 13.3019 4.48375 13.509 4.68377 13.5646C4.88378 13.6201 5.09088 13.503 5.14642 13.3031L5.62666 11.5741H9.95448L10.4347 13.303C10.4809 13.4694 10.632 13.5784 10.7966 13.5784C10.8299 13.5784 10.8638 13.5739 10.8974 13.5646C11.0974 13.509 11.2145 13.3019 11.1589 13.1019ZM5.83544 10.8225L6.98753 6.67515C7.03853 6.49154 7.20728 6.36324 7.39788 6.36324H8.18336C8.37395 6.36324 8.5427 6.49149 8.59366 6.67515L9.7457 10.8225H5.83544Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M16.0079 12.8268C15.9941 12.8268 15.9829 12.8156 15.9829 12.8018V11.3989V10.998V9.19428C15.9829 8.98676 15.8147 8.81848 15.6071 8.81848C15.3995 8.81848 15.2313 8.98672 15.2313 9.19428V9.35356C14.8485 9.0207 14.3492 8.81848 13.8033 8.81848C12.6015 8.81848 11.6237 9.7962 11.6237 10.998V11.3989C11.6237 12.6006 12.6015 13.5784 13.8033 13.5784C14.3639 13.5784 14.8756 13.3655 15.2621 13.0166C15.3557 13.3405 15.6542 13.5784 16.0079 13.5784C16.2154 13.5784 16.3837 13.4102 16.3837 13.2026C16.3837 12.995 16.2155 12.8268 16.0079 12.8268ZM15.2313 11.3988C15.2313 12.1862 14.5907 12.8268 13.8033 12.8268C13.0159 12.8268 12.3754 12.1862 12.3754 11.3988V10.998C12.3754 10.2106 13.016 9.57003 13.8033 9.57003C14.5907 9.57003 15.2313 10.2106 15.2313 10.998V11.3988Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M15.6072 17.6368H5.18552C4.978 17.6368 4.80972 17.8051 4.80972 18.0126C4.80972 18.2202 4.97796 18.3884 5.18552 18.3884H15.6072C15.8148 18.3884 15.983 18.2202 15.983 18.0126C15.983 17.8051 15.8148 17.6368 15.6072 17.6368Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M11.5989 20.8434H5.18552C4.978 20.8434 4.80972 21.0116 4.80972 21.2192C4.80972 21.4267 4.97796 21.595 5.18552 21.595H11.5989C11.8064 21.595 11.9747 21.4267 11.9747 21.2192C11.9747 21.0116 11.8064 20.8434 11.5989 20.8434Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M7.59039 19.2401H5.18552C4.978 19.2401 4.80972 19.4083 4.80972 19.6159C4.80972 19.8234 4.97796 19.9917 5.18552 19.9917H7.59039C7.7979 19.9917 7.96618 19.8235 7.96618 19.6159C7.96618 19.4083 7.79795 19.2401 7.59039 19.2401Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M15.6075 19.2401H9.19416C8.98664 19.2401 8.81836 19.4083 8.81836 19.6159C8.81836 19.8234 8.98659 19.9917 9.19416 19.9917H15.6075C15.815 19.9917 15.9833 19.8235 15.9833 19.6159C15.9833 19.4083 15.8151 19.2401 15.6075 19.2401Z"
+                      fill="#C7DEE1" />
+                  </svg>
+                  <span class="txt-vocabulary">УКРАИНСКИЙ СЛОВАРЬ</span><svg width="11" height="17" viewBox="0 0 11 17"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.73931 2.65887L8.53919 8.62078L2.66678 14.3337L2.73931 2.65887Z" stroke="#C7DEE1"
+                      stroke-width="1.5" />
+                  </svg>
+                </p>
+              </div>
+              <div class="chronomer-window">
+                <p class="copy-text">Скопируйте текст в окно. Удалите ремарки и коментарии</p>
+                <textarea class="input-paste-text" type="text" name="message"></textarea>
+                <button class="btn-clear"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.0018 1.44873H14.0129V2.12366H15.4614V1.35425C15.4616 0.607544 14.8544 0 14.1081 0H9.90656C9.16022 0 8.55304 0.607544 8.55304 1.35425V2.12366H10.0018V1.44873Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M18.8066 7.86328H5.20768C4.83506 7.86328 4.54173 8.18115 4.57176 8.55267L5.70866 22.6108C5.77201 23.3956 6.42662 24 7.21305 24H16.801C17.5874 24 18.242 23.3956 18.3054 22.6106L19.4423 8.55267C19.4725 8.18115 19.1792 7.86328 18.8066 7.86328ZM8.50047 22.5005C8.48527 22.5015 8.47007 22.502 8.45506 22.502C8.0753 22.502 7.75651 22.2063 7.73289 21.8221L7.02043 10.2812C6.99589 9.88184 7.29966 9.53815 7.69883 9.51361C8.09672 9.48944 8.44187 9.79248 8.46641 10.192L9.17869 21.733C9.20341 22.1323 8.89964 22.4758 8.50047 22.5005ZM12.7395 21.7776C12.7395 22.1776 12.4153 22.5018 12.0152 22.5018C11.6151 22.5018 11.2908 22.1776 11.2908 21.7776V10.2365C11.2908 9.83643 11.6151 9.51215 12.0152 9.51215C12.4151 9.51215 12.7395 9.83643 12.7395 10.2365V21.7776ZM16.9938 10.2792L16.3136 21.8201C16.2911 22.205 15.9717 22.5018 15.5912 22.5018C15.5769 22.5018 15.5625 22.5015 15.548 22.5007C15.1487 22.4771 14.844 22.1343 14.8676 21.735L15.5476 10.1938C15.5711 9.79449 15.9128 9.48981 16.3132 9.51343C16.7126 9.53687 17.0173 9.87982 16.9938 10.2792Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M21.3121 5.62793L20.8364 4.2019C20.711 3.82599 20.3591 3.57239 19.9627 3.57239H4.0528C3.65656 3.57239 3.30445 3.82599 3.17921 4.2019L2.7035 5.62793C2.61176 5.90295 2.73115 6.18347 2.95399 6.32336C3.04481 6.38031 3.15229 6.41455 3.27039 6.41455H20.7452C20.8633 6.41455 20.971 6.38031 21.0616 6.32318C21.2845 6.18329 21.4039 5.90277 21.3121 5.62793Z"
+                      fill="#C7DEE1" />
+                  </svg><span>ОЧИСТИТЬ</span></button>
+                <button class="btn-general">ОПРЕДЕЛИТЬ СТРАНИЦЫ<svg width="11" height="17" viewBox="0 0 11 17"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.73931 2.65887L8.53919 8.62078L2.66678 14.3337L2.73931 2.65887Z" stroke="white"
+                      stroke-width="1.5" />
+                  </svg>
+                </button>
+                <div class="chronomer-results">
+                  <span class="min-chrono-txt">Минимальный хронометраж:</span>
+                  <span>Всего слов:</span>
+                  <p>Оптимальный хронометраж:</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-overlay-page">
+        <div class="modal-page">
+          <a class="close-modal-page">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.9886 18.0008L35.5879 2.40143C36.1371 1.85222 36.1371 0.96178 35.5879 0.41264C35.0387 -0.1365 34.1482 -0.13657 33.5991 0.41264L17.9997 16.012L2.40045 0.41264C1.85124 -0.13657 0.960803 -0.13657 0.411663 0.41264C-0.137476 0.96185 -0.137547 1.85229 0.411663 2.40143L16.011 18.0007L0.411663 33.6001C-0.137547 34.1493 -0.137547 35.0397 0.411663 35.5889C0.686233 35.8634 1.04616 36.0007 1.40609 36.0007C1.76602 36.0007 2.12588 35.8634 2.40052 35.5889L17.9997 19.9896L33.599 35.5889C33.8736 35.8634 34.2335 36.0007 34.5935 36.0007C34.9534 36.0007 35.3132 35.8634 35.5879 35.5889C36.1371 35.0397 36.1371 34.1492 35.5879 33.6001L19.9886 18.0008Z"
+                fill="url(#paint0_linearc)" />
+              <defs>
+                <linearGradient id="paint0_linearc" x1="-0.000244141" y1="36.0007" x2="20.6022" y2="2.05459"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#483156" />
+                  <stop offset="1" stop-color="#39516E" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </a>
+          <div class="modal-content-page">
+            <h3 class="txt-chronomer">
+              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M42.0199 43.9999C41.7935 43.9999 41.5733 43.8825 41.4518 43.6724L39.071 39.5554C39.0686 39.551 39.0661 39.5467 39.0637 39.5425L36.1144 34.165C35.9404 33.8475 36.0566 33.4491 36.374 33.2749C36.6917 33.101 37.0899 33.2171 37.2642 33.5345L40.2098 38.9052L42.5868 43.0159C42.7681 43.3293 42.661 43.7304 42.3476 43.9116C42.2441 43.9714 42.1312 43.9999 42.0199 43.9999Z"
+                    fill="url(#paint0_linear)" />
+                  <path
+                    d="M1.98066 44.0001C1.8693 44.0001 1.75645 43.9717 1.65304 43.9119C1.33967 43.7307 1.23242 43.3297 1.4138 43.0162L3.78887 38.9091L5.95423 34.8478C6.12451 34.5284 6.52145 34.4073 6.84111 34.5777C7.1606 34.7481 7.2815 35.1452 7.11122 35.4646L4.94052 39.5358C4.93693 39.5425 4.93335 39.549 4.9295 39.5557L2.54875 43.6727C2.42725 43.8827 2.20697 44.0001 1.98066 44.0001Z"
+                    fill="url(#paint1_linear)" />
+                  <path
+                    d="M23.5072 5.73859H20.4048V1.04431C20.4048 0.467566 20.8723 0 21.449 0H22.4629C23.0396 0 23.5072 0.467566 23.5072 1.04431V5.73859Z"
+                    fill="url(#paint2_linear)" />
+                  <path
+                    d="M21.1323 2.13215C21.1323 1.55541 21.5999 1.08784 22.1766 1.08784H23.1905C23.301 1.08784 23.4073 1.10524 23.5072 1.13705V1.04422C23.5072 0.467566 23.0396 0 22.463 0H21.449C20.8723 0 20.4048 0.467566 20.4048 1.04431V5.73859H21.1323V2.13215Z"
+                    fill="url(#paint3_linear)" />
+                  <path
+                    d="M22.0001 14.4165L15.9922 25.4617C15.9156 25.6026 15.8153 25.7292 15.6956 25.8359L11.6585 29.4391L6.38709 38.9895C6.09855 39.5123 5.45624 39.7251 4.91263 39.478L3.9997 39.063C3.39586 38.7886 3.15137 38.0595 3.46771 37.4765L17.5972 11.4333L19.9839 6.44702L24.8858 8.70776L22.0001 14.4165Z"
+                    fill="url(#paint4_linear)" />
+                  <path
+                    d="M26.4023 11.4333L40.5318 37.4764C40.8481 38.0594 40.6037 38.7885 39.9998 39.0629L39.0869 39.4779C38.5433 39.725 37.901 39.5122 37.6124 38.9894L32.341 29.439L28.3039 25.8359C28.1843 25.7291 28.084 25.6025 28.0073 25.4616L21.9994 14.4164L19.4315 9.11597L24.4367 6.44702L26.4023 11.4333Z"
+                    fill="url(#paint5_linear)" />
+                  <path
+                    d="M26.4024 11.4333L24.4367 6.44702L19.4315 9.11597L21.9994 14.4164L23.0041 16.2635C24.8624 15.9813 26.4703 14.9281 27.492 13.4419L26.4024 11.4333Z"
+                    fill="url(#paint6_linear)" />
+                  <path
+                    d="M24.8858 8.70776L19.9839 6.44702L17.5972 11.4333L16.5074 13.442C17.5293 14.9281 19.1371 15.9813 20.9953 16.2636L22 14.4165L24.8858 8.70776Z"
+                    fill="url(#paint7_linear)" />
+                  <path
+                    d="M24.3938 5.58718V4.49086C24.3938 4.11779 24.0914 3.81543 23.7184 3.81543H20.1957C19.8226 3.81543 19.5202 4.11779 19.5202 4.49086V5.63893C18.1653 6.47301 17.2616 7.96933 17.2616 9.67718C17.2616 12.2945 19.3833 14.4163 22.0007 14.4163C24.6181 14.4163 26.7398 12.2946 26.7398 9.67718C26.7398 7.93305 25.7969 6.40999 24.3938 5.58718Z"
+                    fill="url(#paint8_linear)" />
+                  <path
+                    d="M18.8743 10.1867C18.8743 8.72282 19.5382 7.41444 20.5812 6.54521C20.925 6.25868 21.133 5.84146 21.133 5.394V3.81543H20.1957C19.8226 3.81543 19.5202 4.11787 19.5202 4.49086V5.63893C18.1653 6.47301 17.2616 7.96933 17.2616 9.67718C17.2616 12.0908 19.0664 14.083 21.3998 14.3785C19.898 13.5835 18.8743 12.0043 18.8743 10.1867Z"
+                    fill="url(#paint9_linear)" />
+                  <path
+                    d="M21.9998 11.4331C22.9696 11.4331 23.7559 10.6469 23.7559 9.67701C23.7559 8.70714 22.9696 7.9209 21.9998 7.9209C21.0299 7.9209 20.2437 8.70714 20.2437 9.67701C20.2437 10.6469 21.0299 11.4331 21.9998 11.4331Z"
+                    fill="url(#paint10_linear)" />
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="36.0336" y1="43.9999" x2="43.0042" y2="36.9407"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="1.32556" y1="44.0001" x2="7.45329" y2="37.7689"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="paint2_linear" x1="20.4048" y1="5.73859" x2="24.0824" y2="2.46271"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="paint3_linear" x1="20.4048" y1="5.73859" x2="24.0824" y2="2.46271"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="paint4_linear" x1="3.32898" y1="39.5807" x2="24.6533" y2="16.7215"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="paint5_linear" x1="19.4315" y1="39.5806" x2="40.7754" y2="17.0377"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="paint6_linear" x1="19.4315" y1="16.2635" x2="25.4858" y2="8.07244"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="paint7_linear" x1="16.5074" y1="16.2636" x2="22.4895" y2="7.85132"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="paint8_linear" x1="17.2616" y1="14.4163" x2="23.6176" y2="5.05269"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="paint9_linear" x1="17.2616" y1="14.3785" x2="23.4717" y2="10.37"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <linearGradient id="paint10_linear" x1="20.2437" y1="11.4331" x2="22.2537" y2="8.12128"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#483156" />
+                    <stop offset="1" stop-color="#39516E" />
+                  </linearGradient>
+                  <clipPath id="clip0">
+                    <rect width="44" height="44" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Страницемер</h3>
+            <p class="text-definition">Определение количества страниц текста</p>
+            <div class="page-block">
+              <label class="txt-font">ШРИФТ</label>
+
+              <div class="custom-select">
+                <select>
+                  <option value="0">Times New Roman</option>
+                  <option value="1">Arial</option>
+                  <option value="2">Courier New</option>
+
+                </select>
+              </div>
+              <label class="txt-font txt-size">РАЗМЕР</label>
+              <div class="custom-select size">
+                <select>
+
+                  <option value="0">14</option>
+                  <option value="1">12</option>
+                  <option value="2">18</option>
+
+                </select>
+              </div>
+
+            </div>
+
+            <div class="chrono-page">
+              <div class="form_radio">
+                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                <label for="radio-1" class="page-txt-chrono">Хронометраж</label><br>
+              </div>
+              <input type="Text" class="chrono-time" name="iHronHour" value="0"><span class="txt-specks">:</span>
+              <input type="Text" class="chrono-time" name="iHronMin" value="0"><span class="txt-specks">:</span>
+              <span class="there-text">Здесь может быть описание блока, которое разъяснит пользователю как пользоваться
+                формой</span>
+              <input type="Text" class="chrono-time" name="iHronSek" value="0"><br>
+              <label class="txt-minutes" for="iHronMin">часов</label>
+              <label class="txt-minutes" for="iHronMin">минут</label>
+              <label class="txt-minutes" for="iHronSek">секунд</label>
+            </div>
+            <div class="chronomer-window page-window">
+              <div class="content-page">
+                <div class="form_radio">
+                  <input id="radio-2" type="radio" name="radio" value="2">
+                  <label for="radio-2" class="copy-text copy-text-page">Скопируйте текст в окно. Удалите ремарки и
+                    коментарии</label></div>
+                <textarea class="input-paste-page" type="text" name="message"></textarea>
+                <button class="btn-clear"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.0018 1.44873H14.0129V2.12366H15.4614V1.35425C15.4616 0.607544 14.8544 0 14.1081 0H9.90656C9.16022 0 8.55304 0.607544 8.55304 1.35425V2.12366H10.0018V1.44873Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M18.8066 7.86328H5.20768C4.83506 7.86328 4.54173 8.18115 4.57176 8.55267L5.70866 22.6108C5.77201 23.3956 6.42662 24 7.21305 24H16.801C17.5874 24 18.242 23.3956 18.3054 22.6106L19.4423 8.55267C19.4725 8.18115 19.1792 7.86328 18.8066 7.86328ZM8.50047 22.5005C8.48527 22.5015 8.47007 22.502 8.45506 22.502C8.0753 22.502 7.75651 22.2063 7.73289 21.8221L7.02043 10.2812C6.99589 9.88184 7.29966 9.53815 7.69883 9.51361C8.09672 9.48944 8.44187 9.79248 8.46641 10.192L9.17869 21.733C9.20341 22.1323 8.89964 22.4758 8.50047 22.5005ZM12.7395 21.7776C12.7395 22.1776 12.4153 22.5018 12.0152 22.5018C11.6151 22.5018 11.2908 22.1776 11.2908 21.7776V10.2365C11.2908 9.83643 11.6151 9.51215 12.0152 9.51215C12.4151 9.51215 12.7395 9.83643 12.7395 10.2365V21.7776ZM16.9938 10.2792L16.3136 21.8201C16.2911 22.205 15.9717 22.5018 15.5912 22.5018C15.5769 22.5018 15.5625 22.5015 15.548 22.5007C15.1487 22.4771 14.844 22.1343 14.8676 21.735L15.5476 10.1938C15.5711 9.79449 15.9128 9.48981 16.3132 9.51343C16.7126 9.53687 17.0173 9.87982 16.9938 10.2792Z"
+                      fill="#C7DEE1" />
+                    <path
+                      d="M21.3121 5.62793L20.8364 4.2019C20.711 3.82599 20.3591 3.57239 19.9627 3.57239H4.0528C3.65656 3.57239 3.30445 3.82599 3.17921 4.2019L2.7035 5.62793C2.61176 5.90295 2.73115 6.18347 2.95399 6.32336C3.04481 6.38031 3.15229 6.41455 3.27039 6.41455H20.7452C20.8633 6.41455 20.971 6.38031 21.0616 6.32318C21.2845 6.18329 21.4039 5.90277 21.3121 5.62793Z"
+                      fill="#C7DEE1" />
+                  </svg><span>ОЧИСТИТЬ</span></button>
+                <button class="btn-general btn-page">ОПРЕДЕЛИТЬ СТРАНИЦЫ<svg width="11" height="17" viewBox="0 0 11 17"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.73931 2.65887L8.53919 8.62078L2.66678 14.3337L2.73931 2.65887Z" stroke="white"
+                      stroke-width="1.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav onmouseover="mouseOver()" onmouseout="mouseOut()" class="left-menu" id="menufixed">
+        <ul>
+          <li>
+            <a>
+              <svg class="left-menu-first" width="34" height="64" viewBox="0 0 34 64" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="33.8824" height="64" fill="url(#pattern0)" />
+                <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0" transform="scale(0.015873 0.00840336)" />
+                  </pattern>
+                  <image id="image0" width="63" height="119"
+                    xlink:href="data:image/png;base64,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" />
+                </defs>
+              </svg>
+              <hr id="demo" class="hr-for-leftmenu">
+              <span class="nav-text for-border modal-btn">Хронометраж</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img class="left-menu-items" src="img/page2.png" alt="Страницемер">
+              <hr id="demo2" class="forweight">
+              <span class="nav-text for-border modal-btn-page">СТРАНИЦЕМЕР</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <svg class="left-menu-items" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M40.8832 11.5835C36.9879 7.68018 31.9135 5.38857 26.4647 5.03936V2.92969H28.6132C29.4222 2.92969 30.078 2.27383 30.078 1.46484C30.078 0.655859 29.4222 0 28.6132 0H21.3866C20.5776 0 19.9218 0.655859 19.9218 1.46484C19.9218 2.27383 20.5776 2.92969 21.3866 2.92969H23.5351V5.03936C19.799 5.27881 16.2394 6.43164 13.1148 8.39131L11.7233 6.99697C11.0461 6.31836 10.1452 5.94473 9.18652 5.94473C8.22783 5.94473 7.32695 6.31846 6.64981 6.99697L4.5335 9.11787C3.14043 10.5137 3.14043 12.785 4.5335 14.1809L5.93447 15.5848C3.72324 19.1229 2.53906 23.2179 2.53906 27.4955C2.53906 33.5061 4.875 39.1571 9.1166 43.4075C13.359 47.6587 18.9998 50 24.9999 50C31 50 36.6408 47.6587 40.8832 43.4075C45.1248 39.1571 47.4607 33.5061 47.4607 27.4955C47.4607 21.485 45.1248 15.8339 40.8832 11.5835ZM6.60723 11.1874L8.72363 9.0666C8.89043 8.89951 9.08525 8.87451 9.18662 8.87451C9.28799 8.87451 9.48291 8.89941 9.64971 9.0666L10.7112 10.1303C10.1607 10.5866 9.62832 11.0709 9.1167 11.5836C8.60654 12.0948 8.12461 12.6268 7.67041 13.1768L6.60723 12.1114C6.35293 11.8566 6.35293 11.4421 6.60723 11.1874ZM24.9999 47.0703C14.2304 47.0703 5.46875 38.2891 5.46875 27.4955C5.46875 16.702 14.2304 7.9207 24.9999 7.9207C35.7694 7.9207 44.5311 16.7019 44.5311 27.4955C44.5311 38.2892 35.7694 47.0703 24.9999 47.0703Z"
+                  fill="url(#paint0_lineaar)" />
+                <path
+                  d="M25.0001 10.6665C15.7382 10.6665 8.20312 18.2159 8.20312 27.4954C8.20312 36.7749 15.7382 44.3243 25.0001 44.3243C34.262 44.3243 41.7971 36.7749 41.7971 27.4954C41.7971 18.2159 34.262 10.6665 25.0001 10.6665ZM26.4649 41.3171V39.6049C26.4649 38.7959 25.8091 38.14 25.0001 38.14C24.1911 38.14 23.5353 38.7959 23.5353 39.6049V41.3171C17.0552 40.632 11.8917 35.4557 11.2098 28.9603H12.8907C13.6997 28.9603 14.3556 28.3044 14.3556 27.4954C14.3556 26.6864 13.6997 26.0306 12.8907 26.0306H11.2099C11.8917 19.5352 17.0552 14.3588 23.5353 13.6737V15.3859C23.5353 16.1949 24.1911 16.8508 25.0001 16.8508C25.8091 16.8508 26.4649 16.1949 26.4649 15.3859V13.6737C32.945 14.3588 38.1085 19.5352 38.7904 26.0306H37.1095C36.3005 26.0306 35.6446 26.6864 35.6446 27.4954C35.6446 28.3044 36.3005 28.9603 37.1095 28.9603H38.7903C38.1085 35.4557 32.945 40.632 26.4649 41.3171Z"
+                  fill="url(#paint1_lineaar)" />
+                <path
+                  d="M28.6135 26.6501H26.5469V20.7256C26.5469 19.9166 25.891 19.2607 25.082 19.2607C24.273 19.2607 23.6172 19.9166 23.6172 20.7256V28.115C23.6172 28.9239 24.273 29.5798 25.082 29.5798H28.6135C29.4225 29.5798 30.0783 28.9239 30.0783 28.115C30.0783 27.306 29.4225 26.6501 28.6135 26.6501Z"
+                  fill="url(#paint2_lineaar)" />
+                <defs>
+                  <linearGradient id="paint0_lineaar" x1="24.9999" y1="0" x2="24.9999" y2="50"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#41AFC1" />
+                    <stop offset="1" stop-color="#D0E6EB" />
+                  </linearGradient>
+                  <linearGradient id="paint1_lineaar" x1="25.0001" y1="10.6665" x2="25.0001" y2="44.3243"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#41AFC1" />
+                    <stop offset="1" stop-color="#D0E6EB" />
+                  </linearGradient>
+                  <linearGradient id="paint2_lineaar" x1="26.8478" y1="19.2607" x2="26.8478" y2="29.5798"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#41AFC1" />
+                    <stop offset="1" stop-color="#D0E6EB" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <hr id="demo3" class="forweight">
+              <span class="nav-text for-border">СТРАНИЦЕМЕР</span>
+            </a>
+
+          </li>
+          <li>
+            <a>
+              <img class="left-menu-items" src="img/setting4.png" alt="Хронометраж">
+              <hr id="demo4" class="hr-for-leftmenu">
+              <span class="nav-text for-border  modal-btn">Хронометраж</span>
+            </a>
+          </li>
+          <li>
+            <a>
+
+              <svg class="left-menu-items" width="44" height="42" viewBox="0 0 44 42" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.8917 0.202393C12.6304 0.202393 2.66406 4.74814 2.66406 14.727V25.1481L3.26786 24.9533C3.71705 23.9786 4.39467 23.1358 5.24219 22.4943V18.3725C5.64566 18.5156 6.0793 18.5942 6.53125 18.5942C8.6637 18.5942 10.3984 16.8595 10.3984 14.727C10.3984 9.81081 17.0591 7.92422 21.9887 7.92422C27.7592 7.92422 33.6016 10.2607 33.6016 14.727C33.6016 16.8595 35.3363 18.5942 37.4688 18.5942C37.9207 18.5942 38.3543 18.5156 38.7578 18.3725V22.4943C39.6214 23.1481 40.315 24.0067 40.7632 25.0052L41.3316 25.1696C41.333 25.1699 41.3346 25.1697 41.3359 25.17V14.727C41.3359 5.0882 31.5825 0.202393 21.8917 0.202393Z"
+                  fill="url(#ppaint0_linear)" />
+                <path
+                  d="M9.10938 23.7505C6.97692 23.7505 5.24219 25.4852 5.24219 27.6177V37.9302C5.24219 40.0626 6.97692 41.7974 9.10938 41.7974C11.2418 41.7974 12.9766 40.0626 12.9766 37.9302V27.6177C12.9766 25.4851 11.2418 23.7505 9.10938 23.7505Z"
+                  fill="url(#ppaint1_linear)" />
+                <path
+                  d="M34.8906 23.7505C32.7582 23.7505 31.0234 25.4852 31.0234 27.6177V37.9302C31.0234 40.0626 32.7582 41.7974 34.8906 41.7974C37.0231 41.7974 38.7578 40.0626 38.7578 37.9302V27.6177C38.7578 25.4851 37.0231 23.7505 34.8906 23.7505Z"
+                  fill="url(#ppaint2_linear)" />
+                <path
+                  d="M41.4219 27.8762V37.6713C42.9145 37.1355 44 35.7377 44 34.0628V31.4847C44 29.8098 42.9145 28.412 41.4219 27.8762Z"
+                  fill="url(#ppaint3_linear)" />
+                <path
+                  d="M0 31.4849V34.063C0 35.7379 1.08548 37.1357 2.57812 37.6715C2.57812 34.4042 2.57812 31.1437 2.57812 27.8765C1.08548 28.4122 0 29.81 0 31.4849Z"
+                  fill="url(#ppaint4_linear)" />
+                <defs>
+                  <linearGradient id="ppaint0_linear" x1="22" y1="0.202393" x2="22" y2="25.17"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#41AFC1" />
+                    <stop offset="1" stop-color="#D0E6EB" />
+                  </linearGradient>
+                  <linearGradient id="ppaint1_linear" x1="9.10938" y1="23.7505" x2="9.10938" y2="41.7974"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#41AFC1" />
+                    <stop offset="1" stop-color="#D0E6EB" />
+                  </linearGradient>
+                  <linearGradient id="ppaint2_linear" x1="34.8906" y1="23.7505" x2="34.8906" y2="41.7974"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#41AFC1" />
+                    <stop offset="1" stop-color="#D0E6EB" />
+                  </linearGradient>
+                  <linearGradient id="ppaint3_linear" x1="42.7109" y1="27.8762" x2="42.7109" y2="37.6713"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#41AFC1" />
+                    <stop offset="1" stop-color="#D0E6EB" />
+                  </linearGradient>
+                  <linearGradient id="ppaint4_linear" x1="1.28906" y1="27.8765" x2="1.28906" y2="37.6715"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#41AFC1" />
+                    <stop offset="1" stop-color="#D0E6EB" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <span class="nav-text">поиск дикторов</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="show" class="box-container">
+        <div class="box-element-audio">
+          <hr class="hr-for-box">
+          <img src="svg/icon1.svg" alt="">
+          <h4 class="text-element">ЗАПИСЬ НА 50 ЯЗЫКАХ</h4>
+        </div>
+        <div class="box-element-audio for-other-bg2">
+          <hr class="hr-for-box">
+        <img src="svg/icon2.svg" alt="">
+          <h4 class="text-element">ЛИЦЕНЗИОННАЯ МУЗЫКА</h4>
+        </div>
+        <div class="box-element-audio for-other-bg3">
+          <hr class="hr-for-box">
+         <img src="svg/icon3.svg" alt="">
+          <h4 class="text-element">СРОКИ ОТ 1-2 ДНЕЙ</h4>
+        </div>
+        <div class="box-element-audio for-other-bg4">
+          <hr class="hr-for-box">
+         <img src="svg/icon4.svg" alt="">
+
+          <h4 class="text-element">СТОИМОСТЬ ОТ 1000 ₽</h4>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div id="showThird" class="box-about-us">
+        <div class="box-about-element">
+          <hr class="hr-for-slider">
+          <p class="txt-about-us txt-audioslot">Особенности создания аудиоспота</p>
+          <p class="info-about-us">Радио в большей степени, чем другие средства рекламы, полагается на мастерство
+            сценариста. Любой сценарист сделает свои тексты более эффективными, если проверит написанное вслух, с тем,
+            чтобы еще раз уточнить паузы, ритм, убрать стилистические небрежности.</p><br>
+          <p class="info-about-us">Продолжительность аудиоролика 10 секунд - для 20 слов, 20 - для 40 слов, 30 - для 60
+            слов, 60 - для 120 слов.</p>
+          <br>
+          <p class="info-about-us"><b>Мы предлагаем следующие форматы аудиороликов:</b></p><br>
+          <p class="info-about-us"><i><svg class="svg-icon-text" width="11" height="17" viewBox="0 0 11 17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.73931 2.65887L8.53919 8.62078L2.66678 14.3337L2.73931 2.65887Z" stroke="#454545"
+                  stroke-width="1.5" />
+              </svg>
+              Информационно-музыкальные;</i> </p>
+
+          <p class="info-about-us"><i><svg class="svg-icon-text" width="11" height="17" viewBox="0 0 11 17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.73931 2.65887L8.53919 8.62078L2.66678 14.3337L2.73931 2.65887Z" stroke="#454545"
+                  stroke-width="1.5" />
+              </svg>
+              Голосовые приветствия, голосовое меню, запись IVR.</i></p>
+          <br>
+          <p class="info-about-us"><b>Выберите интересующий формат аудиоролика:</b></p>
+        </div>
+
+      </div>
+    </section>
+    <section class="info-music">
+      <div class="icon-message">
+        <svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d)">
+            <circle cx="80.5" cy="40.5" r="40.5" fill="#FEFEFF" />
+            <circle cx="80.5" cy="40.5" r="40" stroke="url(#painnt0mes_linear)" />
+          </g>
+          <path
+            d="M98.341 33.4595C98.0009 33.0037 97.3774 32.8673 96.8782 33.1394L84.9926 39.619L77.5984 33.2788C77.145 32.8901 76.4687 32.916 76.0465 33.3383L62.3323 47.0516C61.8873 47.4992 61.8895 48.2228 62.3372 48.6677C62.6952 49.0235 63.2441 49.1023 63.6878 48.8617L75.5733 42.3822L82.9744 48.7246C83.4278 49.1133 84.1041 49.0874 84.5263 48.6651L98.2405 34.9518C98.6401 34.5485 98.683 33.9128 98.341 33.4595Z"
+            fill="url(#paint1mes_linear)" />
+          <defs>
+            <filter id="filter0_d" x="0" y="0" width="129" height="129" filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+              <feOffset dx="-16" dy="24" />
+              <feGaussianBlur stdDeviation="12" />
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" />
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+            </filter>
+            <linearGradient id="painnt0mes_linear" x1="44.2078" y1="81" x2="124.221" y2="13.9764"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#F7F7F7" />
+              <stop offset="1" stop-color="white" />
+            </linearGradient>
+            <linearGradient id="paint1mes_linear" x1="62" y1="49" x2="67.1206" y2="29.7152"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#483156" />
+              <stop offset="1" stop-color="#39516E" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="base-speakers">
+        <div class="base-box">
+          <svg class="img" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clisp0)">
+            <path class="component" d="M60 0C71.8669 0 83.4672 3.51894 93.3342 10.1118C103.201 16.7047 110.891 26.0754 115.433 37.039C119.974 48.0026 121.162 60.0666 118.847 71.7054C116.532 83.3443 110.818 94.0353 102.426 102.426C94.0352 110.818 83.3442 116.532 71.7054 118.847C60.0665 121.162 48.0025 119.974 37.039 115.433C26.0754 110.892 16.7047 103.201 10.1118 93.3342C3.51891 83.4673 -3.05176e-05 71.8669 -3.05176e-05 60C0.0178375 44.0925 6.34499 28.8416 17.5933 17.5933C28.8416 6.34501 44.0925 0.0178658 60 0V0ZM60 116.719C71.2179 116.719 82.1839 113.392 91.5112 107.16C100.839 100.928 108.108 92.0693 112.401 81.7053C116.694 71.3413 117.817 59.9371 115.629 48.9347C113.44 37.9324 108.038 27.826 100.106 19.8938C92.1739 11.9615 82.0676 6.55959 71.0653 4.37108C60.0629 2.18258 48.6586 3.3058 38.2946 7.59871C27.9306 11.8916 19.0724 19.1614 12.8401 28.4888C6.60772 37.8161 3.28122 48.7821 3.28122 60C3.29834 75.0375 9.27955 89.4542 19.9127 100.087C30.5458 110.72 44.9625 116.702 60 116.719ZM9.37497 60C9.37497 73.4266 14.7087 86.3033 24.2027 95.7973C33.6967 105.291 46.5734 110.625 60 110.625C73.4266 110.625 86.3032 105.291 95.7973 95.7973C105.291 86.3033 110.625 73.4266 110.625 60C110.625 59.5649 110.452 59.1476 110.144 58.8399C109.837 58.5322 109.419 58.3594 108.984 58.3594C108.549 58.3594 108.132 58.5322 107.824 58.8399C107.517 59.1476 107.344 59.5649 107.344 60C107.356 71.011 103.534 81.6827 96.5339 90.1825C89.5341 98.6823 79.7934 104.48 68.9845 106.58C58.1755 108.68 46.9727 106.951 37.2997 101.69C27.6267 96.4288 20.0872 87.9643 15.9757 77.7497C11.8642 67.535 11.4374 56.2076 14.7684 45.7125C18.0995 35.2174 24.9807 26.2095 34.2303 20.2356C43.4799 14.2616 54.5208 11.6944 65.4572 12.9748C76.3935 14.2552 86.5429 19.3033 94.1625 27.2522C94.3106 27.4118 94.4889 27.5402 94.6872 27.6302C94.8854 27.7201 95.0996 27.7697 95.3172 27.7761C95.5348 27.7824 95.7515 27.7454 95.9546 27.6671C96.1578 27.5889 96.3433 27.471 96.5005 27.3204C96.6576 27.1697 96.7832 26.9893 96.8699 26.7896C96.9566 26.5899 97.0027 26.3749 97.0055 26.1573C97.0083 25.9396 96.9678 25.7235 96.8862 25.5217C96.8047 25.3198 96.6838 25.1362 96.5306 24.9816C89.5432 17.6825 80.5306 12.6425 70.6536 10.5107C60.7766 8.37887 50.4876 9.25281 41.1117 13.02C31.7357 16.7872 23.7023 23.275 18.0461 31.648C12.3898 40.021 9.36981 49.8956 9.37497 60ZM108.235 44.6138C107.644 42.7642 106.947 40.9506 106.146 39.1819C106.057 38.9856 105.93 38.8088 105.773 38.6616C105.615 38.5143 105.431 38.3994 105.229 38.3236C105.027 38.2477 104.813 38.2123 104.597 38.2194C104.382 38.2265 104.17 38.2759 103.974 38.3648C103.778 38.4538 103.601 38.5805 103.454 38.7378C103.306 38.8951 103.191 39.0798 103.116 39.2815C103.04 39.4832 103.004 39.6978 103.011 39.9131C103.018 40.1285 103.068 40.3403 103.157 40.5366C103.905 42.1891 104.557 43.8835 105.11 45.6113C105.173 45.8192 105.277 46.0126 105.415 46.18C105.554 46.3475 105.724 46.4858 105.917 46.5868C106.109 46.6878 106.32 46.7496 106.536 46.7685C106.753 46.7875 106.971 46.7632 107.178 46.6971C107.385 46.631 107.577 46.5244 107.743 46.3836C107.908 46.2427 108.044 46.0703 108.142 45.8765C108.241 45.6827 108.3 45.4712 108.316 45.2544C108.332 45.0377 108.304 44.8199 108.235 44.6138ZM68.2622 36.4453H51.7387C50.0604 36.4453 48.4508 35.7786 47.2641 34.5919C46.0773 33.4051 45.4106 31.7955 45.4106 30.1172C45.4106 28.4389 46.0773 26.8293 47.2641 25.6425C48.4508 24.4558 50.0604 23.7891 51.7387 23.7891H68.2622C69.9405 23.7891 71.5501 24.4558 72.7368 25.6425C73.9236 26.8293 74.5903 28.4389 74.5903 30.1172C74.5903 31.7955 73.9236 33.4051 72.7368 34.5919C71.5501 35.7786 69.9405 36.4453 68.2622 36.4453ZM68.2622 27.0703H51.7387C50.9306 27.0703 50.1557 27.3913 49.5843 27.9627C49.0129 28.5341 48.6918 29.3091 48.6918 30.1172C48.6918 30.9253 49.0129 31.7003 49.5843 32.2717C50.1557 32.8431 50.9306 33.1641 51.7387 33.1641H68.2622C69.0702 33.1641 69.8452 32.8431 70.4166 32.2717C70.988 31.7003 71.309 30.9253 71.309 30.1172C71.309 29.3091 70.988 28.5341 70.4166 27.9627C69.8452 27.3913 69.0702 27.0703 68.2622 27.0703ZM66.3281 83.5547V55.2103H68.2622C69.9405 55.2103 71.5501 54.5436 72.7368 53.3568C73.9236 52.1701 74.5903 50.5605 74.5903 48.8822C74.5903 47.2039 73.9236 45.5943 72.7368 44.4075C71.5501 43.2208 69.9405 42.5541 68.2622 42.5541H51.7387C50.0604 42.5541 48.4508 43.2208 47.2641 44.4075C46.0773 45.5943 45.4106 47.2039 45.4106 48.8822C45.4106 50.5605 46.0773 52.1701 47.2641 53.3568C48.4508 54.5436 50.0604 55.2103 51.7387 55.2103H53.6718V83.5547H51.7387C51.3036 83.5547 50.8863 83.7275 50.5786 84.0352C50.2709 84.3429 50.0981 84.7602 50.0981 85.1953C50.0981 85.6304 50.2709 86.0477 50.5786 86.3554C50.8863 86.6631 51.3036 86.8359 51.7387 86.8359H55.3125C55.528 86.8361 55.7414 86.7937 55.9405 86.7113C56.1396 86.6289 56.3205 86.5081 56.4728 86.3557C56.6252 86.2033 56.7461 86.0224 56.8285 85.8233C56.9109 85.6242 56.9532 85.4108 56.9531 85.1953V53.5697C56.9532 53.3542 56.9109 53.1408 56.8285 52.9417C56.7461 52.7426 56.6252 52.5617 56.4728 52.4093C56.3205 52.2569 56.1396 52.1361 55.9405 52.0537C55.7414 51.9713 55.528 51.9289 55.3125 51.9291H51.7387C50.9306 51.9291 50.1557 51.6081 49.5843 51.0367C49.0129 50.4653 48.6918 49.6903 48.6918 48.8822C48.6918 48.0741 49.0129 47.2991 49.5843 46.7277C50.1557 46.1563 50.9306 45.8353 51.7387 45.8353H68.2622C69.0702 45.8353 69.8452 46.1563 70.4166 46.7277C70.988 47.2991 71.309 48.0741 71.309 48.8822C71.309 49.6903 70.988 50.4653 70.4166 51.0367C69.8452 51.6081 69.0702 51.9291 68.2622 51.9291H64.6875C64.2523 51.9291 63.835 52.1019 63.5274 52.4096C63.2197 52.7173 63.0468 53.1346 63.0468 53.5697V85.1953C63.0468 85.6304 63.2197 86.0477 63.5274 86.3554C63.835 86.6631 64.2523 86.8359 64.6875 86.8359H68.2622C69.0702 86.8359 69.8452 87.1569 70.4166 87.7283C70.988 88.2998 71.309 89.0747 71.309 89.8828C71.309 90.6909 70.988 91.4659 70.4166 92.0373C69.8452 92.6087 69.0702 92.9297 68.2622 92.9297H51.7387C51.3036 92.9297 50.8863 93.1025 50.5786 93.4102C50.2709 93.7179 50.0981 94.1352 50.0981 94.5703C50.0981 95.0054 50.2709 95.4227 50.5786 95.7304C50.8863 96.0381 51.3036 96.2109 51.7387 96.2109H68.2622C69.9405 96.2109 71.5501 95.5442 72.7368 94.3575C73.9236 93.1707 74.5903 91.5611 74.5903 89.8828C74.5903 88.2045 73.9236 86.5949 72.7368 85.4081C71.5501 84.2214 69.9405 83.5547 68.2622 83.5547H66.3281Z" fill="url(#paint0_linear)"/>
+            </g>
+            <defs>
+            <linearGradient id="paint0_linear" x1="120" y1="120" x2="51.325" y2="6.84635" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#483156"/>
+            <stop offset="1" stop-color="#39516E"/>
+            </linearGradient>
+            <clipPath id="clisp0">
+            <rect width="120" height="120" fill="white" transform="matrix(-1 0 0 1 120 0)"/>
+            </clipPath>
+            </defs>
+            </svg>
+
+          <h4 class="txt-voice">Информационно-музыкальные</h4>
+          <p>Это информационное сообщение в официально-деловом или позитивном тоне. Буквальный рассказ о рекламируемом
+            объекте. Такой вариант подойдет, если ваша аудитория серьезная и воспринимает только информацию коротко и по
+            делу.</p>
+          <button class="base-btn-page">СЛУШАТЬ ПРИМЕРЫ <svg class="svg2" width="9" height="17" viewBox="0 0 9 17"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="svg-arro" d="M1.73931 2.65887L7.53919 8.62078L1.66678 14.3337L1.73931 2.65887Z"
+                stroke="url(#paint0_linear)" stroke-width="1.5" />
+              <defs>
+                <linearGradient id="paint0_linear" x1="-0.999914" y1="1.07747" x2="9.24546" y2="3.20313"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#483156" />
+                  <stop offset="1" stop-color="#39516E" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+          </button>
+        </div>
+        <div class="base-box">
+          <svg class="img" width="120" height="120" viewBox="0 0 120 120" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="component"
+              d="M60 0C71.8668 0 83.4672 3.51894 93.3342 10.1118C103.201 16.7047 110.891 26.0754 115.433 37.039C119.974 48.0026 121.162 60.0666 118.847 71.7054C116.532 83.3443 110.818 94.0353 102.426 102.426C94.0352 110.818 83.3442 116.532 71.7054 118.847C60.0665 121.162 48.0025 119.974 37.039 115.433C26.0754 110.892 16.7047 103.201 10.1118 93.3342C3.51891 83.4673 -3.05176e-05 71.8669 -3.05176e-05 60C0.0178375 44.0925 6.34498 28.8416 17.5933 17.5933C28.8416 6.34501 44.0925 0.0178658 60 0ZM60 116.719C71.2179 116.719 82.1839 113.392 91.5112 107.16C100.839 100.928 108.108 92.0693 112.401 81.7053C116.694 71.3413 117.817 59.9371 115.629 48.9347C113.44 37.9324 108.038 27.826 100.106 19.8938C92.1739 11.9615 82.0676 6.55959 71.0653 4.37108C60.0629 2.18258 48.6586 3.3058 38.2946 7.59871C27.9306 11.8916 19.0724 19.1614 12.8401 28.4888C6.60772 37.8161 3.28122 48.7821 3.28122 60C3.29834 75.0375 9.27955 89.4542 19.9127 100.087C30.5458 110.72 44.9625 116.702 60 116.719ZM9.37497 60C9.37497 73.4266 14.7087 86.3033 24.2027 95.7973C33.6967 105.291 46.5734 110.625 60 110.625C73.4266 110.625 86.3032 105.291 95.7973 95.7973C105.291 86.3033 110.625 73.4266 110.625 60C110.625 59.5649 110.452 59.1476 110.144 58.8399C109.837 58.5322 109.419 58.3594 108.984 58.3594C108.549 58.3594 108.132 58.5322 107.824 58.8399C107.517 59.1476 107.344 59.5649 107.344 60C107.356 71.011 103.534 81.6827 96.5339 90.1825C89.5341 98.6823 79.7934 104.48 68.9845 106.58C58.1755 108.68 46.9727 106.951 37.2997 101.69C27.6267 96.4288 20.0872 87.9643 15.9757 77.7497C11.8642 67.535 11.4374 56.2076 14.7684 45.7125C18.0995 35.2174 24.9807 26.2095 34.2303 20.2356C43.4799 14.2616 54.5208 11.6944 65.4572 12.9748C76.3935 14.2552 86.5429 19.3033 94.1625 27.2522C94.3106 27.4118 94.4889 27.5402 94.6872 27.6302C94.8854 27.7201 95.0996 27.7697 95.3172 27.7761C95.5348 27.7824 95.7515 27.7454 95.9546 27.6671C96.1578 27.5889 96.3433 27.471 96.5005 27.3204C96.6576 27.1697 96.7832 26.9893 96.8699 26.7896C96.9566 26.5899 97.0027 26.3749 97.0055 26.1573C97.0083 25.9396 96.9678 25.7235 96.8862 25.5217C96.8047 25.3198 96.6838 25.1362 96.5306 24.9816C89.5432 17.6825 80.5306 12.6425 70.6536 10.5107C60.7766 8.37887 50.4876 9.25281 41.1117 13.02C31.7357 16.7872 23.7023 23.275 18.0461 31.648C12.3898 40.021 9.36981 49.8956 9.37497 60ZM108.235 44.6138C107.644 42.7642 106.947 40.9506 106.146 39.1819C106.057 38.9856 105.93 38.8088 105.773 38.6616C105.615 38.5143 105.431 38.3994 105.229 38.3236C105.027 38.2477 104.813 38.2123 104.597 38.2194C104.382 38.2265 104.17 38.2759 103.974 38.3648C103.778 38.4538 103.601 38.5805 103.454 38.7378C103.306 38.8951 103.191 39.0798 103.116 39.2815C103.04 39.4832 103.004 39.6978 103.011 39.9131C103.018 40.1285 103.068 40.3403 103.157 40.5366C103.905 42.1891 104.557 43.8835 105.11 45.6113C105.173 45.8192 105.277 46.0126 105.415 46.18C105.554 46.3475 105.724 46.4858 105.917 46.5868C106.109 46.6878 106.32 46.7496 106.536 46.7685C106.753 46.7875 106.971 46.7632 107.178 46.6971C107.385 46.631 107.577 46.5244 107.743 46.3836C107.908 46.2427 108.044 46.0703 108.142 45.8765C108.241 45.6827 108.3 45.4712 108.316 45.2544C108.332 45.0377 108.304 44.8199 108.235 44.6138Z"
+              fill="url(#paint0_linear)" />
+            <path class="component"
+              d="M77.6037 37.9257C77.5993 37.8957 77.5949 37.8632 77.588 37.8363C76.8428 33.426 74.4678 29.4567 70.9339 26.7149C67.4 23.9731 62.965 22.659 58.5078 23.033C54.0507 23.4069 49.8967 25.4417 46.869 28.7341C43.8414 32.0264 42.1611 36.336 42.1612 40.8088V56.5351C42.1558 60.0089 43.1685 63.4081 45.0743 66.3126C45.2334 66.5552 45.4824 66.7246 45.7664 66.7836C46.0505 66.8426 46.3464 66.7864 46.589 66.6273C46.8316 66.4681 47.001 66.2191 47.06 65.9351C47.119 65.651 47.0628 65.3552 46.9037 65.1126C45.949 63.6528 45.2467 62.0428 44.8262 60.3501H54.4187C54.7087 60.3501 54.9869 60.2348 55.1921 60.0297C55.3972 59.8246 55.5124 59.5464 55.5124 59.2563C55.5124 58.9662 55.3972 58.688 55.1921 58.4829C54.9869 58.2778 54.7087 58.1626 54.4187 58.1626H44.4418C44.3828 57.6229 44.3517 57.0805 44.3487 56.5376V55.0563H54.4187C54.7087 55.0563 54.9869 54.9411 55.1921 54.736C55.3972 54.5308 55.5124 54.2526 55.5124 53.9626C55.5124 53.6725 55.3972 53.3943 55.1921 53.1892C54.9869 52.984 54.7087 52.8688 54.4187 52.8688H44.3487V49.7657H54.4187C54.7087 49.7657 54.9869 49.6505 55.1921 49.4453C55.3972 49.2402 55.5124 48.962 55.5124 48.6719C55.5124 48.3819 55.3972 48.1037 55.1921 47.8985C54.9869 47.6934 54.7087 47.5782 54.4187 47.5782H44.3487V44.4751H54.4187C54.7087 44.4751 54.9869 44.3598 55.1921 44.1547C55.3972 43.9496 55.5124 43.6714 55.5124 43.3813C55.5124 43.0912 55.3972 42.813 55.1921 42.6079C54.9869 42.4028 54.7087 42.2876 54.4187 42.2876H44.3487V40.8088C44.3488 40.2661 44.3767 39.7237 44.4324 39.1838H54.4187C54.7087 39.1838 54.9869 39.0686 55.1921 38.8635C55.3972 38.6583 55.5124 38.3801 55.5124 38.0901C55.5124 37.8 55.3972 37.5218 55.1921 37.3167C54.9869 37.1116 54.7087 36.9963 54.4187 36.9963H44.8199C45.3885 34.7526 46.4457 32.6623 47.9159 30.8746C49.3862 29.0869 51.2332 27.6461 53.3249 26.6551V29.3051C53.3249 29.5951 53.4401 29.8733 53.6453 30.0785C53.8504 30.2836 54.1286 30.3988 54.4187 30.3988C54.7087 30.3988 54.9869 30.2836 55.1921 30.0785C55.3972 29.8733 55.5124 29.5951 55.5124 29.3051V25.8126C56.6176 25.4821 57.756 25.2754 58.9068 25.1963V29.3026C58.9068 29.5926 59.022 29.8708 59.2271 30.076C59.4323 30.2811 59.7105 30.3963 60.0005 30.3963C60.2906 30.3963 60.5688 30.2811 60.7739 30.076C60.979 29.8708 61.0943 29.5926 61.0943 29.3026V25.1988C62.2451 25.2779 63.3835 25.4846 64.4887 25.8151V29.3051C64.4887 29.5951 64.6039 29.8733 64.809 30.0785C65.0141 30.2836 65.2923 30.3988 65.5824 30.3988C65.8725 30.3988 66.1507 30.2836 66.3558 30.0785C66.5609 29.8733 66.6762 29.5951 66.6762 29.3051V26.6551C68.7679 27.6461 70.6149 29.0869 72.0851 30.8746C73.5554 32.6623 74.6126 34.7526 75.1812 36.9963H65.5824C65.2923 36.9963 65.0141 37.1116 64.809 37.3167C64.6039 37.5218 64.4887 37.8 64.4887 38.0901C64.4887 38.3801 64.6039 38.6583 64.809 38.8635C65.0141 39.0686 65.2923 39.1838 65.5824 39.1838H75.5687C75.6244 39.7237 75.6523 40.2661 75.6524 40.8088V42.2876H65.5824C65.2923 42.2876 65.0141 42.4028 64.809 42.6079C64.6039 42.813 64.4887 43.0912 64.4887 43.3813C64.4887 43.6714 64.6039 43.9496 64.809 44.1547C65.0141 44.3598 65.2923 44.4751 65.5824 44.4751H75.6524V47.5782H65.5824C65.2923 47.5782 65.0141 47.6934 64.809 47.8985C64.6039 48.1037 64.4887 48.3819 64.4887 48.6719C64.4887 48.962 64.6039 49.2402 64.809 49.4453C65.0141 49.6505 65.2923 49.7657 65.5824 49.7657H75.6524V52.8688H65.5824C65.2923 52.8688 65.0141 52.984 64.809 53.1892C64.6039 53.3943 64.4887 53.6725 64.4887 53.9626C64.4887 54.2526 64.6039 54.5308 64.809 54.736C65.0141 54.9411 65.2923 55.0563 65.5824 55.0563H75.6524V56.5351C75.6523 57.0778 75.6244 57.6202 75.5687 58.1601H65.5824C65.2923 58.1601 65.0141 58.2753 64.809 58.4804C64.6039 58.6855 64.4887 58.9637 64.4887 59.2538C64.4887 59.5439 64.6039 59.8221 64.809 60.0272C65.0141 60.2323 65.2923 60.3476 65.5824 60.3476H75.1812C74.6291 62.5419 73.6082 64.5906 72.1886 66.3526C70.769 68.1146 68.9846 69.5482 66.958 70.5546C64.9314 71.561 62.7108 72.1164 60.4491 72.1825C58.1873 72.2486 55.9381 71.8239 53.8562 70.9376C53.5894 70.8236 53.2882 70.8203 53.019 70.9284C52.7498 71.0364 52.5345 71.247 52.4205 71.5138C52.3066 71.7806 52.3033 72.0817 52.4113 72.351C52.5194 72.6202 52.73 72.8355 52.9968 72.9494C53.9966 73.3752 55.0335 73.7081 56.0943 73.9438V78.9438C56.0947 79.2062 56.1898 79.4596 56.362 79.6575C56.5342 79.8554 56.772 79.9846 57.0318 80.0213V89.2188H53.188C51.4067 89.2208 49.6989 89.9293 48.4393 91.1889C47.1798 92.4485 46.4713 94.1563 46.4693 95.9376C46.4693 96.2276 46.5845 96.5058 46.7896 96.711C46.9948 96.9161 47.2729 97.0313 47.563 97.0313H72.438C72.7281 97.0313 73.0063 96.9161 73.2114 96.711C73.4166 96.5058 73.5318 96.2276 73.5318 95.9376C73.5298 94.1563 72.8213 92.4485 71.5617 91.1889C70.3021 89.9293 68.5944 89.2208 66.813 89.2188H62.9693V86.7969C62.9693 86.5069 62.854 86.2287 62.6489 86.0235C62.4438 85.8184 62.1656 85.7032 61.8755 85.7032C61.5855 85.7032 61.3073 85.8184 61.1021 86.0235C60.897 86.2287 60.7818 86.5069 60.7818 86.7969V89.2188H59.2193V80.0376H60.7818V82.3438C60.7818 82.6339 60.897 82.9121 61.1021 83.1172C61.3073 83.3223 61.5855 83.4376 61.8755 83.4376C62.1656 83.4376 62.4438 83.3223 62.6489 83.1172C62.854 82.9121 62.9693 82.6339 62.9693 82.3438V80.0213C63.2291 79.9846 63.4669 79.8554 63.6391 79.6575C63.8113 79.4596 63.9064 79.2062 63.9068 78.9438V73.9376C67.8579 73.0458 71.3888 70.8379 73.9204 67.6759C76.452 64.5139 77.834 60.5856 77.8399 56.5351V40.8088C77.8394 39.843 77.7604 38.8787 77.6037 37.9257ZM71.213 94.8438H48.788C49.0335 93.8629 49.5994 92.992 50.396 92.3693C51.1926 91.7466 52.1744 91.4077 53.1855 91.4063H66.813C67.8246 91.4071 68.8069 91.7458 69.6041 92.3686C70.4012 92.9913 70.9675 93.8625 71.213 94.8438ZM61.7193 77.8501H58.2818V74.2919C58.8499 74.3457 59.423 74.3751 60.0005 74.3751C60.578 74.3751 61.1537 74.3451 61.7193 74.2907V77.8501ZM49.563 71.0044C48.962 70.5703 48.3884 70.0994 47.8455 69.5944C47.6331 69.3969 47.5079 69.123 47.4974 68.8331C47.4869 68.5431 47.592 68.2609 47.7896 68.0485C47.9872 67.8361 48.2611 67.7109 48.551 67.7004C48.8409 67.6899 49.1231 67.795 49.3355 67.9926C49.812 68.4362 50.3155 68.8499 50.843 69.2313C50.9595 69.3154 51.0582 69.4215 51.1336 69.5437C51.209 69.6659 51.2596 69.8018 51.2825 69.9435C51.3054 70.0853 51.3001 70.2302 51.267 70.3699C51.2339 70.5096 51.1736 70.6415 51.0896 70.7579C51.0055 70.8743 50.8994 70.973 50.7772 71.0484C50.655 71.1238 50.5191 71.1744 50.3774 71.1973C50.2356 71.2202 50.0907 71.215 49.951 71.1819C49.8113 71.1488 49.6795 71.0885 49.563 71.0044ZM61.7449 69.4613C61.6822 69.1781 61.7345 68.8816 61.8904 68.637C62.0463 68.3924 62.293 68.2197 62.5762 68.1569C64.4242 67.7445 66.1476 66.8981 67.6037 65.6876C67.7125 65.5859 67.8409 65.5076 67.9811 65.4573C68.1213 65.4071 68.2702 65.3859 68.4188 65.3953C68.5674 65.4046 68.7126 65.4442 68.8454 65.5116C68.9781 65.579 69.0958 65.6728 69.191 65.7873C69.2863 65.9018 69.3571 66.0345 69.3993 66.1773C69.4414 66.3201 69.454 66.47 69.4361 66.6179C69.4183 66.7657 69.3705 66.9083 69.2956 67.037C69.2207 67.1657 69.1203 67.2778 69.0005 67.3663C67.2765 68.8005 65.2359 69.8038 63.0474 70.2932C62.9694 70.3103 62.8898 70.3189 62.8099 70.3188C62.5615 70.3179 62.3208 70.2325 62.1274 70.0767C61.934 69.9208 61.7993 69.7038 61.7455 69.4613H61.7449Z"
+              fill="url(#paint1_linear)" stroke="url(#paint2_linear)" stroke-width="0.4" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="60" y1="0" x2="60" y2="120" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#41AFC1" />
+                <stop offset="1" stop-color="#D0E6EB" />
+              </linearGradient>
+              <linearGradient id="paint1_linear" x1="60.0005" y1="22.9705" x2="60.0005" y2="97.0313"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#41AFC1" />
+                <stop offset="1" stop-color="#D0E6EB" />
+              </linearGradient>
+              <linearGradient id="paint2_linear" x1="60.0005" y1="22.9705" x2="60.0005" y2="97.0313"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#41AFC1" />
+                <stop offset="1" stop-color="#D0E6EB" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <h4 class="txt-voice">Голосовые приветствия, голосовое меню, запись IVR</h4>
+          <p>Это информационное сообщение в официально-деловом или позитивном тоне. Буквальный рассказ о
+            рекламируемом объекте. Такой вариант подойдет, если ваша аудитория серьезная и воспринимает только
+            информацию
+            коротко и по делу.</p>
+          <button class="base-btn-page">СЛУШАТЬ ПРИМЕРЫ <svg class="svg2" width="9" height="17" viewBox="0 0 9 17"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="svg-arro" d="M1.73931 2.65887L7.53919 8.62078L1.66678 14.3337L1.73931 2.65887Z"
+                stroke="url(#paint0_linear)" stroke-width="1.5" />
+              <defs>
+                <linearGradient id="paint0_linear" x1="-0.999914" y1="1.07747" x2="9.24546" y2="3.20313"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#483156" />
+                  <stop offset="1" stop-color="#39516E" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+          </button>
+        </div>
+      </div>
+
+    </section>
+    <section class="example-audio">
+      <div class="example-block">
+        <hr class="hr-for-slider">
+        <p class="txt-about-us txt-audioslot">ПРИМЕРЫ АУДИОРОЛИКОВ</p>
+
+        <button style="margin-bottom: 20px;" class="example-btn-all">ВСЕ</button><br class="over-btnall">
+
+        <span class="adaptive-block">
+          <span class="example-block-elem">
+            <img src="svg/icon-i-orig.svg" alt="">Информационно-музыкальные</span>
+          <span class="example-block-elem">
+            <img src="svg/icon-i-orig.svg" alt="">Голосовые приветствия, голосовое меню, запись IVR</span> <br
+            class="br-ad-golos">
+          <span class="example-block-elem">
+            <img src="svg/icon-i-orig.svg" alt=""><span class="golos">Голосовые приветствия, голосовое меню, запись
+              IVR</span>
+          </span>
+        </span>
+        <div class="container-playlist">
+          <div class="playlist-element">
+            <span class="txt-visa-free">BELARUS VISA-FREE</span>
+            <img class="icon-playlist" src="svg/i-icon.svg" alt="">
+
+            <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
+            <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ<img src="svg/download.svg" alt="">
+            </a>
+            <section class="player audio-playlist">
+              <div class="details">
+                <div class="now-playing1"></div>
+                <div class="track-art1"></div>
+                <div class="track-name1"></div>
+                <div class="track-artist1"></div>
+              </div>
+              <div class="buttons">
+                <div class="playpause-track1 playpause-audio" onclick="playpauseTrack1()"><img src="img/play.png"></div>
+              </div>
+              <div class="slider_container">
+                <input type="range" id="audio-player" min="1" max="100" value="100" class="seek_slider1"
+                  onchange="seekTo1()">
+              </div>
+              <div class="slider_container">
+                <img class="icon-volume icon-volume-audio" src="img/volume.png">
+                <input type="range" min="1" max="100" value="99" id="audio-volume" name="rng"
+                  class="volume_slider1 __range" onchange="setVolume1()">
+              </div>
+              <div>
+                <div class="playrepeat-track1 repeat" onclick="handleRepeat()"><img src="svg/repeat.svg" alt="">
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+          <div class="playlist-element sec-elem">
+            <span class="txt-visa-free">BELARUS VISA-FREE</span>
+            <img class="icon-playlist" src="svg/i-icon.svg" alt="">
+
+            <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
+            <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ<img src="svg/download.svg" alt="">
+            </a>
+            <section class="player audio-playlist">
+              <div class="details">
+                <div class="now-playing2"></div>
+                <div class="track-art2"></div>
+                <div class="track-name2"></div>
+                <div class="track-artist2"></div>
+              </div>
+              <div class="buttons">
+                <div class="playpause-track2 playpause-audio" onclick="playpauseTrack2()"><img src="img/play.png"></div>
+              </div>
+              <div class="slider_container">
+                <input type="range" id="audio-player" min="1" max="100" value="100" class=" seek_slider2"
+                  onchange="seekTo2()">
+              </div>
+              <div class="slider_container">
+                <img class="icon-volume icon-volume-audio" src="img/volume.png">
+                <input type="range" min="1" max="100" value="99" id="audio-volume" name="rng"
+                  class="volume_slider2 __range" onchange="setVolume2()">
+              </div>
+              <div>
+                <div class="playrepeat-track2 repeat2" onclick="handleRepeat2()"><img src="svg/repeat.svg" alt="">
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+          <div class="playlist-element third-elem">
+            <span class="txt-visa-free">BELARUS VISA-FREE</span>
+            <img class="icon-playlist" src="svg/i-icon.svg" alt="">
+
+            <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
+            <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ<img src="svg/download.svg" alt="">
+            </a>
+            <section class="player audio-playlist">
+              <div class="details">
+                <div class="now-playing3"></div>
+                <div class="track-art3"></div>
+                <div class="track-name3"></div>
+                <div class="track-artist3"></div>
+              </div>
+              <div class="buttons">
+                <div class="playpause-track3 playpause-audio" onclick="playpauseTrack3()"><img src="img/play.png"></div>
+              </div>
+              <div class="slider_container">
+                <input type="range" min="1" max="100" value="100" class="seek_slider3" onchange="seekTo3()">
+              </div>
+              <div class="slider_container">
+                <img class="icon-volume icon-volume-audio" src="img/volume.png">
+                <input type="range" min="1" max="100" value="99" name="rng" class="volume_slider3 __range"
+                  onchange="setVolume3()">
+              </div>
+              <div>
+                <div class="playrepeat-track3 repeat3" onclick="handleRepeat3()"><img src="svg/repeat.svg" alt="">
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+          <div class="playlist-element">
+            <span class="txt-visa-free">BELARUS VISA-FREE</span>
+            <img class="icon-playlist" src="svg/i-icon.svg" alt="">
+
+            <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
+            <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ<img src="svg/download.svg" alt="">
+            </a>
+            <section class="player audio-playlist">
+              <div class="details">
+                <div class="now-playing4"></div>
+                <div class="track-art4"></div>
+                <div class="track-name4"></div>
+                <div class="track-artist4"></div>
+              </div>
+              <div class="buttons">
+                <div class="playpause-track4 playpause-audio" onclick="playpauseTrack4()"><img src="img/play.png"></div>
+              </div>
+              <div class="slider_container">
+                <input type="range" min="1" max="100" value="100" class="seek_slider4" onchange="seekTo4()">
+              </div>
+              <div class="slider_container">
+                <img class="icon-volume icon-volume-audio" src="img/volume.png">
+                <input type="range" min="1" max="100" value="99" name="rng" class="volume_slider4 __range"
+                  onchange="setVolume4()">
+              </div>
+              <div>
+                <div class="playrepeat-track4 repeat4" onclick="handleRepeat4()"><img src="svg/repeat.svg" alt="">
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+          <div class="playlist-element sec-elem">
+            <span class="txt-visa-free">BELARUS VISA-FREE</span>
+            <img class="icon-playlist" src="svg/i-icon.svg" alt="">
+
+            <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
+            <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ<img src="svg/download.svg" alt="">
+            </a>
+            <section class="player audio-playlist">
+              <div class="details">
+                <div class="now-playing5"></div>
+                <div class="track-art5"></div>
+                <div class="track-name5"></div>
+                <div class="track-artist5"></div>
+              </div>
+              <div class="buttons">
+                <div class="playpause-track5 playpause-audio" onclick="playpauseTrack5()"><img src="img/play.png"></div>
+              </div>
+              <div class="slider_container">
+                <input type="range" min="1" max="100" value="100" class="seek_slider5" onchange="seekTo5()">
+              </div>
+              <div class="slider_container">
+                <img class="icon-volume icon-volume-audio" src="img/volume.png">
+                <input type="range" min="1" max="100" value="99" name="rng" class="volume_slider5 __range"
+                  onchange="setVolume5()">
+              </div>
+              <div>
+                <div class="playrepeat-track5 repeat5" onclick="handleRepeat5()"><img src="svg/repeat.svg" alt="">
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+          <div class="playlist-element third-elem">
+            <span class="txt-visa-free">BELARUS VISA-FREE</span>
+            <img class="icon-playlist" src="svg/i-icon.svg" alt="">
+            <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
+            <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ<img src="svg/download.svg" alt="">
+            </a>
+            <section class="player audio-playlist">
+              <div class="details">
+                <div class="now-playing6"></div>
+                <div class="track-art6"></div>
+                <div class="track-name6"></div>
+                <div class="track-artist6"></div>
+              </div>
+              <div class="buttons">
+                <div class="playpause-track6 playpause-audio" onclick="playpauseTrack6()"><img src="img/play.png"></div>
+              </div>
+              <div class="slider_container">
+                <input type="range" min="1" max="100" value="100" class="seek_slider6" onchange="seekTo6()">
+              </div>
+              <div class="slider_container">
+                <img class="icon-volume icon-volume-audio" src="img/volume.png">
+                <input type="range" min="1" max="100" value="99" name="rng" class="volume_slider6 __range"
+                  onchange="setVolume6()">
+              </div>
+              <div>
+                <div class="playrepeat-track6 repeat6" onclick="handleRepeat6()"><img src="svg/repeat.svg" alt="">
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+        <div class="box-pages">
+          <p class="count-pages"><a>1</a><a>2</a><a>3</a>...<a>28</a></p>
+          <button class="btn-show-more">ПОКАЗАТЬ ЕЩЕ<img src="svg/see-more.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="foreign-speakers">
+      <div id="showFour" class="box-with-speakers">
+        <hr class="hr-for-box hr-speakers">
+        <img class="img-speakers" src="img/microphone.png" alt="Microphone">
+        <h3 class="text-recording">Хотите заказать запись<br> аудиоролика?</h3>
+        <p class="text-description">Убедитесь в превосходном качестве нашей работы нашых дикторов!</p>
+        <p class="text-description with-blue">Мы самым строгим образом проверяем свои результаты и извлекаем уроки как
+          из успехов, так и из неудач, достигая, тем самым, высокого качества наших услуг. </p>
+        <button class="home-btn speakers-btn">СДЕЛАТЬ ЗАКАЗ <img class="btn-svg" src="img/btn_svg.svg" alt="">
+        </button>
+      </div>
+    </section>
+    <footer>
+      <a class="box-btn-over" href="#1"><button class="btn-over"> <img src="svg/footer-ar.svg" alt="">
+        </button></a>
+      <div class="footer-flex">
+        <div class="footer-element">
+          <hr>
+          <h5>НАШИ ПРИНЦИПЫ</h5>
+          <p>Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач,
+            достигая, тем самым, высокого качкства наших услуг</p>
+          <div class="for-adaptive"> <br>
+            <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
+            <br>
+            <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
+            <br>
+            <p>Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач,
+              достигая.</p>
+          </div>
+          <span id="dots"></span><span id="more">
+            <br>
+            <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
+            <br>
+            <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
+            <br>
+            <p>Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач,
+              достигая.</p>
+          </span>
+          <div class="see-more">
+            <button onclick="seemore()" id="myBtn">ЕЩЕ
+            </button></div>
+        </div>
+        <div class="footer-element element-items">
+          <hr>
+          <h5>ГРАФИК РАБОТЫ</h5>
+          <p class="text-element">По будним дням: 09:00 - 23:00<br>
+            По субботам: 10:00 - 15:00<br>
+            Выходные: воскресенье</p>
+          <hr>
+          <h5>КОНТАКТЫ</h5>
+          <p class="text-element for-botton-icon">В Москве: +7(495) 545 45 13<br>
+            В России: +7(800) 551 0 551<br>
+            В Украине: +38(044) 545 77 13</p>
+          <div class="svg-boxes">
+            <a href="">
+              <img src="svg/footer1.svg" alt="">
+            </a>
+            <a href="">
+              <img src="svg/footer2.svg" alt="">
+            </a>
+            <a href="">
+              <img src="svg/footer3.svg" alt="">
+            </a>
+            <a href="">
+              <img src="svg/footer4.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer-element">
+          <hr>
+          <h5>ПОЧТОВЫЙ АДРЕС</h5>
+          <p>г. Москва, пер. Электрический д.12, помещение II, комн.6
+            <br> г. Киев, ул. Немиовича-Данченко 87</p>
+          <hr>
+          <h5>СОТРУДНИЧЕСТВО</h5>
+          <p>По вопросам сотрудничества ждем ваше резюме по почте или заполните нашу анкету</p>
+          <button class="footer-btn">ЗАПОЛНИТЬ АНКЕТУ <img src="img/anketa.svg" alt="">
+          </button>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <p class="copyright">© 2020 SILA.FM. Все права защищены.</p>
+    </footer>
+
+  </main>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

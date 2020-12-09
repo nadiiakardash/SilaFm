@@ -578,7 +578,7 @@
     line-height: 18px;
     text-align: center;
     color: #c7dee1;
-    margin-left: 34px;
+    margin-left: 9px;
     margin-right: 26px;
     cursor: pointer;
 }
@@ -1380,8 +1380,10 @@
     opacity: 0;
 }
 .box-svg {
-    width: 90%;
-    padding-bottom: 10px;
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 .btn-know-more {
     font-family: Arial;
