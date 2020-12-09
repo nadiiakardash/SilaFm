@@ -1308,3 +1308,20 @@ function speakerOut12(){
   document.getElementById("elemspe8").style.background = "white";
 }
 
+$(document).ready(function(){
+  $('.example-block-elem').click(function(){
+    var category = $(this).attr('id');
+   if(category == 'all'){
+     $('.playlist-element').hide();
+     setTimeout(function(){
+       $('.playlist-element').show();
+     }, 300);
+   }
+   else{
+     $('.playlist-element').hide();
+     setTimeout(function(){
+       $('.' + category).show();
+     }, 300);
+   }
+  })
+});
