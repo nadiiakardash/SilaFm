@@ -246,6 +246,7 @@ header {
   text-align: right;
   color: #671627;
 }
+
 .home-page {
   background-image: linear-gradient(
       110.34deg,
@@ -263,7 +264,9 @@ header {
   color: #c7dee1;
   font-weight: bold;
 }
-
+.golovna{
+  height: 937px !important;
+}
 .home-box-text {
   width: 45%;
   position: absolute;
@@ -467,7 +470,8 @@ height: 321px;
   display: flex;
   justify-content: start;
   width: 100%;
-  margin-top: -51px;
+  margin: -51px !important;
+
 }
 .slider_container {
   width: 100%;
@@ -1297,5 +1301,21 @@ height: 321px;
   .seek_slider {
     width: 1700px;
     margin-right: 38px;
+  }
+}
+@media(max-width: 1840px){
+  .slider{
+    margin-left: 44%;
+  }
+}
+@media(max-width: 1710px){
+  .slider{
+    margin-top: 404px;
+  }
+}
+@media(max-width: 1210px){
+  .slider{
+    margin-top: 482px;
+    margin-left: 3% !important;
   }
 }

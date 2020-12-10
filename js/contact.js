@@ -259,8 +259,8 @@ document.addEventListener("click", closeAllSelect);
     document.getElementById("change-info2").style.display = "none";
     document.getElementById("change-info4").style.display = "block";
   }
+  
   function prev(){
-   
      func2=person2;
   func2();
   }

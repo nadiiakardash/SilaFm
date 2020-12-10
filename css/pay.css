@@ -1641,3 +1641,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
         margin-top: 50px
     }
 }
+
+.base-box:hover #base-text1{
+    color: #fff;
+}

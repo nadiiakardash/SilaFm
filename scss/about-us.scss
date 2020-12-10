@@ -7,6 +7,7 @@
 }
 .icon-message {
   margin-right: 26px;
+  padding-top: 420px;
   float: right;
   cursor: pointer;
   svg {
@@ -17,12 +18,38 @@
 .box-about-us {
   display: flex;
   width: 80%;
+  padding-top: 373px !important;
   justify-content: space-between;
   padding-left: 160px;
 }
 .box-about-element {
   padding-right: 70px;
+  padding-left: 10px;
 }
+.box-about-element-text{
+  // padding-left: 80px;
+  -webkit-column-width: 300px;
+  -moz-column-width: 300px;
+  column-width: 300px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 2;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  -webkit-column-rule: 1px solid transparent;
+  -moz-column-rule: 1px solid transparent;
+  column-rule: 1px solid transparent;
+}
+.box-about-element-text p{
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 30px;
+color: #454545;
+}
+
 .txt-about-us {
   font-family: Arial;
   width: 239px;
@@ -209,7 +236,6 @@ span.sim-dot {
   .box-about-us {
     padding-left: 78px;
     width: 88%;
-    padding-top: 100px;
     padding-bottom: 100px;
     justify-content: space-between;
   }
@@ -225,6 +251,11 @@ span.sim-dot {
     padding-top: 149px;
     margin-left: 0px;
   }
+}
+@media only screen and (max-width: 1636px){
+.box-about-us{
+  flex-direction: column;
+}
 }
 @media only screen and (max-width: 1694px) {
   .text-recording {
@@ -244,6 +275,7 @@ span.sim-dot {
     width: 450px;
   }
 }
+
 @media only screen and (max-width: 1548px) {
   .speakers-btn {
     margin-top: 30px;
@@ -289,8 +321,9 @@ span.sim-dot {
     margin-top: -125px;
   }
 }
+
 @media only screen and (max-width: 1379px) {
-  .img-speakers {
+   .img-speakers {
     margin-top: -105px;
     width: 710px;
     height: 620px;
@@ -419,7 +452,7 @@ span.sim-dot {
    margin-left: 70%;
     position: absolute;
     svg {
-      margin-top: 10px;
+      margin-top: 195px;
     }
   }
   
@@ -681,4 +714,33 @@ span.sim-dot {
   width: 60px;
  }
    }
+}
+@media (max-width: 1348px){
+  .box-about-us{
+    margin-top: 521px;
+  }
+}
+@media (max-width: 668px){
+  .box-about-us{
+    margin-top: 850px;
+  }
+}
+
+@media (max-width: 740px){
+  .icon-message {
+    padding-top: 528px;
+  }
+}
+@media (max-width: 645px){
+  .icon-message {
+    margin-left: 3%;
+  }
+}
+@media (max-width: 425px){
+  .box-about-element {
+   padding-left: 0;
+  }
+}
+@media (max-width: 377px){
+  
 }

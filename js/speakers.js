@@ -129,7 +129,7 @@ let repeat1 = document.createElement('audio');
 
 let track_list1 = [
   {
-    path: "../mp3/music1.mp3"
+    path: "mp3/music1.mp3"
   }
 ];
 
@@ -150,7 +150,7 @@ function playpauseTrack1() {
 function playTrack1() {
   curr_track1.play();
   isPlaying1 = true;
-  playpause_btn1.innerHTML = '<img src="../img/table-stop.png">';
+  playpause_btn1.innerHTML = '<img src="img/table-stop.png">';
 }
 
 var repIcon = document.querySelector('.repeat')
@@ -174,7 +174,7 @@ playTrack1();
 function pauseTrack1() {
   curr_track1.pause();
   isPlaying1 = false;
-  playpause_btn1.innerHTML = '<img src="../img/table-play.png">';
+  playpause_btn1.innerHTML = '<img src="img/table-play.png">';
 }
 
 function seekTo1() {
@@ -236,7 +236,7 @@ loadTrack1(track_index1);
   function playTrack2() {
     curr_track2.play();
     isPlaying2 = true;
-    playpause_btn2.innerHTML = '<img src="../img/table-stop.png">';
+    playpause_btn2.innerHTML = '<img src="img/table-stop.png">';
   }
  
   var repIcon2 = document.querySelector('.repeat2')
@@ -260,7 +260,7 @@ loadTrack1(track_index1);
   function pauseTrack2() {
     curr_track2.pause();
     isPlaying2 = false;
-    playpause_btn2.innerHTML = '<img src="../img/table-play.png">';
+    playpause_btn2.innerHTML = '<img src="img/table-play.png">';
   }
   
   function seekTo2() {
@@ -320,7 +320,7 @@ loadTrack1(track_index1);
    function playTrack3() {
      curr_track3.play();
      isPlaying3 = true;
-     playpause_btn3.innerHTML = '<img src="../img/table-stop.png">';
+     playpause_btn3.innerHTML = '<img src="img/table-stop.png">';
    }
   
    var repIcon3 = document.querySelector('.repeat3')
@@ -344,7 +344,7 @@ loadTrack1(track_index1);
    function pauseTrack3() {
      curr_track3.pause();
      isPlaying3 = false;
-     playpause_btn3.innerHTML = '<img src="../img/table-play.png">';
+     playpause_btn3.innerHTML = '<img src="img/table-play.png">';
    }
    
    function seekTo3() {
@@ -422,7 +422,7 @@ loadTrack1(track_index1);
     function pauseTrack4() {
       curr_track4.pause();
       isPlaying4 = false;
-      playpause_btn4.innerHTML = '<img src="../img/table-play.png">';
+      playpause_btn4.innerHTML = '<img src="img/table-play.png">';
     }
     
     function seekTo4() {
@@ -499,7 +499,7 @@ loadTrack1(track_index1);
     function pauseTrack5() {
       curr_track5.pause();
       isPlaying5 = false;
-      playpause_btn5.innerHTML = '<img src="../img/table-play.png">';
+      playpause_btn5.innerHTML = '<img src="img/table-play.png">';
     }
     
     function seekTo5() {
@@ -577,7 +577,7 @@ loadTrack1(track_index1);
     function pauseTrack6() {
       curr_track6.pause();
       isPlaying6 = false;
-      playpause_btn6.innerHTML = '<img src="../img/table-play.png">';
+      playpause_btn6.innerHTML = '<img src="img/table-play.png">';
     }
     
     function seekTo6() {
@@ -654,7 +654,7 @@ loadTrack1(track_index1);
     function pauseTrack7() {
       curr_track7.pause();
       isPlaying7 = false;
-      playpause_btn7.innerHTML = '<img src="../img/table-play.png">';
+      playpause_btn7.innerHTML = '<img src="img/table-play.png">';
     }
     
     function seekTo7() {
@@ -731,7 +731,7 @@ loadTrack1(track_index1);
         function pauseTrack8() {
           curr_track8.pause();
           isPlaying8 = false;
-          playpause_btn8.innerHTML = '<img src="../img/table-play.png">';
+          playpause_btn8.innerHTML = '<img src="img/table-play.png">';
         }
         
         function seekTo8() {
@@ -809,7 +809,7 @@ loadTrack1(track_index1);
       function pauseTrack9() {
         curr_track9.pause();
         isPlaying9 = false;
-        playpause_btn9.innerHTML = '<img src="../img/table-play.png">';
+        playpause_btn9.innerHTML = '<img src="img/table-play.png">';
       }
       
       function seekTo9() {
@@ -886,7 +886,7 @@ function handleRepeat10() {
 function pauseTrack10() {
   curr_track10.pause();
   isPlaying10 = false;
-  playpause_btn10.innerHTML = '<img src="../img/table-play.png">';
+  playpause_btn10.innerHTML = '<img src="img/table-play.png">';
 }
 
 function seekTo10() {
@@ -964,7 +964,7 @@ function handleRepeat11() {
 function pauseTrack11() {
   curr_track11.pause();
   isPlaying11 = false;
-  playpause_btn11.innerHTML = '<img src="../img/table-play.png">';
+  playpause_btn11.innerHTML = '<img src="img/table-play.png">';
 }
 
 function seekTo11() {
@@ -1003,7 +1003,7 @@ let repeat12= document.createElement('audio');
 
 let track_list12 = [
   {
-    path: "../mp3/music1.mp3"
+    path: "mp3/music1.mp3"
   }
 ];
 
@@ -1042,7 +1042,7 @@ function handleRepeat12() {
 function pauseTrack12() {
   curr_track12.pause();
   isPlaying12 = false;
-  playpause_btn12.innerHTML = '<img src="../img/table-play.png">';
+  playpause_btn12.innerHTML = '<img src="img/table-play.png">';
 }
 
 function seekTo12() {

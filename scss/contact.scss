@@ -66,6 +66,8 @@
 }
 .base-box {
     padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 .base-speakers {
     margin-top: -20px;
@@ -121,6 +123,32 @@
     width: 1528px;
     font-family: Arial;
 }
+.person1{
+    display: flex;
+    flex-direction: column;  
+    position: relative;
+    width: 230px;
+    display: inline-block;
+    transition: 0.5s flex ease-in-out;
+}
+// .person1:hover #person1top{
+//     opacity: 1;
+// }
+// .person1:hover {
+//     flex: 1;
+// }
+// .person1:hover #person1top {
+//     opacity: 1;
+//   }
+// #person1top{
+//     position: absolute;
+//   opacity: 0;
+//   bottom: 0;
+//   left: 0;
+//   transition: 0.4s opacity ease-in-out 0.1s;
+//     z-index: 99;
+// }
+
 #change-info1 {
     display: none;
 }
