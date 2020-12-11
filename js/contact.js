@@ -1,3 +1,18 @@
+new Swiper('.image-slider',{
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  slidesPerView: 'auto',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  }
+});
+
+
+
 
 $(document).ready(function(){
     $("#menu").on("click", "a", function (event) {

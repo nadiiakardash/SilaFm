@@ -136,6 +136,28 @@
     margin-left: 0px;
     margin-top: 200px;
 }
+//переробка слайдеру
+.box-photo-el{
+    position: relative;
+    cursor: pointer;
+ 
+}
+.persongrey, .personcolor{
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+    bottom: 0;
+}
+.personcolor{
+    display: none;
+}
+.box-photo-el:hover .personcolor{
+display: block;
+transform: translateY(130%);
+transition-timing-function: ease-in;
+transition: 0.2s;
+}
+// кінецб
 .size-photo {
     width: 230px;
     height: 319px;
@@ -143,14 +165,18 @@
     cursor: pointer;
 }
 .photo-employ1 {
-    background: url(../img/person1.png);
+    // background: url(../img/person1.png);
     cursor: pointer;
     transition: 0.3s;
-    &:hover {
-        height: 519px;
-        margin-top: -200px;
-        background: url(../img/person1ch.png);
-    }
+    // &:hover {
+    //     height: 519px;
+    //     width: 230px;
+    //     margin-top: -200px;
+    //     // background: url(../img/person1ch.png);
+    // }
+}
+#person1:hover .photo-employ1{
+ display: none !important;
 }
 .photo-employ2 {
     background: url(../img/person2.png);
@@ -520,3 +546,25 @@
         font-size: 16px;
     }
 }
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+.swiper-slide { width: 80%; }
+.swiper-pagination{
+    margin-top: 40px;
+}
+.swiper-slide{
+    width: 700px !important;
+}
+pagination_x: {
+    position: 'absolute',
+    bottom: 10,
+    left: 0,
+    right: 0,
+    flexDirection: 'row',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'transparent'
+  },
