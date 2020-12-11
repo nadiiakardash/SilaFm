@@ -1,4 +1,12 @@
 
+document.addEventListener('play', function(e){
+  var audios = document.getElementsByTagName('audio');
+  for(var i = 0, len = audios.length; i < len;i++){
+      if(audios[i] != e.target){
+          audios[i].pause();
+      }
+  }
+}, true);
 $(document).ready(function(){
     $("#menu").on("click", "a", function (event) {
       event.preventDefault();
@@ -454,8 +462,6 @@ $(document).ready(function(){
     function seekTo2() {
       seekto2 = curr_track2.duration * (seek_slider2.value / 100);
       curr_track2.currentTime = seekto2;
-      
-    
     }
     function setVolume2() {
       curr_track2.volume = volume_slider2.value / 100;
@@ -1028,3 +1034,11 @@ function pauseTrackKit() {
 
 loadTrackKit(track_indexKit);
 
+document.addEventListener('play', function(e){
+  var audios = document.getElementsByTagName('audio');
+  for(var i = 0, len = audios.length; i < len;i++){
+      if(audios[i] != e.target){
+          audios[i].pause();
+      }
+  }
+}, true);

@@ -1,3 +1,11 @@
+
+
+$(document).ready(sb.init);
+$(function() {
+  $(".order-element").on("click", function(e) {
+      $(this).addClass("active-make-order").siblings().removeClass("active-make-order");
+  });
+})
 $(".custom-selects").each(function() {
   var classes = $(this).attr("class"),
       id      = $(this).attr("id"),
@@ -40,6 +48,42 @@ $('.modal-btn-calculator').click(function () {
   elementtss.addClass('active-calculator');
 });
 
+function openTab(tabname) {
+  var i;
+  var x = document.getElementsByClassName("product");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(tabname).style.display = "block";  
+}
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("site-search");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("audio-table");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+
+document.addEventListener('play', function(e){
+  var audios = document.getElementsByTagName('audio');
+  for(var i = 0, len = audios.length; i < len;i++){
+      if(audios[i] != e.target){
+          audios[i].pause();
+      }
+  }
+}, true);
 $('.close-modal-calculator').click(function () {
   elementtss.removeClass('active-calculator');
 });
@@ -138,6 +182,7 @@ function loadTrack1(track_index1) {
   curr_track1.src = track_list1[track_index1].path;
   curr_track1.load();
   updateTimer1 = setInterval(seekUpdate1, 1000);
+  
 }
 function resetValues1() {
   seek_slider1.value = 0;
@@ -1325,3 +1370,16 @@ $(document).ready(function(){
    }
   })
 });
+
+document.addEventListener('play', function(e){
+  var audios = document.getElementsByTagName('audio');
+  for(var i = 0, len = audios.length; i < len;i++){
+      if(audios[i] != e.target){
+          audios[i].pause();
+      }
+  }
+}, true);
+
+$(document).ready(function() {
+  $('#audio-table').DataTable();
+} );

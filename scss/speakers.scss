@@ -2259,6 +2259,9 @@ input[type="file"] {
 }
 .active-make-order {
   background: #404162;
+  .active-txt-order {
+    color: #c7dee1;
+}
 }
 .order-element {
   font-family: Arial;
@@ -2283,6 +2286,7 @@ input[type="file"] {
 }
 .active-txt-order {
   color: #c7dee1;
+  
 }
 .box-make-order {
   display: flex;
