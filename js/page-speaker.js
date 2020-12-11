@@ -201,6 +201,10 @@ $(document).ready(function(){
             document.getElementById("menufixed").style.position = "absolute";
             document.getElementById("menufixed").style.marginTop = "0px";
         }
+  
+  
+  
+        
     }
    //menu-speaker-page
   

@@ -1383,21 +1383,3 @@ document.addEventListener('play', function(e){
 $(document).ready(function() {
   $('#audio-table').DataTable();
 } );
-
-$(document).ready(function(){
-  $('.example-block-elem').click(function(){
-    var category = $(this).attr('id');
-   if(category == 'all'){
-     $('.playlist-element').hide();
-     setTimeout(function(){
-       $('.playlist-element').show();
-     }, 300);
-   }
-   else{
-     $('.playlist-element').hide();
-     setTimeout(function(){
-       $('.' + category).show();
-     }, 300);
-   }
-  })
-});
