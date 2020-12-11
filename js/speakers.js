@@ -1,6 +1,6 @@
 
 
-$(document).ready(sb.init);
+// $(document).ready(sb.init);
 $(function() {
   $(".order-element").on("click", function(e) {
       $(this).addClass("active-make-order").siblings().removeClass("active-make-order");
@@ -1383,3 +1383,11 @@ document.addEventListener('play', function(e){
 $(document).ready(function() {
   $('#audio-table').DataTable();
 } );
+
+  // var basket = document.getElementById('speaker8');
+  // var modalbasket = document.getElementsByClassName('modal-overlay-order');
+ 
+  // basket.onclick = function(){
+  //   modalbasket.style.display = 'block';
+  // }
+  

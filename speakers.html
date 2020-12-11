@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="css/styleaudio.css">
     <link rel="stylesheet" href="css/speakers.css">
     <link rel="stylesheet" href="css/pay.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css"> -->
+
 </head>
 
 <body>
@@ -150,7 +148,7 @@
             </defs>
         </svg>
 
-
+    
     </section>
 
     <section class="services">
@@ -1192,11 +1190,11 @@
             <hr class="hr-for-slider">
             <p class="txt-about-us txt-audioslot">Пародисты и актеры</p>
             <div class="choose-lgs">
-                <select name="sources" id="sources" class="custom-selects sources" placeholder="Выбрать язык">
+                <!-- <select name="sources" id="sources" class="custom-selects sources" placeholder="Выбрать язык">
                     <option id="option" class="adapt-lgs" value="profile">Русский</option>
                     <option id="option" class="adapt-lgs" value="word">Украинский</option>
                     <option id="option" class="adapt-lgs" value="hashtag">Английский</option>
-                </select>
+                </select> -->
             </div>
             <div class="box-inputs">
                 <input id="site-search" class="search-input" placeholder="Поиск" onkeyup="myFunction()">
@@ -2208,6 +2206,9 @@
                         <td class="last-right"></td>
                     </tr>
                 </table>
+
+
+
                 <div class="modal-overlay-order">
 
 
@@ -2860,8 +2861,7 @@
  
     <script src="js/speakers.js"></script>
     <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js"></script>
+
 
 <script>
     $(document).ready(function(){
@@ -2881,6 +2881,12 @@
    }
   })
 });
+
+$(document).ready(function(){
+    $('.modal-btn-order').click(function(){
+      $('.modal-overlay').show();
+    })
+  })
 
 </script>
 
