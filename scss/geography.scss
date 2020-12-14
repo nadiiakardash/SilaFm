@@ -60,7 +60,7 @@
 .map-box {
     text-align: right;
     margin-top: 30px;
-    svg {
+    img {
         position: absolute;
         animation: marker 1s linear;
         animation-timing-function: ease-in-out;
@@ -74,11 +74,128 @@
             margin-top: 10px;
         }
     }
-    .svg-map1 {
+    // #svg-map1 {
+    //     margin-left: -654px;
+    //     padding-top: 130px;
+    // }
+    // #svg-map2 {
+    //     margin-left: -564px;
+    //     padding-top: 110px;
+    // }
+    // .svg-map3 {
+    //     margin-left: -544px;
+    //     padding-top: 140px;
+    // }
+    // #svg-map4 {
+    //     margin-left: -564px;
+    //     padding-top: 150px;
+    // }
+    // #svg-map5 {
+    //     margin-left: -500px;
+    //     padding-top: 200px;
+    // }
+    // #svg-map5 {
+    //     margin-left: -800px;
+    //     padding-top: 450px;
+    // }
+    // #svg-map6 {
+    //     margin-left: -730px;
+    //     padding-top: 360px;
+    // }
+    // #svg-map7 {
+    //     margin-left: -872px;
+    //     padding-top: 210px;
+    // }
+    // #svg-map8 {
+    //     margin-left: -770px;
+    //     padding-top: 390px;
+    // }
+    // #svg-map9 {
+    //     margin-left: -794px;
+    //     padding-top: 140px;
+    // }
+    // #svg-map10 {
+    //     margin-left: -834px;
+    //     padding-top: 175px;
+    // }
+    // #svg-map11 {
+    //     margin-left: -604px;
+    //     padding-top: 115px;
+    // }
+    // #svg-map12 {
+    //     margin-left: -534px;
+    //     padding-top: 175px;
+    // }
+    // #svg-map13 {
+    //     margin-left: -552px;
+    //     padding-top: 205px;
+    // }
+    // #svg-map14 {
+    //     margin-left: -502px;
+    //     padding-top: 215px;
+    // }
+    // #svg-map15 {
+    //     margin-left: -462px;
+    //     padding-top: 185px;
+    // }
+    // #svg-map16 {
+    //     margin-left: -494px;
+    //     padding-top: 393px;
+    // }
+    // #svg-map17 {
+    //     margin-left: -535px;
+    //     padding-top: 410px;
+    // }
+    // #svg-map18 {
+    //     margin-left: -232px;
+    //     padding-top: 169px;
+    // }
+    // #svg-map19 {
+    //     margin-left: -270px;
+    //     padding-top: 260px;
+    // }
+    // #svg-map20 {
+    //     margin-left: -255px;
+    //     padding-top: 208px;
+    // }
+    // #svg-map21 {
+    //     margin-left: -355px;
+    //     padding-top: 100px;
+    // }
+    // #svg-map22 {
+    //     margin-left: -405px;
+    //     padding-top: 108px;
+    // }
+    // #svg-map23 {
+    //     margin-left: -380px;
+    //     padding-top: 238px;
+    // }
+    // #svg-map24 {
+    //     margin-left: -140px;
+    //     padding-top: 438px;
+    // }
+    //  #svg-map25 {
+    //     margin-left: -210px;
+    //     padding-top: 330px;
+    // } 
+    // #svg-map26 {
+    //     margin-left: -160px;
+    //     padding-top: 400px;
+    // }
+    // #svg-map27 {
+    //     margin-left: -160px;
+    //     padding-top: 200px;
+    // }
+    // #svg-map28 {
+    //     margin-left: -110px;
+    //     padding-top: 130px;
+    // }
+}
+ #svg-map1 {
         margin-left: -654px;
         padding-top: 130px;
     }
-    .svg-map2 {
+    #svg-map2 {
         margin-left: -564px;
         padding-top: 110px;
     }
@@ -86,109 +203,110 @@
         margin-left: -544px;
         padding-top: 140px;
     }
-    .svg-map4 {
+    #svg-map4 {
         margin-left: -564px;
         padding-top: 150px;
     }
-    .svg-map5 {
+    #svg-map5 {
         margin-left: -500px;
         padding-top: 200px;
     }
-    .svg-map5 {
+    #svg-map5 {
         margin-left: -800px;
         padding-top: 450px;
     }
-    .svg-map6 {
+    #svg-map6 {
         margin-left: -730px;
         padding-top: 360px;
     }
-    .svg-map7 {
+    #svg-map7 {
         margin-left: -872px;
         padding-top: 210px;
     }
-    .svg-map8 {
+    #svg-map8 {
         margin-left: -770px;
         padding-top: 390px;
     }
-    .svg-map9 {
+    #svg-map9 {
         margin-left: -794px;
         padding-top: 140px;
     }
-    .svg-map10 {
+    #svg-map10 {
         margin-left: -834px;
         padding-top: 175px;
     }
-    .svg-map11 {
+    #svg-map11 {
         margin-left: -604px;
         padding-top: 115px;
     }
-    .svg-map12 {
+    #svg-map12 {
         margin-left: -534px;
         padding-top: 175px;
     }
-    .svg-map13 {
+    #svg-map13 {
         margin-left: -552px;
         padding-top: 205px;
     }
-    .svg-map14 {
+    #svg-map14 {
         margin-left: -502px;
         padding-top: 215px;
     }
-    .svg-map15 {
+    #svg-map15 {
         margin-left: -462px;
         padding-top: 185px;
     }
-    .svg-map16 {
+    #svg-map16 {
         margin-left: -494px;
         padding-top: 393px;
     }
-    .svg-map17 {
+    #svg-map17 {
         margin-left: -535px;
         padding-top: 410px;
     }
-    .svg-map18 {
+    #svg-map18 {
         margin-left: -232px;
         padding-top: 169px;
     }
-    .svg-map19 {
+    #svg-map19 {
         margin-left: -270px;
         padding-top: 260px;
     }
-    .svg-map20 {
+    #svg-map20 {
         margin-left: -255px;
         padding-top: 208px;
     }
-    .svg-map21 {
+    #svg-map21 {
         margin-left: -355px;
         padding-top: 100px;
     }
-    .svg-map22 {
+    #svg-map22 {
         margin-left: -405px;
         padding-top: 108px;
     }
-    .svg-map23 {
+    #svg-map23 {
         margin-left: -380px;
         padding-top: 238px;
     }
-    .svg-map24 {
+    #svg-map24 {
         margin-left: -140px;
         padding-top: 438px;
-    } .svg-map25 {
+    }
+     #svg-map25 {
         margin-left: -210px;
         padding-top: 330px;
-    } .svg-map26 {
+    } 
+    #svg-map26 {
         margin-left: -160px;
         padding-top: 400px;
     }
-    .svg-map27 {
+    #svg-map27 {
         margin-left: -160px;
         padding-top: 200px;
     }
-    .svg-map28 {
+    #svg-map28 {
         margin-left: -110px;
         padding-top: 130px;
     }
-}
 .img-map {
     z-index: 1;
 }
@@ -275,24 +393,15 @@
 
 .our-principles {
     margin-top: -240px;
+    overflow: hidden;
     background-color: white;
     font-family: Arial;
-    svg {
+   .bg-lines2 {
         width: 100%;
-        path {
-            stroke-dasharray: 1000;
-            animation: dash 5s linear;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-        }
-
-        @keyframes dash {
-            to {
-                stroke-dashoffset: 2000;
-            }
         }
     }
-}
+
+
 .flex-circle {
     display: flex;
     width: 1560px;

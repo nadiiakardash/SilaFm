@@ -1,15 +1,28 @@
-new Swiper('.image-slider',{
+var galleryRight = new Swiper('.image-slider',{
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   },
-  slidesPerView: 'auto',
+  slidesPerView: 1,
   pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+    el: '.right-slide-item'
   }
 });
+// var galleryLeft = new Swiper('.pagination-elem', {
+//   spaceBetween: 10,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   thumbs: {
+//     swiper: galleryRight
+//   }
+// });
+$('.images-slide').hover(function() {
+  $(this).find("img:first").fadeToggle();
+});
+
 
 $(document).ready(function(){
     $("#menu").on("click", "a", function (event) {

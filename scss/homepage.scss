@@ -257,13 +257,15 @@ header {
     url(../img/фото.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 937px;
+  height: 640px;
   padding-left: 60px;
   font-family: Arial;
   color: #c7dee1;
   font-weight: bold;
 }
-
+#1{
+  height: 995px !important;
+}
 .home-box-text {
   width: 45%;
   position: absolute;
@@ -467,7 +469,7 @@ height: 321px;
   display: flex;
   justify-content: start;
   width: 100%;
-  margin-top: -51px;
+  margin-top: -50px !important;
 }
 .slider_container {
   width: 100%;
@@ -1298,4 +1300,17 @@ height: 321px;
     width: 1700px;
     margin-right: 38px;
   }
+}
+
+@media (max-width: 1630px){
+  .slider{
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (max-width: 1499px) {
+ #slider-au{
+  margin-top: 535px !important;
+ }
+ 
 }

@@ -971,6 +971,10 @@
   margin-top: -460px;
   z-index: 0;
   margin-left: 180px;
+  
+}
+.container-page table{
+  margin-top: 0;
 }
 .bg-image {
   background: linear-gradient(31.25deg, rgba(72, 49, 86, 0.2) 0%, rgba(57, 81, 110, 0.2) 80.3%), url(/silaFM/img/img-page.png);
@@ -1019,6 +1023,7 @@ transition: 0.3s;
   width: 360px;
   height: 45px;
   margin-top: 288px;
+  padding-top: 336px !important;
 margin-left: -40px;
 background:  url(/silaFM/img/filtr.png)
 }

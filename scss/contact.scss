@@ -3,6 +3,7 @@
             119.38deg,
             rgba(74, 51, 91, 0.8) -10.09%,
             rgba(47, 61, 83, 0.8) 22.66%,
+      
             rgba(17, 48, 62, 0.8) 58.86%,
             rgba(76, 50, 90, 0.8) 98.42%
         ),
@@ -101,6 +102,56 @@
     background: #ecf6f8;
     border-radius: 4px;
 }
+//slider
+.slider-swiper-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: linear-gradient(31.25deg, #483156 0%, #39516E 80.3%);
+}
+.slider-swiper-subtitle{
+    font-family: Arial;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;  
+    color: #454545;
+}
+.swiper-line{
+    width: 113px;
+    text-align: start;
+    display: inline-block;
+    font-weight: 700;
+    color:rgba(21, 7, 54, 0.8);
+}
+.swiper-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: 400;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 200px;
+}
+.swiper-button-prev{
+   position: absolute;
+}
+.swiper-socials{
+    width: 21px;
+    height: 21px;
+}
+.pagination-elem-item{
+    position: relative;
+}
+.pagination-elem-item img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
 .txt-our-team {
     background: linear-gradient(11.48deg, #483156 0%, #39516e 80.3%);
     -webkit-background-clip: text;
@@ -111,7 +162,12 @@
     font-size: 29px;
     line-height: 40px;
     width: 1528px;
+    .right-slider{
+        display: inline-block;
+        
+    }
 }
+
 .team-element {
     width: 1528px;
 }
@@ -520,8 +576,3 @@
         font-size: 16px;
     }
 }
-
-.swiper-slide img{
-    width:327px;
-    height:auto;
-    }
