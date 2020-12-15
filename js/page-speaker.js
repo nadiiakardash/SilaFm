@@ -1,3 +1,10 @@
+$(document).ready(function(){
+$('.container-pages-slider').slick();
+});
+  
+  
+  
+
 function SLideExample() {
   document.getElementsByClassName("container-page").style.display = "none";
   document.getElementsByClassName("container-page-slide2").style.display = "block";
