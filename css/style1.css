@@ -2650,6 +2650,12 @@ td, th {
     margin-left: 10px;
   }
 }
+.container-page-slide2 {
+  display: none;
+  width: 360px;
+  border: 1px solid black;
+}
+
 .bg-sound-page {
   padding-left: 195px;
   height: 380px;

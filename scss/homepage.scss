@@ -263,7 +263,7 @@ header {
   color: #c7dee1;
   font-weight: bold;
 }
-#1{
+ #p1{
   height: 995px !important;
 }
 .home-box-text {
@@ -1168,7 +1168,9 @@ height: 321px;
     margin-right: 70px;
   }
   .slider{
-   
+
+      margin-top: 500px;
+    
     margin-left: 39%;
    
   }
@@ -1179,6 +1181,7 @@ height: 321px;
   .menu-logo {
     margin-left: 178px;
   }
+  
   .home-page {
     padding-left: 195px;
   }
@@ -1313,4 +1316,9 @@ height: 321px;
   margin-top: 535px !important;
  }
  
+}
+@media (max-width: 1817px){
+  .slider{
+    margin-top: 500px;
+  }
 }

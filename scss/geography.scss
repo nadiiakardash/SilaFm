@@ -60,12 +60,15 @@
 .map-box {
     text-align: right;
     margin-top: 30px;
-    img {
+   img {
         position: absolute;
+        left: 20px;
         animation: marker 1s linear;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
     }
+
+  
     @keyframes marker {
         from {
             margin-top: 0px;
@@ -74,239 +77,9 @@
             margin-top: 10px;
         }
     }
-    // #svg-map1 {
-    //     margin-left: -654px;
-    //     padding-top: 130px;
-    // }
-    // #svg-map2 {
-    //     margin-left: -564px;
-    //     padding-top: 110px;
-    // }
-    // .svg-map3 {
-    //     margin-left: -544px;
-    //     padding-top: 140px;
-    // }
-    // #svg-map4 {
-    //     margin-left: -564px;
-    //     padding-top: 150px;
-    // }
-    // #svg-map5 {
-    //     margin-left: -500px;
-    //     padding-top: 200px;
-    // }
-    // #svg-map5 {
-    //     margin-left: -800px;
-    //     padding-top: 450px;
-    // }
-    // #svg-map6 {
-    //     margin-left: -730px;
-    //     padding-top: 360px;
-    // }
-    // #svg-map7 {
-    //     margin-left: -872px;
-    //     padding-top: 210px;
-    // }
-    // #svg-map8 {
-    //     margin-left: -770px;
-    //     padding-top: 390px;
-    // }
-    // #svg-map9 {
-    //     margin-left: -794px;
-    //     padding-top: 140px;
-    // }
-    // #svg-map10 {
-    //     margin-left: -834px;
-    //     padding-top: 175px;
-    // }
-    // #svg-map11 {
-    //     margin-left: -604px;
-    //     padding-top: 115px;
-    // }
-    // #svg-map12 {
-    //     margin-left: -534px;
-    //     padding-top: 175px;
-    // }
-    // #svg-map13 {
-    //     margin-left: -552px;
-    //     padding-top: 205px;
-    // }
-    // #svg-map14 {
-    //     margin-left: -502px;
-    //     padding-top: 215px;
-    // }
-    // #svg-map15 {
-    //     margin-left: -462px;
-    //     padding-top: 185px;
-    // }
-    // #svg-map16 {
-    //     margin-left: -494px;
-    //     padding-top: 393px;
-    // }
-    // #svg-map17 {
-    //     margin-left: -535px;
-    //     padding-top: 410px;
-    // }
-    // #svg-map18 {
-    //     margin-left: -232px;
-    //     padding-top: 169px;
-    // }
-    // #svg-map19 {
-    //     margin-left: -270px;
-    //     padding-top: 260px;
-    // }
-    // #svg-map20 {
-    //     margin-left: -255px;
-    //     padding-top: 208px;
-    // }
-    // #svg-map21 {
-    //     margin-left: -355px;
-    //     padding-top: 100px;
-    // }
-    // #svg-map22 {
-    //     margin-left: -405px;
-    //     padding-top: 108px;
-    // }
-    // #svg-map23 {
-    //     margin-left: -380px;
-    //     padding-top: 238px;
-    // }
-    // #svg-map24 {
-    //     margin-left: -140px;
-    //     padding-top: 438px;
-    // }
-    //  #svg-map25 {
-    //     margin-left: -210px;
-    //     padding-top: 330px;
-    // } 
-    // #svg-map26 {
-    //     margin-left: -160px;
-    //     padding-top: 400px;
-    // }
-    // #svg-map27 {
-    //     margin-left: -160px;
-    //     padding-top: 200px;
-    // }
-    // #svg-map28 {
-    //     margin-left: -110px;
-    //     padding-top: 130px;
-    // }
+ 
 }
- #svg-map1 {
-        margin-left: -654px;
-        padding-top: 130px;
-    }
-    #svg-map2 {
-        margin-left: -564px;
-        padding-top: 110px;
-    }
-    .svg-map3 {
-        margin-left: -544px;
-        padding-top: 140px;
-    }
-    #svg-map4 {
-        margin-left: -564px;
-        padding-top: 150px;
-    }
-    #svg-map5 {
-        margin-left: -500px;
-        padding-top: 200px;
-    }
-    #svg-map5 {
-        margin-left: -800px;
-        padding-top: 450px;
-    }
-    #svg-map6 {
-        margin-left: -730px;
-        padding-top: 360px;
-    }
-    #svg-map7 {
-        margin-left: -872px;
-        padding-top: 210px;
-    }
-    #svg-map8 {
-        margin-left: -770px;
-        padding-top: 390px;
-    }
-    #svg-map9 {
-        margin-left: -794px;
-        padding-top: 140px;
-    }
-    #svg-map10 {
-        margin-left: -834px;
-        padding-top: 175px;
-    }
-    #svg-map11 {
-        margin-left: -604px;
-        padding-top: 115px;
-    }
-    #svg-map12 {
-        margin-left: -534px;
-        padding-top: 175px;
-    }
-    #svg-map13 {
-        margin-left: -552px;
-        padding-top: 205px;
-    }
-    #svg-map14 {
-        margin-left: -502px;
-        padding-top: 215px;
-    }
-    #svg-map15 {
-        margin-left: -462px;
-        padding-top: 185px;
-    }
-    #svg-map16 {
-        margin-left: -494px;
-        padding-top: 393px;
-    }
-    #svg-map17 {
-        margin-left: -535px;
-        padding-top: 410px;
-    }
-    #svg-map18 {
-        margin-left: -232px;
-        padding-top: 169px;
-    }
-    #svg-map19 {
-        margin-left: -270px;
-        padding-top: 260px;
-    }
-    #svg-map20 {
-        margin-left: -255px;
-        padding-top: 208px;
-    }
-    #svg-map21 {
-        margin-left: -355px;
-        padding-top: 100px;
-    }
-    #svg-map22 {
-        margin-left: -405px;
-        padding-top: 108px;
-    }
-    #svg-map23 {
-        margin-left: -380px;
-        padding-top: 238px;
-    }
-    #svg-map24 {
-        margin-left: -140px;
-        padding-top: 438px;
-    }
-     #svg-map25 {
-        margin-left: -210px;
-        padding-top: 330px;
-    } 
-    #svg-map26 {
-        margin-left: -160px;
-        padding-top: 400px;
-    }
-    #svg-map27 {
-        margin-left: -160px;
-        padding-top: 200px;
-    }
-    #svg-map28 {
-        margin-left: -110px;
-        padding-top: 130px;
-    }
+ 
 .img-map {
     z-index: 1;
 }
@@ -814,7 +587,7 @@ footer {
     }
     .flex-circle {
         width: 900px;
-        margin-top: -290px;
+        margin-top: -98px;
     }
     .circle-items {
         width: 194px;
@@ -859,7 +632,7 @@ footer {
 @media screen and (max-width: 1056px) {
     .flex-circle {
         width: 750px;
-        margin-top: -290px;
+        margin-top: -130px;
     }
     .circle-items {
         width: 164px;
@@ -900,7 +673,7 @@ footer {
 @media screen and (max-width: 909px) {
     .flex-circle {
         width: 400px;
-        margin-top: -380px;
+        margin-top: -100px;
     }
     .circle-items {
         width: 164px;
@@ -1111,7 +884,7 @@ footer {
     }
     .flex-circle {
         width: 250px;
-        margin-top: -380px;
+        margin-top: -95px;
         justify-content: center;
     }
     .circle-items {
@@ -1268,6 +1041,12 @@ padding: 0px 15px 0px 0px;
     }
 }
 @media screen and (max-width: 400px) {
+    .professional-txt{
+        font-size: 27px !important;
+    }
+    .studio-txt{
+        font-size: 19.2px !important;
+    }
     .geography {
         height: 450px;
         h2 {
@@ -1328,7 +1107,7 @@ padding: 0px 15px 0px 0px;
     }
     .flex-circle {
         width: 250px;
-        margin-top: -380px;
+        margin-top: -98px;
         justify-content: center;
     }
     .circle-items {
@@ -1346,4 +1125,13 @@ padding: 0px 15px 0px 0px;
         font-size: 12px;
     }
 }
- 
+ @media (max-width: 1180px){
+     .icons-element img{
+         width: 100px;
+     }
+ }
+ @media (max-width: 793px){
+    .box-about-us{
+        margin-top: 1200px;
+    }
+}
