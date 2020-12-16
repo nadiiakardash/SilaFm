@@ -467,6 +467,26 @@
   }
 }
 
+.sl-btn-prev{
+  width: 20px;
+  position: absolute;
+  left: 195px;
+  height: 20px;
+  z-index: 20;
+  top:12px;
+  background: transparent;
+  border: none;
+  height: 20px;
+}
+.sl-btn-next{
+  height: 20px;
+  border: none;
+  top: 12px;
+  background: transparent;
+  position: absolute;
+  left: 408px;
+}
+
 .btn-show-more {
   border: none;
   background-color: transparent;
@@ -953,6 +973,7 @@
 .general-music {
   margin-top: -50px;
 }
+
 #general-play{
   margin-left: 600px;
 }
@@ -970,17 +991,16 @@
   height: 1152px;
   margin-top: -460px;
   z-index: 0;
-  margin-left: 90px;
-  
-  
+  // margin-left: 1px !important;
 }
+
 .container-page table{
   margin-top: 0;
 }
 .bg-image {
-  background: linear-gradient(31.25deg, rgba(72, 49, 86, 0.2) 0%, rgba(57, 81, 110, 0.2) 80.3%), url(/silaFM/img/img-page.png);
+  background: linear-gradient(31.25deg, rgba(72, 49, 86, 0.2) 0%, rgba(57, 81, 110, 0.2) 80.3%), url("../img/img-page.png");
   border-radius: 4px 4px 0px 0px;
-  width: 360px;
+ 
 height: 360px;
  
 }
@@ -1026,7 +1046,18 @@ transition: 0.3s;
   margin-top: 288px;
   padding-top: 336px !important;
 margin-left: -40px;
-background:  url(/silaFM/img/filtr.png)
+background:  url("../img/filtr.png");
+}
+
+// .slider-content{
+//   width: 400px;
+// }
+.container-page-contain{
+  min-width: 0;
+  position: relative;
+}
+.slick-track{
+  display: flex;
 }
 #play-icon{
   margin-left: 6px;
@@ -1055,9 +1086,10 @@ padding-top: 19px;
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
 }
-
+.container-page table{
+  width: 80%;
+}
 td, th {
   border: 15px solid  #ecf6f8;
   text-align: left;
@@ -1102,6 +1134,8 @@ margin-left: 11px;
 .btn-speaker{
   cursor: pointer;
   border: none;
+  display: block;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -1131,7 +1165,8 @@ margin-left: 11px;
 }
 .make-older{
   background-color: #ecf6f8;
-  padding: 20px 17px;
+  padding: 20px 0px;
+  width: 351px;
 }
 .box-grapfic{
   box-sizing: border-box;
@@ -1309,12 +1344,12 @@ flex-direction: column;
   height: 13.85px;
   margin-left: 116px;
  }
+
  @media only screen and (max-width: 1780px) {
   .box-grapfic{
-  
-  width: 70%;
+  width: 57%;
   height: 100%;
-  margin-left: 20px;
+  margin-left: 88px;
   padding: 67px 39px;
   margin-bottom: 90px;
   }
@@ -2103,7 +2138,18 @@ position: absolute;
 
   }
  .container-page-slide2{
-   display: none;
+  //  display: none;
    width: 360px;
    border: 1px solid black;
+ }
+
+ @media(min-width: 1817px){
+   .slider{
+margin-top: 30px;
+   }
+ }
+ @media(max-width: 1847px){
+   .box-grapfic{
+     margin-left: 0px;
+   }
  }

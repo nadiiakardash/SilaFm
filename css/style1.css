@@ -899,6 +899,27 @@ section #audio-stick-play {
   opacity: 0.7;
 }
 
+.sl-btn-prev {
+  width: 20px;
+  position: absolute;
+  left: 195px;
+  height: 20px;
+  z-index: 20;
+  top: 12px;
+  background: transparent;
+  border: none;
+  height: 20px;
+}
+
+.sl-btn-next {
+  height: 20px;
+  border: none;
+  top: 12px;
+  background: transparent;
+  position: absolute;
+  left: 408px;
+}
+
 .btn-show-more {
   border: none;
   background-color: transparent;
@@ -1484,7 +1505,6 @@ section #audio-stick-play {
   height: 1152px;
   margin-top: -460px;
   z-index: 0;
-  margin-left: 90px;
 }
 
 .container-page table {
@@ -1492,9 +1512,8 @@ section #audio-stick-play {
 }
 
 .bg-image {
-  background: linear-gradient(31.25deg, rgba(72, 49, 86, 0.2) 0%, rgba(57, 81, 110, 0.2) 80.3%), url(/silaFM/img/img-page.png);
+  background: linear-gradient(31.25deg, rgba(72, 49, 86, 0.2) 0%, rgba(57, 81, 110, 0.2) 80.3%), url("../img/img-page.png");
   border-radius: 4px 4px 0px 0px;
-  width: 360px;
   height: 360px;
 }
 
@@ -1542,7 +1561,16 @@ section #audio-stick-play {
   margin-top: 288px;
   padding-top: 336px !important;
   margin-left: -40px;
-  background: url(/silaFM/img/filtr.png);
+  background: url("../img/filtr.png");
+}
+
+.container-page-contain {
+  min-width: 0;
+  position: relative;
+}
+
+.slick-track {
+  display: flex;
 }
 
 #play-icon {
@@ -1574,7 +1602,10 @@ section #audio-stick-play {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+}
+
+.container-page table {
+  width: 80%;
 }
 
 td, th {
@@ -1623,6 +1654,8 @@ td, th {
 .btn-speaker {
   cursor: pointer;
   border: none;
+  display: block;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -1653,7 +1686,8 @@ td, th {
 
 .make-older {
   background-color: #ecf6f8;
-  padding: 20px 17px;
+  padding: 20px 0px;
+  width: 351px;
 }
 
 .box-grapfic {
@@ -1848,9 +1882,9 @@ td, th {
 
 @media only screen and (max-width: 1780px) {
   .box-grapfic {
-    width: 70%;
+    width: 57%;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 88px;
     padding: 67px 39px;
     margin-bottom: 90px;
   }
@@ -2655,11 +2689,20 @@ td, th {
   }
 }
 .container-page-slide2 {
-  display: none;
   width: 360px;
   border: 1px solid black;
 }
 
+@media (min-width: 1817px) {
+  .slider {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1847px) {
+  .box-grapfic {
+    margin-left: 0px;
+  }
+}
 .bg-sound-page {
   padding-left: 195px;
   height: 380px;
