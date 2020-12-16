@@ -1,14 +1,13 @@
-$(document).ready(function(){
-$('.container-pages-slider').slick();
-});
-  
-  
-  
 
-function SLideExample() {
-  document.getElementsByClassName("container-page").style.display = "none";
-  document.getElementsByClassName("container-page-slide2").style.display = "block";
-}
+
+document.addEventListener('play', function(e){
+  var audios = document.getElementsByTagName('input');
+  for(var i = 0, len = audios.length; i < len;i++){
+      if(audios[i] != e.target){
+          audios[i].pause();
+      }
+  }
+}, true);
 document.addEventListener('play', function(e){
   var audios = document.getElementsByTagName('audio');
   for(var i = 0, len = audios.length; i < len;i++){

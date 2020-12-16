@@ -23,6 +23,10 @@
   background-size: cover;
 }
 
+section #audio-stick-play {
+  margin-top: 25px !important;
+}
+
 .sila-fm-txt {
   padding-top: 199px;
   font-size: 18px;
@@ -519,7 +523,7 @@
 
 .voices-people {
   margin-left: 20px;
-  margin-top: 26px;
+  margin-top: 110px;
   margin-bottom: 26px;
   font-size: 18px;
   line-height: 30px;
