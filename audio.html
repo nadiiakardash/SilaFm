@@ -12,90 +12,74 @@
 
 <body>
   <header>
-    <img onclick="window.location.href='/silaFM/index.html'" class="menu-logo" src="img/SilaFM_logo.png" alt="logotip-Sila-FM">
+    <img class="menu-logo" src="img/SilaFM_logo.png" alt="logotip-Sila-FM">
     <ul class="menu">
       <div class="menu-dropdown">
-        <li onclick="window.location.href='/silaFM/speakers-page/speakers.html'" class="menu-item dropbtn">
-          <svg class="menu-polygon" width="16" height="18" viewBox="0 0 11 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#671627"
-              stroke-width="1.5">
-          </svg>
-          ДИКТОРЫ
+        <li class="menu-item dropbtn"><span class="triangle"></span><a href="speakers.html">ДИКТОРЫ</a></li>
+          <!-- <menu-poligon></menu-poligon> -->
+          
           <div class="dropdown-content">
-            <svg class="dropsvg" width="16" height="18" viewBox="0 0 16 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.98529 14.2265L9.98525 5.90892L1.7924 5.90889L9.98529 14.2265Z" stroke="#671627"
-                stroke-width="1.5" />
-            </svg>
             <ul class="content-items">
-              <li class="down-item">ДИКТОРЫ РОССИИ</li>
-              <li class="down-item">ДИКТОРЫ УКРАИНЫ</li>
-              <li class="down-item">ИНОСТРАННЫЕ ДИКТОРЫ</li>
-              <li class="down-item">ВОКАЛИСТЫ</li>
-              <li class="down-item">ПАРОДИСТЫ</li>
-              <li class="down-item">ДЕТСКИЕ ГОЛОСА</li>
+              <li class="down-item"><a href="#">ДИКТОРЫ РОССИИ</a></li>
+              <li class="down-item"><a href="#">ДИКТОРЫ УКРАИНЫ</a></li>
+              <li class="down-item"><a href="#">ИНОСТРАННЫЕ ДИКТОРЫ</a></li>
+              <li class="down-item"><a href="#">ВОКАЛИСТЫ</a></li>
+              <li class="down-item"><a href="#">ПАРОДИСТЫ</a></li>
+              <li class="down-item"><a href="#">ДЕТСКИЕ ГОЛОСА</a></li>
             </ul>
           </div>
         </li>
       </div>
 
-      <li  class="menu-item active-page-col">
-        <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#671627"
-            stroke-width="1.5" />
-        </svg>
-        УСЛУГИ</li>
-      <li onclick="window.location.href='/silaFM/pay-page/pay.html'" class="menu-item">ОПЛАТА</li>
-      <li onclick="window.location.href='/silaFM/contact-page/contact.html'" class="menu-item">КОНТАКТЫ</li>
+      <li class="menu-item"><span class="triangle"></span><a href="audio.html">УСЛУГИ</a></li>
+      <li class="menu-item"><a href="pay.html">ОПЛАТА</a></li>
+      <li class="menu-item"><a href="contact.html">КОНТАКТЫ</a></li>
     </ul>
     <ul class="header-number">
-      <li class="number-city">Киев<span class="phone-number">+38 /044/ 545 77 13</span></li>
-      <li class="number-city">Москва <span class="phone-number">+7 /800/ 551 0 551</span></li>
+      <li class="number-city">Киев<a href="+380445457713" class="phone-number">+38 /044/ 545 77 13</a></li>
+      <li class="number-city">Москва <a href="+78005510551" class="phone-number">+7 /800/ 551 0 551</a></li>
     </ul>
     <div class="burger">
       <div id="myNav" class="overlay">
         <a class="closebtn" onclick="closeNav()">
-          <img src="img/icons/closebntsvg.svg" alt="">
         </a>
         <div class="overlay-content">
           <div class="dropdown-burger">
-            <a onclick="window.location.href='/silaFM/speakers-page/speakers.html'" class="for-droptmenu dropbtn-burger">
+            <a class="for-droptmenu dropbtn-burger">
               <svg class="menu-polygon-burger" width="16" height="18"
                 viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
                   stroke-width="1.5">
-              </svg>ДИКТОРЫ</a>
+              </svg>
+              ДИКТОРЫ</a>
             <div class="dropdown-content-burger">
-              <a>ДИКТОРЫ РОССИИ</a>
-              <a>ДИКТОРЫ УКРАИНЫ</a>
-              <a>ИНОСТРАННЫЕ ДИКТОРЫ</a>
-              <a>ВОКАЛИСТЫ</a>
-              <a>ПАРОДИСТЫ</a>
-              <a>ДЕТСКИЕ ГОЛОСА</a>
+              <a href="#">ДИКТОРЫ РОССИИ</a>
+              <a href="#">ДИКТОРЫ УКРАИНЫ</a>
+              <a href="#">ИНОСТРАННЫЕ ДИКТОРЫ</a>
+              <a href="#">ВОКАЛИСТЫ</a>
+              <a href="#">ПАРОДИСТЫ</a>
+              <a href="#">ДЕТСКИЕ ГОЛОСА</a>
             </div>
           </div>
-          <a class="for-droptmenu">
-             <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
+          <a href='audio.html' class="for-droptmenu"> <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
                 stroke-width="1.5">
             </svg>УСЛУГИ</a>
-          <a onclick="window.location.href='/silaFM/pay-page/pay.html'">ОПЛАТА</a>
-          <a onclick="window.location.href='/silaFM/contact-page/contact.html'" >КОНТАКТЫ</a>
+          <a href='pay.html'>ОПЛАТА</a>
+          <a href='contact.html'>КОНТАКТЫ</a>
 
           <div class="contacts">
             <p class="contact-elem">Киев<span class="phone-number">+38 /044/ 545 77 13</span></p>
-            <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span></p>
+            <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span><p>
           </div>
         </div>
       </div>
-      <p class="icon-menu" onclick="openNav()">
-        <img src="img/icons/burger.svg" alt="">
+      <p class="icon-menu" onclick="openNav()"><span class="iconmenu"></span>
       </p>
     </div>
   </header>
+
   <main id="menu">
   <section id="1" class="home-page">
     <div class="home-box-text">
@@ -115,197 +99,205 @@
 
   </section>
   <section class="player">
-    <div class="details">
-      <div class="now-playing"></div>
-      <div class="track-art"></div>
-      <div class="track-name"></div>
-      <div class="track-artist"></div>
-    </div>
-    <div class="buttons">
-      <div class="playpause-track" onclick="playpauseTrack()"><img src="img/play.png"></div>
-    </div>
-    <div class="slider_container">
-      <input type="range" id="range-player" min="1" max="100" value="100" class="seek_slider" onchange="seekTo()">
-    </div>
-    <div class="slider_container">
-      <img class="icon-volume" src="img/volume.png">
-      <input type="range" min="1" max="100" value="99" id="rng" name="rng" class="volume_slider __range"
-        onchange="setVolume()">
-    </div>
-    <div>
-      <div class="playrepeat-track" onclick="playTrackRepeat()"><img src="img/repeat.png"></div>
-    </div>
-  </section>
-  <section class="services">
+      <div class="details">
+        <div class="now-playing"></div>
+        <div class="track-art"></div>
+        <div class="track-name"></div>
+        <div class="track-artist"></div>
+      </div>
+      <div class="buttons">
+        <button id="play" class="play-track" data-sound="mp3/audio-main.mp3" onclick="playpauseTrack()"></button>
+      </div>
+      <div class="slider_container">
+        <input type="range" id="range-player" min="1" max="100" value="100" class="seek_slider" onchange="seekTo()">
+      </div>
+      <div class="slider_container">
+        <div class="icon-volume"></div>
+        <input type="range" min="1" max="100" value="99" id="rng" name="rng" class="volume_slider __range"
+          onchange="setVolume()">
+      </div>
+      <div id="myAudio">
+        <button class="playrepeat-track" onclick="playTrackRepeat()"></button>
+      </div>
+    </section>
 
-    <div class="modal-overlay">
-      <div class="modal">
-        <a class="close-modal">
+    <section class="services">
 
-          <img src="img/icons/close-modal-svg.svg" alt="">
-        </a>
-        <div class="modal-content">
-          <h3 class="txt-chronomer">
+      <div class="modal-overlay">
+        <div class="modal">
+          <a class="close-modal">
 
-            <img src="img/icons/modal-clock.svg" alt="">
-            ХРОНОМЕР</h3>
-          <p class="text-definition">Определение хронометража рекламного текста</p>
-          <div class="chronomer-block">
-            <div class="chronomer-element">
-              <input type="checkbox"><span class="txt-required">Требуемый хронометраж</span><br>
-              <input type="Text" class="chrono-time" name="iHronMin" value="0"><span class="txt-specks">:</span>
-              <input type="Text" class="chrono-time" name="iHronSek" value="0"><br>
-              <label class="txt-minutes" for="iHronMin">минут</label> <label class="txt-minutes"
-                for="iHronSek">секунд</label>
-            </div>
-            <div class="chronomer-element">
-              <p class="vocabulary-box">
-      
-                <img src="img/icons/modal-dictionary.svg" alt="">
-                <span class="txt-vocabulary" style="margin-left: 30px;">РУССКИЙ СЛОВАРЬ</span>
-             
-                <img src="img/icons/modal-dictionart-more.svg" alt="">
-              </p>
-              <p class="vocabulary-box2">
-                <img src="img/icons/modal-dictionary.svg" alt="">
-                <span class="txt-vocabulary"  style="margin-left: 30px;">УКРАИНСКИЙ СЛОВАРЬ</span>
-                <img src="img/icons/modal-dictionart-more.svg" alt="">
-              </p>
-            </div>
-            <div class="chronomer-window">
-              <p class="copy-text">Скопируйте текст в окно. Удалите ремарки и коментарии</p>
-              <textarea class="input-paste-text" type="text" name="message"></textarea>
-              <button class="btn-clear">
-        
-                <img src="img/icons/modal-clear.svg" alt="" style="margin-left: -20px;">
-                <span>ОЧИСТИТЬ</span></button>
-              <button class="btn-general">ОПРЕДЕЛИТЬ СТРАНИЦЫ
-              <img src="img/icons/modal-red-arrow.svg" alt="">
-              </button>
-              <div class="chronomer-results">
-                <span class="min-chrono-txt">Минимальный хронометраж:</span>
-                <span>Всего слов:</span>
-                <p>Оптимальный хронометраж:</p>
+          </a>
+          <div class="modal-content">
+            <h3 class="txt-chronomer">
+
+              <span class="chrono-clock"></span>
+              ХРОНОМЕР</h3>
+            <p class="text-definition">Определение хронометража рекламного текста</p>
+            <div class="chronomer-block">
+              <div class="chronomer-element">
+                <input type="checkbox"><span class="txt-required">Требуемый хронометраж</span><br>
+                <input type="Text" class="chrono-time" name="iHronMin" value="0"><span class="txt-specks">:</span>
+                <input type="Text" class="chrono-time" name="iHronSek" value="0"><br>
+                <label class="txt-minutes" for="iHronMin">минут</label> <label class="txt-minutes"
+                  for="iHronSek">секунд</label>
+              </div>
+              <div class="chronomer-element">
+                <p class="vocabulary-box">
+
+                  <span class="dictionary"></span>
+                  <span class="txt-vocabulary">РУССКИЙ СЛОВАРЬ</span>
+                  <span class="arr-right"></span>
+                </p>
+                <p class="vocabulary-box2">
+                  <span class="dictionary"></span>
+                  <span class="txt-vocabulary">УКРАИНСКИЙ СЛОВАРЬ</span>
+                  <span class="arr-right"></span>
+                </p>
+              </div>
+              <div class="chronomer-window">
+                <p class="copy-text">Скопируйте текст в окно. Удалите ремарки и коментарии</p>
+                <textarea class="input-paste-text" type="text" name="message"></textarea>
+                <button class="btn-clear">
+                 <span class="trash"></span>
+                  <span class="cleartext">ОЧИСТИТЬ</span></button>
+                <button class="btn-general">ОПРЕДЕЛИТЬ СТРАНИЦЫ<svg class="btn-svg" width="8" height="15"
+                  viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.73931 2.65887L7.53919 8.62078L1.66678 14.3337L1.73931 2.65887Z" stroke="white"
+                    stroke-width="1.5" />
+                </svg>
+                </button>
+                <div class="chronomer-results">
+                  <span class="min-chrono-txt">Минимальный хронометраж:</span>
+                  <span>Всего слов:</span>
+                  <p>Оптимальный хронометраж:</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="modal-overlay-page">
-      <div class="modal-page">
-        <a class="close-modal-page">
-        
-          <img src="img/icons/close-modal-svg.svg" alt="">
-        </a>
-        <div class="modal-content-page">
-          <h3 class="txt-chronomer">
-           <img src="img/icons/stacimetr.svg" alt="">
-            Страницемер</h3>
-          <p class="text-definition">Определение количества страниц текста</p>
-          <div class="page-block">
-            <label class="txt-font">ШРИФТ</label>
+      <div class="modal-overlay-page">
+        <div class="modal-page">
+          <a class="close-modal-page">
+    
+            <img src="img/icons/close-modal-svg.svg" alt="">
+          </a>
+          <div class="modal-content-page">
+            <h3 class="txt-chronomer">
+              <span class="stacimetr"></span>
+              Страницемер</h3>
+            <p class="text-definition">Определение количества страниц текста</p>
+            <div class="page-block">
+              <label class="txt-font">ШРИФТ</label>
 
-            <div class="custom-select">
-              <select>
-                <option value="0">Times New Roman</option>
-                <option value="1">Arial</option>
-                <option value="2">Courier New</option>
+              <div class="custom-select">
+                <select>
 
-              </select>
+                  <option value="0">-</option>
+                  <option value="1">Times New Roman</option>
+                  <option value="2">Arial</option>
+                  <option value="3">Courier New</option>
+
+                </select>
+              </div>
+              <label class="txt-font txt-size">РАЗМЕР</label>
+              <div class="custom-select size">
+                <select>
+
+                  <option value="0">-</option>
+                  <option value="1">12</option>
+                  <option value="2">14</option>
+                  <option value="3">18</option>
+
+                </select>
+              </div>
+
             </div>
-            <label class="txt-font txt-size">РАЗМЕР</label>
-            <div class="custom-select size">
-              <select>
 
-                <option value="0">14</option>
-                <option value="1">12</option>
-                <option value="2">18</option>
-
-              </select>
-            </div>
-
-          </div>
-
-          <div class="chrono-page">
-            <div class="form_radio">
-              <input id="radio-1" type="radio" name="radio" value="1" checked>
-              <label for="radio-1" class="page-txt-chrono">Хронометраж</label><br>
-            </div>
-            <input type="Text" class="chrono-time" name="iHronHour" value="0"><span class="txt-specks">:</span>
-            <input type="Text" class="chrono-time" name="iHronMin" value="0"><span class="txt-specks">:</span>
-            <span class="there-text">Здесь может быть описание блока, которое разъяснит пользователю как пользоваться
-              формой</span>
-            <input type="Text" class="chrono-time" name="iHronSek" value="0"><br>
-            <label class="txt-minutes" for="iHronMin">часов</label>
-            <label class="txt-minutes" for="iHronMin">минут</label>
-            <label class="txt-minutes" for="iHronSek">секунд</label>
-          </div>
-          <div class="chronomer-window page-window">
-            <div class="content-page">
+            <div class="chrono-page">
               <div class="form_radio">
-                <input id="radio-2" type="radio" name="radio" value="2">
-                <label for="radio-2" class="copy-text copy-text-page">Скопируйте текст в окно. Удалите ремарки и
-                  коментарии</label></div>
-              <textarea class="input-paste-page" type="text" name="message"></textarea>
-              <button class="btn-clear">
-            
-                <img src="img/icons/modal-clear.svg" alt="" style="margin-left: -20px;">
-                <span>ОЧИСТИТЬ</span></button>
-              <button class="btn-general btn-page">ОПРЕДЕЛИТЬ СТРАНИЦЫ
-              <img src="img/icons/modal-red-arrow.svg" alt="">
-              </button>
+                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                <label for="radio-1" class="page-txt-chrono">Хронометраж</label><br>
+              </div>
+              <input type="Text" class="chrono-time" name="iHronHour" value="0"><span class="txt-specks">:</span>
+              <input type="Text" class="chrono-time" name="iHronMin" value="0"><span class="txt-specks">:</span>
+              <span class="there-text">Здесь может быть описание блока, которое разъяснит пользователю как пользоваться
+                формой</span>
+              <input type="Text" class="chrono-time" name="iHronSek" value="0"><br>
+              <label class="txt-minutes" for="iHronMin">часов</label>
+              <label class="txt-minutes" for="iHronMin">минут</label>
+              <label class="txt-minutes" for="iHronSek">секунд</label>
+            </div>
+            <div class="chronomer-window page-window">
+              <div class="content-page">
+                <div class="form_radio">
+                  <input id="radio-2" type="radio" name="radio" value="2">
+                  <label for="radio-2" class="copy-text copy-text-page">Скопируйте текст в окно. Удалите ремарки и
+                    коментарии</label></div>
+                <textarea class="input-paste-page" type="text" name="message"></textarea>
+                <button class="btn-clear">
+                  <span class="trash"></span>
+                   <span class="cleartext">ОЧИСТИТЬ</span></button>
+                <button class="btn-general btn-page">ОПРЕДЕЛИТЬ СТРАНИЦЫ<svg class="btn-svg" width="8" height="15"
+                  viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.73931 2.65887L7.53919 8.62078L1.66678 14.3337L1.73931 2.65887Z" stroke="white"
+                    stroke-width="1.5" />
+                </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <nav onmouseover="mouseOver()" onmouseout="mouseOut()" class="left-menu" id="menufixed">
-      <ul>
-        <li>
-          <a>
-      
-            <img src="img/icons/chef.svg" alt="" class="left-menu-first">
-            <hr id="demo" class="hr-for-leftmenu">
-            <span class="nav-text for-border modal-btn">Хронометраж</span>
-          </a>
-        </li>
-        <li>
-          <a>
-            <img class="left-menu-items" src="img/page2.png" alt="Страницемер">
-            <hr id="demo2" class="forweight">
-            <span class="nav-text for-border modal-btn-page">СТРАНИЦЕМЕР</span>
-          </a>
-        </li>
-        <li>
-          <a>
-         
-            <img src="img/icons/left-clock.svg" alt="" class="left-menu-items">
+      <nav onmouseover="mouseOver()" onmouseout="mouseOut()" class="left-menu" id="menufixed">
+        <ul>
+          <li>
+            <a>
+              <img src="img/icons/chef.svg" alt="" class="left-menu-first">
 
-            <hr id="demo3" class="forweight">
-            <span class="nav-text for-border">СТРАНИЦЕМЕР</span>
-          </a>
+              <hr id="demo" class="hr-for-leftmenu">
+              <span class="nav-text for-border modal-btn">Хронометраж</span>
+            </a>
+          </li>
+          <li>
 
-        </li>
-        <li>
-          <a>
-            <img class="left-menu-items" src="img/setting4.png" alt="Хронометраж">
-            <hr id="demo4" class="hr-for-leftmenu">
-            <span class="nav-text for-border  modal-btn">Хронометраж</span>
-          </a>
-        </li>
-        <li>
-          <a>
+            <a>
+              <img class="left-menu-items" src="img/page2.png" alt="Страницемер">
+              <hr id="demo2" class="forweight">
+              <span class="nav-text for-border modal-btn-page">СТРАНИЦЕМЕР</span>
+            </a>
+          </li>
+          <li>
+            <a>
 
-            <img src="img/icons/headphone.svg" alt="" class="left-menu-items">
+              <img src="img/icons/left-clock.svg" class="left-menu-items" alt="">
 
-            <span class="nav-text">поиск дикторов</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+              <hr id="demo3" class="forweight">
+              <span class="nav-text for-border">СТРАНИЦЕМЕР</span>
+            </a>
+
+          </li>
+          <li>
+            <a>
+              <img class="left-menu-items" src="img/setting4.png" alt="Хронометраж">
+              <hr id="demo4" class="hr-for-leftmenu">
+              <span class="nav-text for-border  modal-btn">Хронометраж</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="img/icons/headphone.svg" alt="" class="left-menu-items">
+
+              <span class="nav-text">поиск дикторов</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    
     <div id="show" class="box-container">
       <div class="box-element-audio">
         <hr class="hr-for-box">
@@ -380,7 +372,7 @@
             d="M60 0C71.8669 0 83.4672 3.51894 93.3342 10.1118C103.201 16.7047 110.891 26.0754 115.433 37.039C119.974 48.0026 121.162 60.0666 118.847 71.7054C116.532 83.3443 110.818 94.0353 102.426 102.426C94.0352 110.818 83.3442 116.532 71.7054 118.847C60.0665 121.162 48.0025 119.974 37.039 115.433C26.0754 110.892 16.7047 103.201 10.1118 93.3342C3.51891 83.4673 -3.05176e-05 71.8669 -3.05176e-05 60C0.0178375 44.0925 6.34499 28.8416 17.5933 17.5933C28.8416 6.34501 44.0925 0.0178658 60 0V0ZM60 116.719C71.2179 116.719 82.1839 113.392 91.5112 107.16C100.839 100.928 108.108 92.0693 112.401 81.7053C116.694 71.3413 117.817 59.9371 115.629 48.9347C113.44 37.9324 108.038 27.826 100.106 19.8938C92.1739 11.9615 82.0676 6.55959 71.0653 4.37108C60.0629 2.18258 48.6586 3.3058 38.2946 7.59871C27.9306 11.8916 19.0724 19.1614 12.8401 28.4888C6.60772 37.8161 3.28122 48.7821 3.28122 60C3.29834 75.0375 9.27955 89.4542 19.9127 100.087C30.5458 110.72 44.9625 116.702 60 116.719ZM9.37497 60C9.37497 73.4266 14.7087 86.3033 24.2027 95.7973C33.6967 105.291 46.5734 110.625 60 110.625C73.4266 110.625 86.3032 105.291 95.7973 95.7973C105.291 86.3033 110.625 73.4266 110.625 60C110.625 59.5649 110.452 59.1476 110.144 58.8399C109.837 58.5322 109.419 58.3594 108.984 58.3594C108.549 58.3594 108.132 58.5322 107.824 58.8399C107.517 59.1476 107.344 59.5649 107.344 60C107.356 71.011 103.534 81.6827 96.5339 90.1825C89.5341 98.6823 79.7934 104.48 68.9845 106.58C58.1755 108.68 46.9727 106.951 37.2997 101.69C27.6267 96.4288 20.0872 87.9643 15.9757 77.7497C11.8642 67.535 11.4374 56.2076 14.7684 45.7125C18.0995 35.2174 24.9807 26.2095 34.2303 20.2356C43.4799 14.2616 54.5208 11.6944 65.4572 12.9748C76.3935 14.2552 86.5429 19.3033 94.1625 27.2522C94.3106 27.4118 94.4889 27.5402 94.6872 27.6302C94.8854 27.7201 95.0996 27.7697 95.3172 27.7761C95.5348 27.7824 95.7515 27.7454 95.9546 27.6671C96.1578 27.5889 96.3433 27.471 96.5005 27.3204C96.6576 27.1697 96.7832 26.9893 96.8699 26.7896C96.9566 26.5899 97.0027 26.3749 97.0055 26.1573C97.0083 25.9396 96.9678 25.7235 96.8862 25.5217C96.8047 25.3198 96.6838 25.1362 96.5306 24.9816C89.5432 17.6825 80.5306 12.6425 70.6536 10.5107C60.7766 8.37887 50.4876 9.25281 41.1117 13.02C31.7357 16.7872 23.7023 23.275 18.0461 31.648C12.3898 40.021 9.36981 49.8956 9.37497 60ZM108.235 44.6138C107.644 42.7642 106.947 40.9506 106.146 39.1819C106.057 38.9856 105.93 38.8088 105.773 38.6616C105.615 38.5143 105.431 38.3994 105.229 38.3236C105.027 38.2477 104.813 38.2123 104.597 38.2194C104.382 38.2265 104.17 38.2759 103.974 38.3648C103.778 38.4538 103.601 38.5805 103.454 38.7378C103.306 38.8951 103.191 39.0798 103.116 39.2815C103.04 39.4832 103.004 39.6978 103.011 39.9131C103.018 40.1285 103.068 40.3403 103.157 40.5366C103.905 42.1891 104.557 43.8835 105.11 45.6113C105.173 45.8192 105.277 46.0126 105.415 46.18C105.554 46.3475 105.724 46.4858 105.917 46.5868C106.109 46.6878 106.32 46.7496 106.536 46.7685C106.753 46.7875 106.971 46.7632 107.178 46.6971C107.385 46.631 107.577 46.5244 107.743 46.3836C107.908 46.2427 108.044 46.0703 108.142 45.8765C108.241 45.6827 108.3 45.4712 108.316 45.2544C108.332 45.0377 108.304 44.8199 108.235 44.6138ZM68.2622 36.4453H51.7387C50.0604 36.4453 48.4508 35.7786 47.2641 34.5919C46.0773 33.4051 45.4106 31.7955 45.4106 30.1172C45.4106 28.4389 46.0773 26.8293 47.2641 25.6425C48.4508 24.4558 50.0604 23.7891 51.7387 23.7891H68.2622C69.9405 23.7891 71.5501 24.4558 72.7368 25.6425C73.9236 26.8293 74.5903 28.4389 74.5903 30.1172C74.5903 31.7955 73.9236 33.4051 72.7368 34.5919C71.5501 35.7786 69.9405 36.4453 68.2622 36.4453ZM68.2622 27.0703H51.7387C50.9306 27.0703 50.1557 27.3913 49.5843 27.9627C49.0129 28.5341 48.6918 29.3091 48.6918 30.1172C48.6918 30.9253 49.0129 31.7003 49.5843 32.2717C50.1557 32.8431 50.9306 33.1641 51.7387 33.1641H68.2622C69.0702 33.1641 69.8452 32.8431 70.4166 32.2717C70.988 31.7003 71.309 30.9253 71.309 30.1172C71.309 29.3091 70.988 28.5341 70.4166 27.9627C69.8452 27.3913 69.0702 27.0703 68.2622 27.0703ZM66.3281 83.5547V55.2103H68.2622C69.9405 55.2103 71.5501 54.5436 72.7368 53.3568C73.9236 52.1701 74.5903 50.5605 74.5903 48.8822C74.5903 47.2039 73.9236 45.5943 72.7368 44.4075C71.5501 43.2208 69.9405 42.5541 68.2622 42.5541H51.7387C50.0604 42.5541 48.4508 43.2208 47.2641 44.4075C46.0773 45.5943 45.4106 47.2039 45.4106 48.8822C45.4106 50.5605 46.0773 52.1701 47.2641 53.3568C48.4508 54.5436 50.0604 55.2103 51.7387 55.2103H53.6718V83.5547H51.7387C51.3036 83.5547 50.8863 83.7275 50.5786 84.0352C50.2709 84.3429 50.0981 84.7602 50.0981 85.1953C50.0981 85.6304 50.2709 86.0477 50.5786 86.3554C50.8863 86.6631 51.3036 86.8359 51.7387 86.8359H55.3125C55.528 86.8361 55.7414 86.7937 55.9405 86.7113C56.1396 86.6289 56.3205 86.5081 56.4728 86.3557C56.6252 86.2033 56.7461 86.0224 56.8285 85.8233C56.9109 85.6242 56.9532 85.4108 56.9531 85.1953V53.5697C56.9532 53.3542 56.9109 53.1408 56.8285 52.9417C56.7461 52.7426 56.6252 52.5617 56.4728 52.4093C56.3205 52.2569 56.1396 52.1361 55.9405 52.0537C55.7414 51.9713 55.528 51.9289 55.3125 51.9291H51.7387C50.9306 51.9291 50.1557 51.6081 49.5843 51.0367C49.0129 50.4653 48.6918 49.6903 48.6918 48.8822C48.6918 48.0741 49.0129 47.2991 49.5843 46.7277C50.1557 46.1563 50.9306 45.8353 51.7387 45.8353H68.2622C69.0702 45.8353 69.8452 46.1563 70.4166 46.7277C70.988 47.2991 71.309 48.0741 71.309 48.8822C71.309 49.6903 70.988 50.4653 70.4166 51.0367C69.8452 51.6081 69.0702 51.9291 68.2622 51.9291H64.6875C64.2523 51.9291 63.835 52.1019 63.5274 52.4096C63.2197 52.7173 63.0468 53.1346 63.0468 53.5697V85.1953C63.0468 85.6304 63.2197 86.0477 63.5274 86.3554C63.835 86.6631 64.2523 86.8359 64.6875 86.8359H68.2622C69.0702 86.8359 69.8452 87.1569 70.4166 87.7283C70.988 88.2998 71.309 89.0747 71.309 89.8828C71.309 90.6909 70.988 91.4659 70.4166 92.0373C69.8452 92.6087 69.0702 92.9297 68.2622 92.9297H51.7387C51.3036 92.9297 50.8863 93.1025 50.5786 93.4102C50.2709 93.7179 50.0981 94.1352 50.0981 94.5703C50.0981 95.0054 50.2709 95.4227 50.5786 95.7304C50.8863 96.0381 51.3036 96.2109 51.7387 96.2109H68.2622C69.9405 96.2109 71.5501 95.5442 72.7368 94.3575C73.9236 93.1707 74.5903 91.5611 74.5903 89.8828C74.5903 88.2045 73.9236 86.5949 72.7368 85.4081C71.5501 84.2214 69.9405 83.5547 68.2622 83.5547H66.3281Z"
             fill="#39516e" />
         </svg>
-        <svg id="base-svg1" width="120" height="120" viewBox="0 0 120 120" fill="none"
+        <!-- <svg id="base-svg1" width="120" height="120" viewBox="0 0 120 120" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M60 0C71.8669 0 83.4672 3.51894 93.3342 10.1118C103.201 16.7047 110.891 26.0754 115.433 37.039C119.974 48.0026 121.162 60.0666 118.847 71.7054C116.532 83.3443 110.818 94.0353 102.426 102.426C94.0352 110.818 83.3442 116.532 71.7054 118.847C60.0665 121.162 48.0025 119.974 37.039 115.433C26.0754 110.892 16.7047 103.201 10.1118 93.3342C3.51891 83.4673 -3.05176e-05 71.8669 -3.05176e-05 60C0.0178375 44.0925 6.34499 28.8416 17.5933 17.5933C28.8416 6.34501 44.0925 0.0178658 60 0V0ZM60 116.719C71.2179 116.719 82.1839 113.392 91.5112 107.16C100.839 100.928 108.108 92.0693 112.401 81.7053C116.694 71.3413 117.817 59.9371 115.629 48.9347C113.44 37.9324 108.038 27.826 100.106 19.8938C92.1739 11.9615 82.0676 6.55959 71.0653 4.37108C60.0629 2.18258 48.6586 3.3058 38.2946 7.59871C27.9306 11.8916 19.0724 19.1614 12.8401 28.4888C6.60772 37.8161 3.28122 48.7821 3.28122 60C3.29834 75.0375 9.27955 89.4542 19.9127 100.087C30.5458 110.72 44.9625 116.702 60 116.719ZM9.37497 60C9.37497 73.4266 14.7087 86.3033 24.2027 95.7973C33.6967 105.291 46.5734 110.625 60 110.625C73.4266 110.625 86.3032 105.291 95.7973 95.7973C105.291 86.3033 110.625 73.4266 110.625 60C110.625 59.5649 110.452 59.1476 110.144 58.8399C109.837 58.5322 109.419 58.3594 108.984 58.3594C108.549 58.3594 108.132 58.5322 107.824 58.8399C107.517 59.1476 107.344 59.5649 107.344 60C107.356 71.011 103.534 81.6827 96.5339 90.1825C89.5341 98.6823 79.7934 104.48 68.9845 106.58C58.1755 108.68 46.9727 106.951 37.2997 101.69C27.6267 96.4288 20.0872 87.9643 15.9757 77.7497C11.8642 67.535 11.4374 56.2076 14.7684 45.7125C18.0995 35.2174 24.9807 26.2095 34.2303 20.2356C43.4799 14.2616 54.5208 11.6944 65.4572 12.9748C76.3935 14.2552 86.5429 19.3033 94.1625 27.2522C94.3106 27.4118 94.4889 27.5402 94.6872 27.6302C94.8854 27.7201 95.0996 27.7697 95.3172 27.7761C95.5348 27.7824 95.7515 27.7454 95.9546 27.6671C96.1578 27.5889 96.3433 27.471 96.5005 27.3204C96.6576 27.1697 96.7832 26.9893 96.8699 26.7896C96.9566 26.5899 97.0027 26.3749 97.0055 26.1573C97.0083 25.9396 96.9678 25.7235 96.8862 25.5217C96.8047 25.3198 96.6838 25.1362 96.5306 24.9816C89.5432 17.6825 80.5306 12.6425 70.6536 10.5107C60.7766 8.37887 50.4876 9.25281 41.1117 13.02C31.7357 16.7872 23.7023 23.275 18.0461 31.648C12.3898 40.021 9.36981 49.8956 9.37497 60ZM108.235 44.6138C107.644 42.7642 106.947 40.9506 106.146 39.1819C106.057 38.9856 105.93 38.8088 105.773 38.6616C105.615 38.5143 105.431 38.3994 105.229 38.3236C105.027 38.2477 104.813 38.2123 104.597 38.2194C104.382 38.2265 104.17 38.2759 103.974 38.3648C103.778 38.4538 103.601 38.5805 103.454 38.7378C103.306 38.8951 103.191 39.0798 103.116 39.2815C103.04 39.4832 103.004 39.6978 103.011 39.9131C103.018 40.1285 103.068 40.3403 103.157 40.5366C103.905 42.1891 104.557 43.8835 105.11 45.6113C105.173 45.8192 105.277 46.0126 105.415 46.18C105.554 46.3475 105.724 46.4858 105.917 46.5868C106.109 46.6878 106.32 46.7496 106.536 46.7685C106.753 46.7875 106.971 46.7632 107.178 46.6971C107.385 46.631 107.577 46.5244 107.743 46.3836C107.908 46.2427 108.044 46.0703 108.142 45.8765C108.241 45.6827 108.3 45.4712 108.316 45.2544C108.332 45.0377 108.304 44.8199 108.235 44.6138ZM68.2622 36.4453H51.7387C50.0604 36.4453 48.4508 35.7786 47.2641 34.5919C46.0773 33.4051 45.4106 31.7955 45.4106 30.1172C45.4106 28.4389 46.0773 26.8293 47.2641 25.6425C48.4508 24.4558 50.0604 23.7891 51.7387 23.7891H68.2622C69.9405 23.7891 71.5501 24.4558 72.7368 25.6425C73.9236 26.8293 74.5903 28.4389 74.5903 30.1172C74.5903 31.7955 73.9236 33.4051 72.7368 34.5919C71.5501 35.7786 69.9405 36.4453 68.2622 36.4453ZM68.2622 27.0703H51.7387C50.9306 27.0703 50.1557 27.3913 49.5843 27.9627C49.0129 28.5341 48.6918 29.3091 48.6918 30.1172C48.6918 30.9253 49.0129 31.7003 49.5843 32.2717C50.1557 32.8431 50.9306 33.1641 51.7387 33.1641H68.2622C69.0702 33.1641 69.8452 32.8431 70.4166 32.2717C70.988 31.7003 71.309 30.9253 71.309 30.1172C71.309 29.3091 70.988 28.5341 70.4166 27.9627C69.8452 27.3913 69.0702 27.0703 68.2622 27.0703ZM66.3281 83.5547V55.2103H68.2622C69.9405 55.2103 71.5501 54.5436 72.7368 53.3568C73.9236 52.1701 74.5903 50.5605 74.5903 48.8822C74.5903 47.2039 73.9236 45.5943 72.7368 44.4075C71.5501 43.2208 69.9405 42.5541 68.2622 42.5541H51.7387C50.0604 42.5541 48.4508 43.2208 47.2641 44.4075C46.0773 45.5943 45.4106 47.2039 45.4106 48.8822C45.4106 50.5605 46.0773 52.1701 47.2641 53.3568C48.4508 54.5436 50.0604 55.2103 51.7387 55.2103H53.6718V83.5547H51.7387C51.3036 83.5547 50.8863 83.7275 50.5786 84.0352C50.2709 84.3429 50.0981 84.7602 50.0981 85.1953C50.0981 85.6304 50.2709 86.0477 50.5786 86.3554C50.8863 86.6631 51.3036 86.8359 51.7387 86.8359H55.3125C55.528 86.8361 55.7414 86.7937 55.9405 86.7113C56.1396 86.6289 56.3205 86.5081 56.4728 86.3557C56.6252 86.2033 56.7461 86.0224 56.8285 85.8233C56.9109 85.6242 56.9532 85.4108 56.9531 85.1953V53.5697C56.9532 53.3542 56.9109 53.1408 56.8285 52.9417C56.7461 52.7426 56.6252 52.5617 56.4728 52.4093C56.3205 52.2569 56.1396 52.1361 55.9405 52.0537C55.7414 51.9713 55.528 51.9289 55.3125 51.9291H51.7387C50.9306 51.9291 50.1557 51.6081 49.5843 51.0367C49.0129 50.4653 48.6918 49.6903 48.6918 48.8822C48.6918 48.0741 49.0129 47.2991 49.5843 46.7277C50.1557 46.1563 50.9306 45.8353 51.7387 45.8353H68.2622C69.0702 45.8353 69.8452 46.1563 70.4166 46.7277C70.988 47.2991 71.309 48.0741 71.309 48.8822C71.309 49.6903 70.988 50.4653 70.4166 51.0367C69.8452 51.6081 69.0702 51.9291 68.2622 51.9291H64.6875C64.2523 51.9291 63.835 52.1019 63.5274 52.4096C63.2197 52.7173 63.0468 53.1346 63.0468 53.5697V85.1953C63.0468 85.6304 63.2197 86.0477 63.5274 86.3554C63.835 86.6631 64.2523 86.8359 64.6875 86.8359H68.2622C69.0702 86.8359 69.8452 87.1569 70.4166 87.7283C70.988 88.2998 71.309 89.0747 71.309 89.8828C71.309 90.6909 70.988 91.4659 70.4166 92.0373C69.8452 92.6087 69.0702 92.9297 68.2622 92.9297H51.7387C51.3036 92.9297 50.8863 93.1025 50.5786 93.4102C50.2709 93.7179 50.0981 94.1352 50.0981 94.5703C50.0981 95.0054 50.2709 95.4227 50.5786 95.7304C50.8863 96.0381 51.3036 96.2109 51.7387 96.2109H68.2622C69.9405 96.2109 71.5501 95.5442 72.7368 94.3575C73.9236 93.1707 74.5903 91.5611 74.5903 89.8828C74.5903 88.2045 73.9236 86.5949 72.7368 85.4081C71.5501 84.2214 69.9405 83.5547 68.2622 83.5547H66.3281Z"
@@ -392,13 +384,13 @@
               <stop offset="1" stop-color="#39516E" />
             </linearGradient>
           </defs>
-        </svg>
+        </svg> -->
 
         <h4 id="base-block1">Информационно-музыкальные</h4>
         <p id="base-text1">Это информационное сообщение в официально-деловом или позитивном тоне. Буквальный рассказ о
           рекламируемом объекте. Такой вариант подойдет, если ваша аудитория серьезная и воспринимает только информацию
           коротко и по делу.</p>
-          <a href="speakers.html">
+          <a href="#examples">
         <button id="btn-audio-page" class="base-btn-page">СЛУШАТЬ ПРИМЕРЫ<svg id="svg1" width="11" height="17"
             viewBox="0 0 11 17" stroke="#404263" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.73931 2.65887L8.53919 8.62078L2.66678 14.3337L2.73931 2.65887Z" stroke-width="1.5">
@@ -416,12 +408,12 @@
 
         </svg>
 
-        <img src="img/icons/microfon.svg" alt="" id="base-svg2">
+        <!-- <img src="img/icons/microfon.svg" style="width: 120px; height:120px;" alt="" id="base-svg2"> -->
         <h4 id="base-blockk2" class="txt-voice">Голосовые приветствия, голосовое меню, запись IVR</h4>
         <p id="base-text2">Это информационное сообщение в официально-деловом или позитивном тоне. Буквальный рассказ о
           рекламируемом объекте. Такой вариант подойдет, если ваша аудитория серьезная и воспринимает только информацию
           коротко и по делу.</p>
-          <a href="speakers.html">
+          <a href="#examples">
         <button id="btn-audio-page2" class="base-btn-page">СЛУШАТЬ ПРИМЕРЫ
           <svg id="svg2" width="11" height="17"
             viewBox="0 0 11 17" stroke="#404263" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -435,12 +427,12 @@
   <section class="example-audio">
     <div class="example-block">
       <hr class="hr-for-slider">
-      <p class="txt-about-us txt-audioslot">ПРИМЕРЫ АУДИОРОЛИКОВ</p>
+      <p class="txt-about-us txt-audioslot">ПРИМЕРЫ АУДИОРОЛИКОВ</p><a name="examples"></a>
 
-      <button style="margin-bottom: 20px;" class="example-btn-all">ВСЕ</button><br class="over-btnall">
+      <button class="example-block-elem example-btn-all" data-filter="all" id="all">ВСЕ</button><br class="over-btnall">
    
      <span class="adaptive-block">
-       <span class="example-block-elem">
+       <span class="first example-block-elem" data-filter="info-music" id="music">
         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M22 0C26.3512 0 30.6047 1.29028 34.2225 3.70767C37.8404 6.12506 40.6602 9.56099 42.3253 13.581C43.9905 17.6009 44.4261 22.0244 43.5773 26.292C42.7284 30.5596 40.6331 34.4796 37.5563 37.5564C34.4796 40.6331 30.5596 42.7284 26.292 43.5773C22.0244 44.4261 17.6009 43.9905 13.581 42.3253C9.56098 40.6602 6.12505 37.8404 3.70766 34.2225C1.29027 30.6047 -1.14441e-05 26.3512 -1.14441e-05 22C0.00653935 16.1672 2.32649 10.5753 6.45087 6.45089C10.5753 2.32651 16.1672 0.0065508 22 0ZM22 42.7969C26.1132 42.7969 30.1341 41.5772 33.5541 39.292C36.9741 37.0068 39.6397 33.7588 41.2138 29.9586C42.7879 26.1585 43.1997 21.9769 42.3973 17.9427C41.5948 13.9085 39.6141 10.2029 36.7056 7.29439C33.7971 4.38589 30.0915 2.40518 26.0573 1.60273C22.0231 0.800279 17.8415 1.21213 14.0414 2.78619C10.2412 4.36026 6.99321 7.02585 4.70802 10.4459C2.42283 13.8659 1.20311 17.8868 1.20311 22C1.20939 27.5137 3.4025 32.7999 7.30131 36.6987C11.2001 40.5975 16.4862 42.7906 22 42.7969ZM3.43749 22C3.43749 26.9231 5.39317 31.6445 8.87432 35.1257C12.3555 38.6068 17.0769 40.5625 22 40.5625C26.9231 40.5625 31.6445 38.6068 35.1257 35.1257C38.6068 31.6445 40.5625 26.9231 40.5625 22C40.5625 21.8405 40.4991 21.6874 40.3863 21.5746C40.2735 21.4618 40.1205 21.3984 39.9609 21.3984C39.8014 21.3984 39.6484 21.4618 39.5356 21.5746C39.4227 21.6874 39.3594 21.8405 39.3594 22C39.3637 26.0374 37.9623 29.9503 35.3958 33.0669C32.8292 36.1835 29.2576 38.3093 25.2943 39.0792C21.331 39.8492 17.2233 39.2152 13.6766 37.2862C10.1298 35.3572 7.36529 32.2536 5.85775 28.5082C4.35021 24.7628 4.1937 20.6095 5.4151 16.7612C6.63649 12.913 9.15957 9.61014 12.5511 7.4197C15.9426 5.22926 19.991 4.28796 24.001 4.75744C28.011 5.22691 31.7324 7.07787 34.5262 9.99247C34.5805 10.051 34.6459 10.0981 34.7186 10.1311C34.7913 10.164 34.8698 10.1822 34.9496 10.1846C35.0294 10.1869 35.1089 10.1733 35.1834 10.1446C35.2579 10.1159 35.3259 10.0727 35.3835 10.0175C35.4411 9.96222 35.4872 9.89606 35.519 9.82284C35.5507 9.74963 35.5677 9.67081 35.5687 9.591C35.5697 9.51118 35.5548 9.43196 35.5249 9.35795C35.4951 9.28394 35.4507 9.21662 35.3946 9.15991C32.8325 6.4836 29.5279 4.6356 25.9063 3.85393C22.2848 3.07225 18.5121 3.3927 15.0743 4.77399C11.6364 6.15529 8.69085 8.53418 6.61689 11.6043C4.54294 14.6744 3.4356 18.295 3.43749 22ZM39.6863 16.3584C39.4696 15.6802 39.2138 15.0152 38.9201 14.3667C38.8874 14.2947 38.841 14.2299 38.7833 14.1759C38.7256 14.1219 38.6579 14.0798 38.5839 14.052C38.51 14.0242 38.4313 14.0112 38.3523 14.0138C38.2734 14.0164 38.1957 14.0345 38.1238 14.0671C38.0518 14.0997 37.987 14.1462 37.933 14.2039C37.879 14.2615 37.8369 14.3293 37.809 14.4032C37.7812 14.4772 37.7682 14.5559 37.7708 14.6348C37.7734 14.7138 37.7916 14.7914 37.8242 14.8634C38.0985 15.4693 38.3376 16.0906 38.5402 16.7241C38.5634 16.8004 38.6015 16.8713 38.6523 16.9327C38.7031 16.9941 38.7656 17.0448 38.8362 17.0818C38.9067 17.1189 38.984 17.1415 39.0634 17.1485C39.1428 17.1554 39.2227 17.1465 39.2987 17.1223C39.3746 17.098 39.4449 17.059 39.5056 17.0073C39.5663 16.9557 39.6162 16.8925 39.6522 16.8214C39.6883 16.7503 39.7099 16.6728 39.7157 16.5933C39.7216 16.5138 39.7116 16.434 39.6863 16.3584ZM25.0295 13.3633H18.9709C18.3555 13.3633 17.7653 13.1188 17.3302 12.6837C16.895 12.2485 16.6506 11.6584 16.6506 11.043C16.6506 10.4276 16.895 9.8374 17.3302 9.40226C17.7653 8.96712 18.3555 8.72266 18.9709 8.72266H25.0295C25.6448 8.72266 26.235 8.96712 26.6702 9.40226C27.1053 9.8374 27.3498 10.4276 27.3498 11.043C27.3498 11.6584 27.1053 12.2485 26.6702 12.6837C26.235 13.1188 25.6448 13.3633 25.0295 13.3633ZM25.0295 9.92578H18.9709C18.6746 9.92578 18.3904 10.0435 18.1809 10.253C17.9714 10.4625 17.8537 10.7467 17.8537 11.043C17.8537 11.3393 17.9714 11.6234 18.1809 11.8329C18.3904 12.0425 18.6746 12.1602 18.9709 12.1602H25.0295C25.3258 12.1602 25.6099 12.0425 25.8194 11.8329C26.0289 11.6234 26.1466 11.3393 26.1466 11.043C26.1466 10.7467 26.0289 10.4625 25.8194 10.253C25.6099 10.0435 25.3258 9.92578 25.0295 9.92578ZM24.3203 30.6367V20.2438H25.0295C25.6448 20.2438 26.235 19.9993 26.6702 19.5642C27.1053 19.129 27.3498 18.5389 27.3498 17.9235C27.3498 17.3081 27.1053 16.7179 26.6702 16.2828C26.235 15.8476 25.6448 15.6032 25.0295 15.6032H18.9709C18.3555 15.6032 17.7653 15.8476 17.3302 16.2828C16.895 16.7179 16.6506 17.3081 16.6506 17.9235C16.6506 18.5389 16.895 19.129 17.3302 19.5642C17.7653 19.9993 18.3555 20.2438 18.9709 20.2438H19.6797V30.6367H18.9709C18.8113 30.6367 18.6583 30.7001 18.5455 30.8129C18.4327 30.9257 18.3693 31.0787 18.3693 31.2383C18.3693 31.3978 18.4327 31.5508 18.5455 31.6636C18.6583 31.7765 18.8113 31.8398 18.9709 31.8398H20.2812C20.3602 31.8399 20.4385 31.8244 20.5115 31.7941C20.5845 31.7639 20.6508 31.7196 20.7067 31.6638C20.7626 31.6079 20.8069 31.5415 20.8371 31.4685C20.8673 31.3955 20.8828 31.3173 20.8828 31.2383V19.6422C20.8828 19.5632 20.8673 19.485 20.8371 19.412C20.8069 19.339 20.7626 19.2726 20.7067 19.2167C20.6508 19.1609 20.5845 19.1166 20.5115 19.0864C20.4385 19.0561 20.3602 19.0406 20.2812 19.0407H18.9709C18.6746 19.0407 18.3904 18.923 18.1809 18.7134C17.9714 18.5039 17.8537 18.2198 17.8537 17.9235C17.8537 17.6272 17.9714 17.343 18.1809 17.1335C18.3904 16.924 18.6746 16.8063 18.9709 16.8063H25.0295C25.3258 16.8063 25.6099 16.924 25.8194 17.1335C26.0289 17.343 26.1466 17.6272 26.1466 17.9235C26.1466 18.2198 26.0289 18.5039 25.8194 18.7134C25.6099 18.923 25.3258 19.0407 25.0295 19.0407H23.7187C23.5592 19.0407 23.4062 19.104 23.2934 19.2169C23.1806 19.3297 23.1172 19.4827 23.1172 19.6422V31.2383C23.1172 31.3978 23.1806 31.5508 23.2934 31.6636C23.4062 31.7765 23.5592 31.8398 23.7187 31.8398H25.0295C25.3258 31.8398 25.6099 31.9575 25.8194 32.1671C26.0289 32.3766 26.1466 32.6607 26.1466 32.957C26.1466 33.2533 26.0289 33.5375 25.8194 33.747C25.6099 33.9565 25.3258 34.0742 25.0295 34.0742H18.9709C18.8113 34.0742 18.6583 34.1376 18.5455 34.2504C18.4327 34.3632 18.3693 34.5162 18.3693 34.6758C18.3693 34.8353 18.4327 34.9883 18.5455 35.1012C18.6583 35.214 18.8113 35.2773 18.9709 35.2773H25.0295C25.6448 35.2773 26.235 35.0329 26.6702 34.5977C27.1053 34.1626 27.3498 33.5724 27.3498 32.957C27.3498 32.3416 27.1053 31.7515 26.6702 31.3163C26.235 30.8812 25.6448 30.6367 25.0295 30.6367H24.3203Z"
@@ -448,7 +440,7 @@
             <defs>
             </defs>
         </svg>Информационно-музыкальные</span> 
-      <span class="example-block-elem">
+      <span class="second example-block-elem" data-filter="voice-menu" id="ivr">
         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M22 0C26.3512 0 30.6047 1.29028 34.2225 3.70767C37.8404 6.12506 40.6602 9.56099 42.3253 13.581C43.9905 17.6009 44.4261 22.0244 43.5773 26.292C42.7284 30.5596 40.6331 34.4796 37.5563 37.5564C34.4796 40.6331 30.5596 42.7284 26.292 43.5773C22.0244 44.4261 17.6009 43.9905 13.581 42.3253C9.56098 40.6602 6.12505 37.8404 3.70766 34.2225C1.29027 30.6047 -1.14441e-05 26.3512 -1.14441e-05 22C0.00653935 16.1672 2.32649 10.5753 6.45087 6.45089C10.5753 2.32651 16.1672 0.0065508 22 0ZM22 42.7969C26.1132 42.7969 30.1341 41.5772 33.5541 39.292C36.9741 37.0068 39.6397 33.7588 41.2138 29.9586C42.7879 26.1585 43.1997 21.9769 42.3973 17.9427C41.5948 13.9085 39.6141 10.2029 36.7056 7.29439C33.7971 4.38589 30.0915 2.40518 26.0573 1.60273C22.0231 0.800279 17.8415 1.21213 14.0414 2.78619C10.2412 4.36026 6.99321 7.02585 4.70802 10.4459C2.42283 13.8659 1.20311 17.8868 1.20311 22C1.20939 27.5137 3.4025 32.7999 7.30131 36.6987C11.2001 40.5975 16.4862 42.7906 22 42.7969ZM3.43749 22C3.43749 26.9231 5.39317 31.6445 8.87432 35.1257C12.3555 38.6068 17.0769 40.5625 22 40.5625C26.9231 40.5625 31.6445 38.6068 35.1257 35.1257C38.6068 31.6445 40.5625 26.9231 40.5625 22C40.5625 21.8405 40.4991 21.6874 40.3863 21.5746C40.2735 21.4618 40.1205 21.3984 39.9609 21.3984C39.8014 21.3984 39.6484 21.4618 39.5356 21.5746C39.4227 21.6874 39.3594 21.8405 39.3594 22C39.3637 26.0374 37.9623 29.9503 35.3958 33.0669C32.8292 36.1835 29.2576 38.3093 25.2943 39.0792C21.331 39.8492 17.2233 39.2152 13.6766 37.2862C10.1298 35.3572 7.36529 32.2536 5.85775 28.5082C4.35021 24.7628 4.1937 20.6095 5.4151 16.7612C6.63649 12.913 9.15957 9.61014 12.5511 7.4197C15.9426 5.22926 19.991 4.28796 24.001 4.75744C28.011 5.22691 31.7324 7.07787 34.5262 9.99247C34.5805 10.051 34.6459 10.0981 34.7186 10.1311C34.7913 10.164 34.8698 10.1822 34.9496 10.1846C35.0294 10.1869 35.1089 10.1733 35.1834 10.1446C35.2579 10.1159 35.3259 10.0727 35.3835 10.0175C35.4411 9.96222 35.4872 9.89606 35.519 9.82284C35.5507 9.74963 35.5677 9.67081 35.5687 9.591C35.5697 9.51118 35.5548 9.43196 35.5249 9.35795C35.4951 9.28394 35.4507 9.21662 35.3946 9.15991C32.8325 6.4836 29.5279 4.6356 25.9063 3.85393C22.2848 3.07225 18.5121 3.3927 15.0743 4.77399C11.6364 6.15529 8.69085 8.53418 6.61689 11.6043C4.54294 14.6744 3.4356 18.295 3.43749 22ZM39.6863 16.3584C39.4696 15.6802 39.2138 15.0152 38.9201 14.3667C38.8874 14.2947 38.841 14.2299 38.7833 14.1759C38.7256 14.1219 38.6579 14.0798 38.5839 14.052C38.51 14.0242 38.4313 14.0112 38.3523 14.0138C38.2734 14.0164 38.1957 14.0345 38.1238 14.0671C38.0518 14.0997 37.987 14.1462 37.933 14.2039C37.879 14.2615 37.8369 14.3293 37.809 14.4032C37.7812 14.4772 37.7682 14.5559 37.7708 14.6348C37.7734 14.7138 37.7916 14.7914 37.8242 14.8634C38.0985 15.4693 38.3376 16.0906 38.5402 16.7241C38.5634 16.8004 38.6015 16.8713 38.6523 16.9327C38.7031 16.9941 38.7656 17.0448 38.8362 17.0818C38.9067 17.1189 38.984 17.1415 39.0634 17.1485C39.1428 17.1554 39.2227 17.1465 39.2987 17.1223C39.3746 17.098 39.4449 17.059 39.5056 17.0073C39.5663 16.9557 39.6162 16.8925 39.6522 16.8214C39.6883 16.7503 39.7099 16.6728 39.7157 16.5933C39.7216 16.5138 39.7116 16.434 39.6863 16.3584ZM25.0295 13.3633H18.9709C18.3555 13.3633 17.7653 13.1188 17.3302 12.6837C16.895 12.2485 16.6506 11.6584 16.6506 11.043C16.6506 10.4276 16.895 9.8374 17.3302 9.40226C17.7653 8.96712 18.3555 8.72266 18.9709 8.72266H25.0295C25.6448 8.72266 26.235 8.96712 26.6702 9.40226C27.1053 9.8374 27.3498 10.4276 27.3498 11.043C27.3498 11.6584 27.1053 12.2485 26.6702 12.6837C26.235 13.1188 25.6448 13.3633 25.0295 13.3633ZM25.0295 9.92578H18.9709C18.6746 9.92578 18.3904 10.0435 18.1809 10.253C17.9714 10.4625 17.8537 10.7467 17.8537 11.043C17.8537 11.3393 17.9714 11.6234 18.1809 11.8329C18.3904 12.0425 18.6746 12.1602 18.9709 12.1602H25.0295C25.3258 12.1602 25.6099 12.0425 25.8194 11.8329C26.0289 11.6234 26.1466 11.3393 26.1466 11.043C26.1466 10.7467 26.0289 10.4625 25.8194 10.253C25.6099 10.0435 25.3258 9.92578 25.0295 9.92578ZM24.3203 30.6367V20.2438H25.0295C25.6448 20.2438 26.235 19.9993 26.6702 19.5642C27.1053 19.129 27.3498 18.5389 27.3498 17.9235C27.3498 17.3081 27.1053 16.7179 26.6702 16.2828C26.235 15.8476 25.6448 15.6032 25.0295 15.6032H18.9709C18.3555 15.6032 17.7653 15.8476 17.3302 16.2828C16.895 16.7179 16.6506 17.3081 16.6506 17.9235C16.6506 18.5389 16.895 19.129 17.3302 19.5642C17.7653 19.9993 18.3555 20.2438 18.9709 20.2438H19.6797V30.6367H18.9709C18.8113 30.6367 18.6583 30.7001 18.5455 30.8129C18.4327 30.9257 18.3693 31.0787 18.3693 31.2383C18.3693 31.3978 18.4327 31.5508 18.5455 31.6636C18.6583 31.7765 18.8113 31.8398 18.9709 31.8398H20.2812C20.3602 31.8399 20.4385 31.8244 20.5115 31.7941C20.5845 31.7639 20.6508 31.7196 20.7067 31.6638C20.7626 31.6079 20.8069 31.5415 20.8371 31.4685C20.8673 31.3955 20.8828 31.3173 20.8828 31.2383V19.6422C20.8828 19.5632 20.8673 19.485 20.8371 19.412C20.8069 19.339 20.7626 19.2726 20.7067 19.2167C20.6508 19.1609 20.5845 19.1166 20.5115 19.0864C20.4385 19.0561 20.3602 19.0406 20.2812 19.0407H18.9709C18.6746 19.0407 18.3904 18.923 18.1809 18.7134C17.9714 18.5039 17.8537 18.2198 17.8537 17.9235C17.8537 17.6272 17.9714 17.343 18.1809 17.1335C18.3904 16.924 18.6746 16.8063 18.9709 16.8063H25.0295C25.3258 16.8063 25.6099 16.924 25.8194 17.1335C26.0289 17.343 26.1466 17.6272 26.1466 17.9235C26.1466 18.2198 26.0289 18.5039 25.8194 18.7134C25.6099 18.923 25.3258 19.0407 25.0295 19.0407H23.7187C23.5592 19.0407 23.4062 19.104 23.2934 19.2169C23.1806 19.3297 23.1172 19.4827 23.1172 19.6422V31.2383C23.1172 31.3978 23.1806 31.5508 23.2934 31.6636C23.4062 31.7765 23.5592 31.8398 23.7187 31.8398H25.0295C25.3258 31.8398 25.6099 31.9575 25.8194 32.1671C26.0289 32.3766 26.1466 32.6607 26.1466 32.957C26.1466 33.2533 26.0289 33.5375 25.8194 33.747C25.6099 33.9565 25.3258 34.0742 25.0295 34.0742H18.9709C18.8113 34.0742 18.6583 34.1376 18.5455 34.2504C18.4327 34.3632 18.3693 34.5162 18.3693 34.6758C18.3693 34.8353 18.4327 34.9883 18.5455 35.1012C18.6583 35.214 18.8113 35.2773 18.9709 35.2773H25.0295C25.6448 35.2773 26.235 35.0329 26.6702 34.5977C27.1053 34.1626 27.3498 33.5724 27.3498 32.957C27.3498 32.3416 27.1053 31.7515 26.6702 31.3163C26.235 30.8812 25.6448 30.6367 25.0295 30.6367H24.3203Z"
@@ -456,25 +448,17 @@
             <defs>
             </defs>
         </svg>Голосовые приветствия, голосовое меню, запись IVR</span>  <br class="br-ad-golos">
-        <span class="example-block-elem">
-          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M22 0C26.3512 0 30.6047 1.29028 34.2225 3.70767C37.8404 6.12506 40.6602 9.56099 42.3253 13.581C43.9905 17.6009 44.4261 22.0244 43.5773 26.292C42.7284 30.5596 40.6331 34.4796 37.5563 37.5564C34.4796 40.6331 30.5596 42.7284 26.292 43.5773C22.0244 44.4261 17.6009 43.9905 13.581 42.3253C9.56098 40.6602 6.12505 37.8404 3.70766 34.2225C1.29027 30.6047 -1.14441e-05 26.3512 -1.14441e-05 22C0.00653935 16.1672 2.32649 10.5753 6.45087 6.45089C10.5753 2.32651 16.1672 0.0065508 22 0ZM22 42.7969C26.1132 42.7969 30.1341 41.5772 33.5541 39.292C36.9741 37.0068 39.6397 33.7588 41.2138 29.9586C42.7879 26.1585 43.1997 21.9769 42.3973 17.9427C41.5948 13.9085 39.6141 10.2029 36.7056 7.29439C33.7971 4.38589 30.0915 2.40518 26.0573 1.60273C22.0231 0.800279 17.8415 1.21213 14.0414 2.78619C10.2412 4.36026 6.99321 7.02585 4.70802 10.4459C2.42283 13.8659 1.20311 17.8868 1.20311 22C1.20939 27.5137 3.4025 32.7999 7.30131 36.6987C11.2001 40.5975 16.4862 42.7906 22 42.7969ZM3.43749 22C3.43749 26.9231 5.39317 31.6445 8.87432 35.1257C12.3555 38.6068 17.0769 40.5625 22 40.5625C26.9231 40.5625 31.6445 38.6068 35.1257 35.1257C38.6068 31.6445 40.5625 26.9231 40.5625 22C40.5625 21.8405 40.4991 21.6874 40.3863 21.5746C40.2735 21.4618 40.1205 21.3984 39.9609 21.3984C39.8014 21.3984 39.6484 21.4618 39.5356 21.5746C39.4227 21.6874 39.3594 21.8405 39.3594 22C39.3637 26.0374 37.9623 29.9503 35.3958 33.0669C32.8292 36.1835 29.2576 38.3093 25.2943 39.0792C21.331 39.8492 17.2233 39.2152 13.6766 37.2862C10.1298 35.3572 7.36529 32.2536 5.85775 28.5082C4.35021 24.7628 4.1937 20.6095 5.4151 16.7612C6.63649 12.913 9.15957 9.61014 12.5511 7.4197C15.9426 5.22926 19.991 4.28796 24.001 4.75744C28.011 5.22691 31.7324 7.07787 34.5262 9.99247C34.5805 10.051 34.6459 10.0981 34.7186 10.1311C34.7913 10.164 34.8698 10.1822 34.9496 10.1846C35.0294 10.1869 35.1089 10.1733 35.1834 10.1446C35.2579 10.1159 35.3259 10.0727 35.3835 10.0175C35.4411 9.96222 35.4872 9.89606 35.519 9.82284C35.5507 9.74963 35.5677 9.67081 35.5687 9.591C35.5697 9.51118 35.5548 9.43196 35.5249 9.35795C35.4951 9.28394 35.4507 9.21662 35.3946 9.15991C32.8325 6.4836 29.5279 4.6356 25.9063 3.85393C22.2848 3.07225 18.5121 3.3927 15.0743 4.77399C11.6364 6.15529 8.69085 8.53418 6.61689 11.6043C4.54294 14.6744 3.4356 18.295 3.43749 22ZM39.6863 16.3584C39.4696 15.6802 39.2138 15.0152 38.9201 14.3667C38.8874 14.2947 38.841 14.2299 38.7833 14.1759C38.7256 14.1219 38.6579 14.0798 38.5839 14.052C38.51 14.0242 38.4313 14.0112 38.3523 14.0138C38.2734 14.0164 38.1957 14.0345 38.1238 14.0671C38.0518 14.0997 37.987 14.1462 37.933 14.2039C37.879 14.2615 37.8369 14.3293 37.809 14.4032C37.7812 14.4772 37.7682 14.5559 37.7708 14.6348C37.7734 14.7138 37.7916 14.7914 37.8242 14.8634C38.0985 15.4693 38.3376 16.0906 38.5402 16.7241C38.5634 16.8004 38.6015 16.8713 38.6523 16.9327C38.7031 16.9941 38.7656 17.0448 38.8362 17.0818C38.9067 17.1189 38.984 17.1415 39.0634 17.1485C39.1428 17.1554 39.2227 17.1465 39.2987 17.1223C39.3746 17.098 39.4449 17.059 39.5056 17.0073C39.5663 16.9557 39.6162 16.8925 39.6522 16.8214C39.6883 16.7503 39.7099 16.6728 39.7157 16.5933C39.7216 16.5138 39.7116 16.434 39.6863 16.3584ZM25.0295 13.3633H18.9709C18.3555 13.3633 17.7653 13.1188 17.3302 12.6837C16.895 12.2485 16.6506 11.6584 16.6506 11.043C16.6506 10.4276 16.895 9.8374 17.3302 9.40226C17.7653 8.96712 18.3555 8.72266 18.9709 8.72266H25.0295C25.6448 8.72266 26.235 8.96712 26.6702 9.40226C27.1053 9.8374 27.3498 10.4276 27.3498 11.043C27.3498 11.6584 27.1053 12.2485 26.6702 12.6837C26.235 13.1188 25.6448 13.3633 25.0295 13.3633ZM25.0295 9.92578H18.9709C18.6746 9.92578 18.3904 10.0435 18.1809 10.253C17.9714 10.4625 17.8537 10.7467 17.8537 11.043C17.8537 11.3393 17.9714 11.6234 18.1809 11.8329C18.3904 12.0425 18.6746 12.1602 18.9709 12.1602H25.0295C25.3258 12.1602 25.6099 12.0425 25.8194 11.8329C26.0289 11.6234 26.1466 11.3393 26.1466 11.043C26.1466 10.7467 26.0289 10.4625 25.8194 10.253C25.6099 10.0435 25.3258 9.92578 25.0295 9.92578ZM24.3203 30.6367V20.2438H25.0295C25.6448 20.2438 26.235 19.9993 26.6702 19.5642C27.1053 19.129 27.3498 18.5389 27.3498 17.9235C27.3498 17.3081 27.1053 16.7179 26.6702 16.2828C26.235 15.8476 25.6448 15.6032 25.0295 15.6032H18.9709C18.3555 15.6032 17.7653 15.8476 17.3302 16.2828C16.895 16.7179 16.6506 17.3081 16.6506 17.9235C16.6506 18.5389 16.895 19.129 17.3302 19.5642C17.7653 19.9993 18.3555 20.2438 18.9709 20.2438H19.6797V30.6367H18.9709C18.8113 30.6367 18.6583 30.7001 18.5455 30.8129C18.4327 30.9257 18.3693 31.0787 18.3693 31.2383C18.3693 31.3978 18.4327 31.5508 18.5455 31.6636C18.6583 31.7765 18.8113 31.8398 18.9709 31.8398H20.2812C20.3602 31.8399 20.4385 31.8244 20.5115 31.7941C20.5845 31.7639 20.6508 31.7196 20.7067 31.6638C20.7626 31.6079 20.8069 31.5415 20.8371 31.4685C20.8673 31.3955 20.8828 31.3173 20.8828 31.2383V19.6422C20.8828 19.5632 20.8673 19.485 20.8371 19.412C20.8069 19.339 20.7626 19.2726 20.7067 19.2167C20.6508 19.1609 20.5845 19.1166 20.5115 19.0864C20.4385 19.0561 20.3602 19.0406 20.2812 19.0407H18.9709C18.6746 19.0407 18.3904 18.923 18.1809 18.7134C17.9714 18.5039 17.8537 18.2198 17.8537 17.9235C17.8537 17.6272 17.9714 17.343 18.1809 17.1335C18.3904 16.924 18.6746 16.8063 18.9709 16.8063H25.0295C25.3258 16.8063 25.6099 16.924 25.8194 17.1335C26.0289 17.343 26.1466 17.6272 26.1466 17.9235C26.1466 18.2198 26.0289 18.5039 25.8194 18.7134C25.6099 18.923 25.3258 19.0407 25.0295 19.0407H23.7187C23.5592 19.0407 23.4062 19.104 23.2934 19.2169C23.1806 19.3297 23.1172 19.4827 23.1172 19.6422V31.2383C23.1172 31.3978 23.1806 31.5508 23.2934 31.6636C23.4062 31.7765 23.5592 31.8398 23.7187 31.8398H25.0295C25.3258 31.8398 25.6099 31.9575 25.8194 32.1671C26.0289 32.3766 26.1466 32.6607 26.1466 32.957C26.1466 33.2533 26.0289 33.5375 25.8194 33.747C25.6099 33.9565 25.3258 34.0742 25.0295 34.0742H18.9709C18.8113 34.0742 18.6583 34.1376 18.5455 34.2504C18.4327 34.3632 18.3693 34.5162 18.3693 34.6758C18.3693 34.8353 18.4327 34.9883 18.5455 35.1012C18.6583 35.214 18.8113 35.2773 18.9709 35.2773H25.0295C25.6448 35.2773 26.235 35.0329 26.6702 34.5977C27.1053 34.1626 27.3498 33.5724 27.3498 32.957C27.3498 32.3416 27.1053 31.7515 26.6702 31.3163C26.235 30.8812 25.6448 30.6367 25.0295 30.6367H24.3203Z"
-              fill="#94a0b0">
-              <defs>
-              </defs>
-          </svg><span class="golos" >Голосовые приветствия, голосовое меню, запись IVR</span>
       </span>
       </span>
+
       <div class="container-playlist">
-<div class="playlist-element">
+
+          <div class="playlist-element first-elem music">
           <span class="txt-visa-free">BELARUS VISA-FREE</span>
     
           <img src="img/icons/iconI-blue.svg" alt="" class="icon-playlist">
           <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
-          <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ
-          
-            <img src="img/icons/download.svg" alt="">
+          <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ <span class="downloadicon"></span>
           </a>
     <section class="player audio-playlist" id="audio-stick-play">
     <div class="details">
@@ -484,7 +468,7 @@
       <div class="track-artist1"></div>
     </div>
     <div class="buttons">
-      <div class="playpause-track1 playpause-audio" onclick="playpauseTrack1()"><img src="img/play.png"></div>
+      <div id="play1" class="play-track" data-sound="mp3/music1.mp3" onclick="playpauseTrack1()"></div>
     </div>
     <div class="slider_container">
       <input type="range" id="audio-player" min="1" max="100" value="100" class="seek_slider1" onchange="seekTo1()">
@@ -504,13 +488,13 @@
 
     
 </div>
-<div class="playlist-element sec-elem">
-          <span class="txt-visa-free">BELARUS VISA-FREE</span>
+<div class="playlist-element first-elem music">
+          <span class="txt-visa-free">Info-music</span>
 
           <img src="img/icons/iconI-blue.svg" alt="" class="icon-playlist">
           <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
           <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ
-            <img src="img/icons/download.svg" alt="">
+            <span class="downloadicon"></span>
           </a>
     <section class="player audio-playlist" id="audio-stick-play">
     <div class="details">
@@ -520,7 +504,7 @@
       <div class="track-artist2"></div>
     </div>
     <div class="buttons">
-      <div class="playpause-track2 playpause-audio" onclick="playpauseTrack2()"><img src="img/play.png"></div>
+      <div id="play2" class="play-track" data-sound="mp3/music2.mp3" onclick="playpauseTrack2()"></div>
     </div>
     <div class="slider_container">
       <input type="range" id="audio-player" min="1" max="100" value="100" class=" seek_slider2" onchange="seekTo2()">
@@ -538,11 +522,12 @@
 
     
 </div>
-<div class="playlist-element third-elem">
-  <span class="txt-visa-free">BELARUS VISA-FREE</span>
+<div class="playlist-element first-elem music">
+  <span class="txt-visa-free">Advertisment</span>
   <img src="img/icons/iconI-blue.svg" alt="" class="icon-playlist">
   <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
-  <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ <img src="img/icons/download.svg" alt="">
+  <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ 
+    <span class="downloadicon"></span>
   </a>
 <section class="player audio-playlist" id="audio-stick-play">
 <div class="details">
@@ -552,7 +537,7 @@
 <div class="track-artist3"></div>
 </div>
 <div class="buttons">
-<div class="playpause-track3 playpause-audio" onclick="playpauseTrack3()"><img src="img/play.png"></div>
+<div id="play3" class="play-track" data-sound="mp3/music1.mp3" onclick="playpauseTrack3()"></div>
 </div>
 <div class="slider_container">
 <input type="range"  min="1" max="100" value="100" class="seek_slider3" onchange="seekTo3()">
@@ -570,11 +555,12 @@ onchange="setVolume3()">
 
 
 </div>
-<div class="playlist-element">
-  <span class="txt-visa-free">BELARUS VISA-FREE</span>
+<div class="playlist-element sec-elem ivr">
+  <span class="txt-visa-free">Voice greeting</span>
   <img src="img/icons/iconI-blue.svg" alt="" class="icon-playlist">
   <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
-  <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ <img src="img/icons/download.svg" alt="">
+  <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ
+    <span class="downloadicon"></span>
   </a>
 <section class="player audio-playlist" id="audio-stick-play">
 <div class="details">
@@ -584,7 +570,7 @@ onchange="setVolume3()">
 <div class="track-artist4"></div>
 </div>
 <div class="buttons">
-<div class="playpause-track4 playpause-audio" onclick="playpauseTrack4()"><img src="img/play.png"></div>
+<div id="play4" class="play-track" data-sound="mp3/music2.mp3" onclick="playpauseTrack4()"></div>
 </div>
 <div class="slider_container">
 <input type="range"  min="1" max="100" value="100" class="seek_slider4" onchange="seekTo4()">
@@ -602,11 +588,12 @@ onchange="setVolume4()">
 
 
 </div>
-<div class="playlist-element sec-elem">
-  <span class="txt-visa-free">BELARUS VISA-FREE</span>
+<div class="playlist-element sec-elem ivr">
+  <span class="txt-visa-free">Voice-menu</span>
   <img src="img/icons/iconI-blue.svg" alt="" class="icon-playlist">
   <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
-  <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ <img src="img/icons/download.svg" alt="">
+  <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ 
+    <span class="downloadicon"></span>
   </a>
 <section class="player audio-playlist" id="audio-stick-play">
 <div class="details">
@@ -616,7 +603,7 @@ onchange="setVolume4()">
 <div class="track-artist5"></div>
 </div>
 <div class="buttons">
-<div class="playpause-track5 playpause-audio" onclick="playpauseTrack5()"><img src="img/play.png"></div>
+<div id="play5" class="play-track" data-sound="mp3/music2.mp3" onclick="playpauseTrack5()"></div>
 </div>
 <div class="slider_container">
 <input type="range"  min="1" max="100" value="100" class="seek_slider5" onchange="seekTo5()">
@@ -634,11 +621,12 @@ onchange="setVolume5()">
 
 
 </div>
-<div class="playlist-element third-elem">
-  <span class="txt-visa-free">BELARUS VISA-FREE</span>
+<div class="playlist-element sec-elem ivr">
+  <span class="txt-visa-free">IVR record</span>
   <img src="img/icons/iconI-blue.svg" alt="" class="icon-playlist">
   <p class="voices-people"><b>Голоса:</b><br> Ярошенко Лара, Андрющенко Полина 5 лет </p>
-  <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ <img src="img/icons/download.svg" alt="">
+  <a download href="/silaFM/mp3/music1.mp3" class="btn-download">СКАЧАТЬ 
+    <span class="downloadicon"></span>
   </a>
 <section class="player audio-playlist" id="audio-stick-play">
 <div class="details">
@@ -648,7 +636,7 @@ onchange="setVolume5()">
 <div class="track-artist6"></div>
 </div>
 <div class="buttons">
-<div class="playpause-track6 playpause-audio" onclick="playpauseTrack6()"><img src="img/play.png"></div>
+<div id="play6" class="play-track" data-sound="mp3/music1.mp3" onclick="playpauseTrack6()"></div>
 </div>
 <div class="slider_container">
 <input type="range"  min="1" max="100" value="100" class="seek_slider6" onchange="seekTo6()">
@@ -690,83 +678,108 @@ onchange="setVolume6()">
     </div>
   </section>
   <footer>
-    <a class="box-btn-over" href="#1"><button class="btn-over">
-  
-        <img src="img/icons/arr-up-white.svg" alt="">
-      </button></a>
-    <div class="footer-flex">
-      <div class="footer-element">
-        <hr>
-        <h5>НАШИ ПРИНЦИПЫ</h5>
-        <p>Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач,
-          достигая, тем самым, высокого качкства наших услуг</p>
-        <div class="for-adaptive"> <br>
-          <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
-          <br>
-          <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
-          <br>
-          <p>Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач,
-            достигая.</p>
-        </div>
-        <span id="dots"></span><span id="more">
-          <br>
-          <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
-          <br>
-          <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
-          <br>
-          <p>Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач,
-            достигая.</p>
-        </span>
-        <div class="see-more">
-          <button onclick="seemore()" id="myBtn">ЕЩЕ
-          </button></div>
-      </div>
-     
-      <div class="footer-element element-items">
-        <hr>
-        <h5>ГРАФИК РАБОТЫ</h5>
-        <p class="text-element">По будним дням: 09:00 - 23:00<br>
-          По субботам: 10:00 - 15:00<br>
-          Выходные: воскресенье</p>
-        <hr>
-        <h5>КОНТАКТЫ</h5>
-        <p class="text-element for-botton-icon">В Москве: +7(495) 545 45 13<br>
-          В России: +7(800) 551 0 551<br>
-          В Украине: +38(044) 545 77 13</p>
-          <div class="svg-boxes">
-            <a href="">
-          <img src="img/icons/letter.svg" alt="">
-             </a>
-             <a href=""> 
-          
-            <img src="img/icons/viber.svg" alt="">
-          </a>
-          <a href=""> 
-           <img src="img/icons/telegram.svg" alt="">
-          </a>
-          <a href="">
-           <img src="img/icons/skype.svg" alt="">
-            </a>
-          </div>
-      </div>
-      <div class="footer-element">
-        <hr>
-        <h5>ПОЧТОВЫЙ АДРЕС</h5>
-        <p>г. Москва, пер. Электрический д.12, помещение II, комн.6
-          <br> г. Киев, ул. Немиовича-Данченко 87</p>
-        <hr>
-        <h5>СОТРУДНИЧЕСТВО</h5>
-        <p>По вопросам сотрудничества ждем ваше резюме по почте или заполните нашу анкету</p>
-        <button class="footer-btn">ЗАПОЛНИТЬ АНКЕТУ<svg width="11" height="17" viewBox="0 0 11 17" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.73931 2.65887L8.53919 8.62078L2.66678 14.3337L2.73931 2.65887Z" stroke="white"
-              stroke-width="1.5" />
-          </svg>
-        </button>
-      </div>
+    <a class="box-btn-over" href="#1"><button class="btn-over"><svg width="17" height="12" viewBox="0 0 17 12"
+      fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2.80438 8.5268L8.76629 2.72692L14.4792 8.59933L2.80438 8.5268Z" stroke="white"
+        stroke-width="1.5" />
+    </svg>
+  </button></a>
+<div class="footer-flex">
+  <div class="footer-element">
+    <hr>
+    <h5>НАШИ ПРИНЦИПЫ</h5>
+    <p>Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач,
+      достигая, тем самым, высокого качкства наших услуг</p>
+    <div class="for-adaptive"> <br>
+      <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
+      <br>
+      <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
+      <br>
+      <p>Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач,
+        достигая.</p>
     </div>
-    <hr class="footer-hr">
-    <p class="copyright">© 2020 SILA.FM. Все права защищены.</p>
+    <span id="dots"></span><span id="more">
+      <br>
+      <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
+      <br>
+      <p>Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.</p>
+      <br>
+      <p>Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач,
+        достигая.</p>
+    </span>
+    <div class="see-more">
+      <button onclick="seemore()" id="myBtn">ЕЩЕ
+      </button></div>
+  </div>
+  <div class="footer-element element-items">
+    <hr>
+    <h5>ГРАФИК РАБОТЫ</h5>
+    <p class="text-element">По будним дням: 09:00 - 23:00<br>
+      По субботам: 10:00 - 15:00<br>
+      Выходные: воскресенье</p>
+    <hr>
+    <h5>КОНТАКТЫ</h5>
+    <p class="text-element for-botton-icon">В Москве: <a href="+74955454513">+7(495) 545 45 13</a><br>
+      В России: <a href="+78005510551">+7(800) 551 0 551</a><br>
+      В Украине: <a href="+380445457713">+38(044) 545 77 13</a></p>
+    <div class="svg-boxes">
+      <a href="">
+      <svg width="22" height="19" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20.0667 0.624023H1.93386C1.63622 0.624023 1.35757 0.697199 1.10547 0.817813L10.9573 10.6696L13.1654 8.54755L20.8954 0.817984C20.6432 0.697285 20.3644 0.624023 20.0667 0.624023Z"
+          fill="white" />
+        <path
+          d="M21.8061 1.72949L14.5322 9.00299L21.8058 16.2766C21.9265 16.0245 21.9996 15.7459 21.9996 15.4482V2.55759C21.9996 2.26011 21.9266 1.9815 21.8061 1.72949Z"
+          fill="white" />
+        <path
+          d="M0.193789 1.72949C0.0731758 1.98159 0 2.26024 0 2.55789V15.4485C0 15.746 0.0730898 16.0247 0.193617 16.2767L7.4675 9.0032L0.193789 1.72949Z"
+          fill="white" />
+        <path
+          d="M13.6208 9.91415L11.4124 12.0365C11.2865 12.1624 11.1215 12.2254 10.9567 12.2254C10.7918 12.2254 10.6268 12.1624 10.501 12.0365L8.3785 9.91406L1.10449 17.1876C1.35663 17.3083 1.63546 17.3816 1.93319 17.3816H20.066C20.3636 17.3816 20.6423 17.3084 20.8944 17.1878L13.6208 9.91415Z"
+          fill="white" />
+      </svg>
+       </a>
+       <a href=""> 
+      <svg width="21" height="21" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M15.7333 0.00292969H5.25C2.36667 0.00292969 0 2.3696 0 5.2696V15.7529C0 18.6363 2.36667 21.0029 5.25 21.0029H15.7333C18.6333 21.0029 21 18.6363 21 15.7363V5.2696C21 2.3696 18.6333 0.00292969 15.7333 0.00292969ZM9.93333 4.3196C9.96667 3.80293 10.45 3.98626 10.7 3.95293C13.8333 4.05293 16.5333 6.8696 16.5 9.90293C16.5 10.2029 16.6 10.6363 16.15 10.6363C15.7167 10.6363 15.8333 10.1863 15.7833 9.88626C15.3667 6.6696 13.8667 5.15293 10.6 4.65293C10.3333 4.6196 9.91667 4.6696 9.93333 4.3196ZM14.6167 10.0363C14.1167 10.1029 14.2167 9.6696 14.1667 9.38626C13.8333 7.4196 13.1333 6.70293 11.1167 6.2696C10.8167 6.20293 10.35 6.25293 10.4333 5.80293C10.5 5.3696 10.9167 5.5196 11.2333 5.55293C13.25 5.78626 14.9 7.50293 14.8833 9.38626C14.85 9.58626 14.9833 9.9696 14.6167 10.0363ZM13.3667 9.00293C13.3667 9.2696 13.3333 9.5196 13.0333 9.55293C12.8167 9.58626 12.6833 9.40293 12.65 9.18626C12.5667 8.38626 12.1333 7.90293 11.3 7.7696C11.05 7.73626 10.8167 7.65293 10.9333 7.3196C11.0167 7.10293 11.2167 7.0696 11.4333 7.0696C12.3333 7.05293 13.3667 8.10293 13.3667 9.00293ZM16.5333 15.1529C16.1833 16.1029 15 17.0696 13.9833 17.0529C13.8333 17.0196 13.55 16.9696 13.3 16.8696C8.83333 14.9863 5.58333 11.8863 3.75 7.45293C3.13333 5.9696 3.78333 4.70293 5.33333 4.20293C5.61667 4.10293 5.88333 4.10293 6.16667 4.20293C6.83333 4.43626 8.51667 6.7196 8.55 7.38626C8.58333 7.90293 8.21667 8.18626 7.86667 8.4196C7.18333 8.8696 7.18333 9.43626 7.48333 10.0863C8.13333 11.5196 9.25 12.5196 10.7 13.1529C11.2167 13.3863 11.7333 13.3696 12.0833 12.8363C12.7167 11.8863 13.5 11.9363 14.35 12.5196C14.7833 12.8196 15.2167 13.1029 15.6167 13.4196C16.1667 13.8696 16.8667 14.2363 16.5333 15.1529Z"
+          fill="white" />
+      </svg>
+    </a>
+    <a href=""> 
+      <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M5.29355 11.5386L8.02979 18.3786L11.592 14.8164L17.6996 19.6709L22 0.334961L0 9.49872L5.29355 11.5386ZM15.7135 5.88263L8.97963 12.0246L8.1409 15.1857L6.59151 11.3115L15.7135 5.88263Z"
+          fill="white" />
+      </svg>
+    </a>
+    <a href="">
+      <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M21.3666 13.3369C22.9598 6.17772 16.6879 -0.326034 9.3225 0.922466C5.324 -1.55895 0 1.24513 0 6.00263C0 7.10905 0.30525 8.14488 0.836 9.03772C-0.644417 16.2134 5.67875 22.6236 13.0378 21.2899C18.2398 24.0408 23.9883 18.5546 21.3666 13.3369ZM14.3651 17.6544C12.4328 18.4491 9.25283 18.4537 7.32875 17.4463C4.58517 15.9833 4.0975 12.6897 6.46433 12.6897C8.24817 12.6897 7.6835 14.7696 9.48475 15.6175C10.3116 15.9998 12.089 16.0392 13.1221 15.3426C14.1423 14.6596 14.0488 13.5853 13.4943 13.072C12.0248 11.7153 7.82008 12.2543 5.89783 9.87922C5.06275 8.84888 4.90508 7.03113 5.93175 5.71297C7.72108 3.4103 12.9718 3.27005 15.2295 5.00897C17.314 6.6223 16.7512 8.76363 15.0691 8.76363C13.046 8.76363 14.1093 6.1163 10.8433 6.1163C8.4755 6.1163 7.54417 7.80022 9.21158 8.61972C11.4721 9.74263 17.2324 9.36772 17.2324 13.7558C17.2278 15.5818 16.1086 16.9431 14.3651 17.6544Z"
+          fill="white" />
+      </svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer-element">
+    <hr>
+    <h5>ПОЧТОВЫЙ АДРЕС</h5>
+    <p>г. Москва, пер. Электрический д.12, помещение II, комн.6
+      <br> г. Киев, ул. Немиовича-Данченко 87</p>
+    <hr>
+    <h5>СОТРУДНИЧЕСТВО</h5>
+    <p>По вопросам сотрудничества ждем ваше резюме по почте или заполните нашу анкету</p>
+    <button class="footer-btn">ЗАПОЛНИТЬ АНКЕТУ<svg width="11" height="17" viewBox="0 0 11 17" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.73931 2.65887L8.53919 8.62078L2.66678 14.3337L2.73931 2.65887Z" stroke="white"
+          stroke-width="1.5" />
+      </svg>
+    </button>
+  </div>
+</div>
+<hr class="footer-hr">
+<p class="copyright">© 2020 SILA.FM. Все права защищены.</p>
   </footer>
 
 </main>

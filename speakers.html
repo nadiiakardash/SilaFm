@@ -16,100 +16,81 @@
 <body>
 
     <header>
-        <img onclick="window.location.href='/silaFM/index.html'" class="menu-logo" src="img/SilaFM_logo.png"
-            alt="logotip-Sila-FM">
+        <img class="menu-logo" src="img/SilaFM_logo.png" alt="logotip-Sila-FM">
         <ul class="menu">
-            <div class="menu-dropdown">
-                <li class="menu-item dropbtn active-speakers">
-                    <svg class="menu-polygon" width="16" height="18" viewBox="0 0 11 12" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#671627"
-                            stroke-width="1.5">
-                    </svg>
-                    <hr class="hr-underspeak">ДИКТОРЫ
-                    <div class="dropdown-content">
-                        <svg class="dropsvg" width="16" height="18" viewBox="0 0 16 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.98529 14.2265L9.98525 5.90892L1.7924 5.90889L9.98529 14.2265Z" stroke="#671627"
-                                stroke-width="1.5" />
-                        </svg>
-                        <ul class="content-items">
-                            <li class="down-item">ДИКТОРЫ РОССИИ</li>
-                            <li class="down-item">ДИКТОРЫ УКРАИНЫ</li>
-                            <li class="down-item">ИНОСТРАННЫЕ ДИКТОРЫ</li>
-                            <li class="down-item">ВОКАЛИСТЫ</li>
-                            <li class="down-item">ПАРОДИСТЫ</li>
-                            <li class="down-item">ДЕТСКИЕ ГОЛОСА</li>
-                        </ul>
-                    </div>
-                </li>
-            </div>
-
-            <li onclick="window.location.href='/silaFM/audio-page/audio.html'" class="menu-item">
-                <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#671627"
-                        stroke-width="1.5" />
-                </svg>
-                УСЛУГИ</li>
-            <li onclick="window.location.href='/silaFM/pay-page/pay.html'" class="menu-item">ОПЛАТА</li>
-            <li onclick="window.location.href='/silaFM/contact-page/contact.html'" class="menu-item">КОНТАКТЫ</li>
+          <div class="menu-dropdown">
+            <li class="menu-item dropbtn"><img src="img/icons/menu-poligons.svg" alt=""><a href="speakers.html">ДИКТОРЫ</a></li>
+              <!-- <menu-poligon></menu-poligon> -->
+              
+              <div class="dropdown-content">
+                <ul class="content-items">
+                  <li class="down-item"><a href="#">ДИКТОРЫ РОССИИ</a></li>
+                  <li class="down-item"><a href="#">ДИКТОРЫ УКРАИНЫ</a></li>
+                  <li class="down-item"><a href="#">ИНОСТРАННЫЕ ДИКТОРЫ</a></li>
+                  <li class="down-item"><a href="#">ВОКАЛИСТЫ</a></li>
+                  <li class="down-item"><a href="#">ПАРОДИСТЫ</a></li>
+                  <li class="down-item"><a href="#">ДЕТСКИЕ ГОЛОСА</a></li>
+                </ul>
+              </div>
+            </li>
+          </div>
+    
+          <li class="menu-item"><a href="audio.html"><img src="img/icons/menu-poligon2.svg" alt="" class="menu-poligon2">УСЛУГИ</a></li>
+          <li class="menu-item"><a href="pay.html">ОПЛАТА</a></li>
+          <li class="menu-item"><a href="contact.html">КОНТАКТЫ</a></li>
         </ul>
         <ul class="header-number">
-            <li class="number-city">Киев<span class="phone-number">+38 /044/ 545 77 13</span></li>
-            <li class="number-city">Москва <span class="phone-number">+7 /800/ 551 0 551</span></li>
+          <li class="number-city">Киев<span class="phone-number">+38 /044/ 545 77 13</span></li>
+          <li class="number-city">Москва <span class="phone-number">+7 /800/ 551 0 551</span></li>
         </ul>
         <div class="burger">
-            <div id="myNav" class="overlay">
-                <a class="closebtn" onclick="closeNav()"><svg width="22" height="22" viewBox="0 0 22 22" fill="white"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M21 2.17838L19.8216 1L11 9.82162L2.17838 1L1 2.17838L9.82162 11L1 19.8216L2.17838 21L11 12.1784L19.8216 21L21 19.8216L12.1784 11L21 2.17838Z"
-                            stroke-width="0.5" />
-                    </svg>
-                </a>
-                <div class="overlay-content">
-                    <div class="dropdown-burger">
-                        <a class="for-droptmenu dropbtn-burger"><svg class="menu-polygon-burger" width="16" height="18"
-                                viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z"
-                                    stroke="#FEFEFF" stroke-width="1.5">
-                            </svg>ДИКТОРЫ</a>
-                        <div class="dropdown-content-burger">
-                            <a>ДИКТОРЫ РОССИИ</a>
-                            <a>ДИКТОРЫ УКРАИНЫ</a>
-                            <a>ИНОСТРАННЫЕ ДИКТОРЫ</a>
-                            <a>ВОКАЛИСТЫ</a>
-                            <a>ПАРОДИСТЫ</a>
-                            <a>ДЕТСКИЕ ГОЛОСА</a>
-                        </div>
-                    </div>
-                    <a onclick="window.location.href='/silaFM/audio-page/audio.html'" class="for-droptmenu"> <svg
-                            class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
-                                stroke-width="1.5">
-                        </svg>УСЛУГИ</a>
-                    <a onclick="window.location.href='/silaFM/pay-page/pay.html'">ОПЛАТА</a>
-                    <a onclick="window.location.href='/silaFM/contact-page/contact.html'">КОНТАКТЫ</a>
-
-                    <div class="contacts">
-                        <p class="contact-elem">Киев<span class="phone-number">+38 /044/ 545 77 13</span></p>
-                        <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span></p>
-                    </div>
+          <div id="myNav" class="overlay">
+            <a class="closebtn" onclick="closeNav()">
+              <img src="img/icons/closebntsvg.svg" alt="">
+            </a>
+            <div class="overlay-content">
+              <div class="dropdown-burger">
+                <a class="for-droptmenu dropbtn-burger">
+                  <svg class="menu-polygon-burger" width="16" height="18"
+                    viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
+                      stroke-width="1.5">
+                  </svg>
+                  ДИКТОРЫ</a>
+                <div class="dropdown-content-burger">
+                  <a href="#">ДИКТОРЫ РОССИИ</a>
+                  <a href="#">ДИКТОРЫ УКРАИНЫ</a>
+                  <a href="#">ИНОСТРАННЫЕ ДИКТОРЫ</a>
+                  <a href="#">ВОКАЛИСТЫ</a>
+                  <a href="#">ПАРОДИСТЫ</a>
+                  <a href="#">ДЕТСКИЕ ГОЛОСА</a>
                 </div>
+              </div>
+              <a href='audio.html' class="for-droptmenu"> <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
+                    stroke-width="1.5">
+                </svg>УСЛУГИ</a>
+              <a href='pay.html'>ОПЛАТА</a>
+              <a href='contact.html'>КОНТАКТЫ</a>
+    
+              <div class="contacts">
+                <p class="contact-elem">Киев<span class="phone-number">+38 /044/ 545 77 13</span></p>
+                <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span><p>
+              </div>
             </div>
-            <p class="icon-menu" onclick="openNav()"><svg width="42" height="27" viewBox="0 0 32 17" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <line x1="6" y1="1" x2="32" y2="1" stroke="#404040" stroke-width="2" />
-                    <line x1="6" y1="8.27979" x2="32" y2="8.27979" stroke="#404040" stroke-width="2" />
-                    <line y1="8.27979" x2="4" y2="8.27979" stroke="#A31734" stroke-width="2" />
-                    <line x1="6" y1="15.5601" x2="32" y2="15.5601" stroke="#A31734" stroke-width="2" />
-                    <line y1="1" x2="4" y2="1" stroke="#404040" stroke-width="2" />
-                </svg>
-            </p>
+          </div>
+          <p class="icon-menu" onclick="openNav()"><svg width="42" height="27" viewBox="0 0 32 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line x1="6" y1="1" x2="32" y2="1" stroke="#404040" stroke-width="2" />
+              <line x1="6" y1="8.27979" x2="32" y2="8.27979" stroke="#404040" stroke-width="2" />
+              <line y1="8.27979" x2="4" y2="8.27979" stroke="#A31734" stroke-width="2" />
+              <line x1="6" y1="15.5601" x2="32" y2="15.5601" stroke="#A31734" stroke-width="2" />
+              <line y1="1" x2="4" y2="1" stroke="#404040" stroke-width="2" />
+            </svg>
+          </p>
         </div>
-    </header>
+      </header>
     <main id="menu">
     <section id="1" class="speak-page">
         <div class="home-box-text">
@@ -911,7 +892,7 @@
             <hr class="hr-for-slider">
             <p class="txt-about-us txt-audioslot">ВСЕ Доступные голоса</p>
 
-            <button class=" example-btn-all" data-filter="all" id="all">ВСЕ</button><br class="over-btnall">
+            <button class="example-block-elem example-btn-all" data-filter="all" id="all">ВСЕ</button><br class="over-btnall">
 
             <span class="adaptive-block">
 
@@ -998,13 +979,11 @@
                     <img src="svg/icons/speaker-man.svg" alt="" class="icon-playlist">
                     <p class="voices-people"><b>Мужские голоса</b></p>
                     <a href="pagespeakers.html" class="btn-download">ПЕРЕЙТИ НА СТРАНИЦУ
-                        <!-- <svg width="11" height="17" viewBox="0 0 11 17"
+                        <svg width="11" height="17" viewBox="0 0 11 17"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.73931 2.65887L8.53919 8.62078L2.66678 14.3337L2.73931 2.65887Z" stroke="#C7DEE1"
                                 stroke-width="1.5" />
-                        </svg> -->
-                        <img src="img/play.png" alt="" >
-
+                        </svg>
                     </a>
                 </div>
 
@@ -1067,7 +1046,7 @@
 
                     </a>
                 </div>
-                <div class="playlist-element sec-elem man">
+                <div class="playlist-element sec-elem woman">
                     <span class="txt-visa-free" id="sprakers-stick"style="margin-top: -10px;">Иностранные женские голоса</span>
                     <img src="svg/icons/speak-woman.svg" alt="" class="icon-playlist">
                    
@@ -1224,7 +1203,7 @@
                         <th>Сроки выполнения*</th>
                         <th>Заказать</th>
                     </tr>
-                    <tr onmouseover="speakerHover()" onmouseout="speakerOut()">
+                    <tr>
                         <td id="speaker1" class="play-music">
                             <section id="speaker2" class="player audio-playlist" >
                                 <div class="details">
@@ -1234,8 +1213,7 @@
                                     <div class="track-artist1"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track1 playpause-audio" onclick="playpauseTrack1()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play1" class="play-table" data-sound="mp3/music1.mp3" onclick="playpauseTrack1()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider1"
@@ -1260,8 +1238,7 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="speaker3" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Александров Юрий</td>
+                        <td id="speaker3" class="name-speak"><a href="pagespeakers.html">Александров Юрий</a></td>
                         <td id="speaker4">
                             <div class="in-studio-txt">
                                 <div class="eclips"></div>в студии
@@ -1305,7 +1282,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover2()" onmouseout="speakerOut2()">
+                    <tr>
                         <td id="speaker1s" class="play-music">
                             <section id="speaker2s" class="player audio-playlist">
                                 <div class="details">
@@ -1315,8 +1292,7 @@
                                     <div class="track-artist2"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track2 playpause-audio" onclick="playpauseTrack2()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play2" class="play-table" data-sound="mp3/music2.mp3" onclick="playpauseTrack2()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider2"
@@ -1341,8 +1317,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="speaker3s" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Потапенко Андрей</td>
+                        <td id="speaker3s" 
+                            class="name-speak"><a href="pagespeakers.html">Потапенко Андрей</a></td>
                         <td id="speaker4s">
                             <div class="in-studio-txt for-order">
                                 <div class="eclips for-order-e"></div>под заказ
@@ -1386,7 +1362,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover3()" onmouseout="speakerOut3()">
+                    <tr>
                         <td id="speaker1sp" class="play-music">
                             <section id="speaker2sp" class="player audio-playlist">
                                 <div class="details">
@@ -1396,8 +1372,7 @@
                                     <div class="track-artist3"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track3 playpause-audio" onclick="playpauseTrack3()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play3" class="play-table" data-sound="mp3/music1.mp3" onclick="playpauseTrack3()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider3"
@@ -1422,8 +1397,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="speaker3sp" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Маркус Ольга</td>
+                        <td id="speaker3sp" 
+                            class="name-speak"><a href="pagespeakers.html">Маркус Ольга</a></td>
                         <td id="speaker4sp">
                             <div class="in-studio-txt">
                                 <div class="eclips"></div>в студии
@@ -1467,7 +1442,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover4()" onmouseout="speakerOut4()">
+                    <tr>
                         <td id="speaker1spe" class="adaptive-ta class=" play-music">
                             <section id="speaker2spe" class="player audio-playlist">
                                 <div class="details">
@@ -1477,8 +1452,7 @@
                                     <div class="track-artist4"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track4 playpause-audio" onclick="playpauseTrack4()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play4" class="play-table" data-sound="mp3/music2.mp3" onclick="playpauseTrack4()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider4"
@@ -1503,8 +1477,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="speaker3spe" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Шевченко Олег</td>
+                        <td id="speaker3spe" 
+                            class="name-speak"><a href="pagespeakers.html">Шевченко Олег</a></td>
                         <td id="speaker4spe">
                             <div class="in-studio-txt">
                                 <div class="eclips"></div>в студии
@@ -1548,7 +1522,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover5()" onmouseout="speakerOut5()">
+                    <tr>
                         <td id="speaker1spea" class="play-music">
                             <section id="speaker2spea" class="player audio-playlist">
                                 <div class="details">
@@ -1558,8 +1532,7 @@
                                     <div class="track-artist5"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track5 playpause-audio" onclick="playpauseTrack5()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play5" class="play-table" data-sound="mp3/music1.mp3" onclick="playpauseTrack5()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider5"
@@ -1584,8 +1557,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="speaker3spea" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Орлик Олександра</td>
+                        <td id="speaker3spea" 
+                            class="name-speak"><a href="pagespeakers.html">Орлик Олександра</a></td>
                         <td id="speaker4spea">
                             <div class="in-studio-txt">
                                 <div class="eclips"></div>в студии
@@ -1629,7 +1602,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover6()" onmouseout="speakerOut6()">
+                    <tr>
                         <td id="speakerelem1" class="play-music">
                             <section id="speakerelem2" class="player audio-playlist">
                                 <div class="details">
@@ -1639,8 +1612,7 @@
                                     <div class="track-artist6"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track6 playpause-audio" onclick="playpauseTrack6()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play6" class="play-table" data-sound="mp3/music2.mp3" onclick="playpauseTrack6()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider6"
@@ -1665,8 +1637,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="speakerelem3" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Александров Юрий</td>
+                        <td id="speakerelem3" 
+                            class="name-speak"><a href="pagespeakers.html">Александров Юрий</a></td>
                         <td id="speakerelem8">
                             <div class="in-studio-txt">
                                 <div class="eclips"></div>в студии
@@ -1710,7 +1682,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover7()" onmouseout="speakerOut7()">
+                    <tr>
                         <td id="speakerelem1e" class="play-music">
                             <section id="speakerelem2e" class="player audio-playlist">
                                 <div class="details">
@@ -1720,8 +1692,7 @@
                                     <div class="track-artist7"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track7 playpause-audio" onclick="playpauseTrack7()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play7" class="play-table" data-sound="mp3/music1.mp3" onclick="playpauseTrack7()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider7"
@@ -1746,8 +1717,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="speakerelem3e" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Александров Юрий</td>
+                        <td id="speakerelem3e" 
+                            class="name-speak"><a href="pagespeakers.html">Александров Юрий</a></td>
                         <td id="speakerelem4e">
                             <div class="in-studio-txt">
                                 <div class="eclips"></div>в студии
@@ -1791,7 +1762,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover8()" onmouseout="speakerOut8()">
+                    <tr>
                         <td id="speakerelem1el" class="play-music">
                             <section id="speakerelem2el" class="player audio-playlist">
                                 <div class="details">
@@ -1801,8 +1772,7 @@
                                     <div class="track-artist8"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track8 playpause-audio" onclick="playpauseTrack8()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play8" class="play-table" data-sound="mp3/music2.mp3" onclick="playpauseTrack8()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider8"
@@ -1827,8 +1797,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="speakerelem3el" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Потапенко Андрей</td>
+                        <td id="speakerelem3el" 
+                            class="name-speak"><a href="pagespeakers.html">Потапенко Андрей</a></td>
                         <td id="speakerelem4el">
                             <div class="in-studio-txt for-order">
                                 <div class="eclips for-order-e"></div>под заказ
@@ -1872,7 +1842,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover9()" onmouseout="speakerOut9()">
+                    <tr>
                         <td id="speakerelem1ele" class="play-music">
                             <section id="speakerelem2ele" class="player audio-playlist">
                                 <div class="details">
@@ -1882,8 +1852,7 @@
                                     <div class="track-artist9"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track9 playpause-audio" onclick="playpauseTrack9()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play9" class="play-table" data-sound="mp3/music1.mp3" onclick="playpauseTrack9()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider9"
@@ -1908,8 +1877,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="speakerelem3ele" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Маркус Ольга</td>
+                        <td id="speakerelem3ele" 
+                            class="name-speak"><a href="pagespeakers.html">Маркус Ольга</a></td>
                         <td id="speakerelem4ele">
                             <div class="in-studio-txt">
                                 <div class="eclips"></div>в студии
@@ -1953,7 +1922,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover10()" onmouseout="speakerOut10()">
+                    <tr>
                         <td id="speakerelem1elem" class="play-music">
                             <section id="speakerelem2elem" class="player audio-playlist">
                                 <div class="details">
@@ -1963,8 +1932,7 @@
                                     <div class="track-artist10"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track10 playpause-audio" onclick="playpauseTrack10()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play10" class="play-table" data-sound="mp3/music2.mp3" onclick="playpauseTrack10()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider10"
@@ -1989,8 +1957,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="speakerelem3elem" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Шевченко Олег</td>
+                        <td id="speakerelem3elem" 
+                            class="name-speak"><a href="pagespeakers.html">Шевченко Олег</a></td>
                         <td id="speakerelem4elem">
                             <div class="in-studio-txt">
                                 <div class="eclips"></div>в студии
@@ -2034,7 +2002,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover11()" onmouseout="speakerOut11()">
+                    <tr>
                         <td id="elemsp1" class="play-music">
                             <section id="elemsp2" class="player audio-playlist">
                                 <div class="details">
@@ -2044,8 +2012,7 @@
                                     <div class="track-artist11"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track11 playpause-audio" onclick="playpauseTrack11()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play11" class="play-table" data-sound="mp3/music1.mp3" onclick="playpauseTrack11()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider11"
@@ -2070,8 +2037,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="elemsp3" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Орлик Олександра</td>
+                        <td id="elemsp3" 
+                            class="name-speak"><a href="pagespeakers.html">Орлик Олександра</a></td>
                         <td id="elemsp4">
                             <div class="in-studio-txt">
                                 <div class="eclips"></div>в студии
@@ -2115,7 +2082,7 @@
                                 </defs>
                             </svg></td>
                     </tr>
-                    <tr onmouseover="speakerHover12()" onmouseout="speakerOut12()">
+                    <tr>
                         <td id="elemspe1" class="play-music">
                             <section id="elemspe2" class="player audio-playlist" style="margin-top: 20px;">
                                 <div class="details">
@@ -2125,8 +2092,7 @@
                                     <div class="track-artist12"></div>
                                 </div>
                                 <div class="buttons">
-                                    <div class="playpause-track12 playpause-audio" onclick="playpauseTrack12()"><img
-                                            src="img/table-play.png"></div>
+                                    <div id="play12" class="play-table" data-sound="mp3/music1.mp3" onclick="playpauseTrack12()"></div>
                                 </div>
                                 <div class="slider_container">
                                     <input type="range" min="1" max="100" value="100" class="seek_slider12"
@@ -2151,8 +2117,8 @@
                                 </div>
                             </section>
                         </td>
-                        <td id="elemspe3" onclick="window.location.href='/silaFM/audio-page/pagespeakers.html'"
-                            class="name-speak">Александров Юрий</td>
+                        <td id="elemspe3" 
+                            class="name-speak"><a href="pagespeakers.html">Александров Юрий</a></td>
                         <td id="elemspe4">
                             <div class="in-studio-txt">
                                 <div class="eclips"></div>в студии
@@ -2861,12 +2827,13 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
- 
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
     <script src="js/speakers.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <s type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></s>
 
 
-<script>
+<!-- <s>
     $(document).ready(function(){
   $('.example-block-elem').click(function(){
     var category = $(this).attr('id');
@@ -2891,7 +2858,7 @@ $(document).ready(function(){
     })
   })
 
-</script>
+</s> -->
 
 </body>
 

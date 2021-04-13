@@ -7,93 +7,82 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="/silaFM/index.html"><img class="menu-logo" src="img/SilaFM_logo.png" alt="logotip-Sila-FM"></a>
-        <ul class="menu">
-          <div class="menu-dropdown">
-            <li class="menu-item dropbtn">
-              <svg class="menu-polygon" width="16" height="18" viewBox="0 0 11 12" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#671627"
+  <header>
+    <img class="menu-logo" src="img/SilaFM_logo.png" alt="logotip-Sila-FM">
+    <ul class="menu">
+      <div class="menu-dropdown">
+        <li class="menu-item dropbtn"><img src="img/icons/menu-poligons.svg" alt=""><a href="speakers.html">ДИКТОРЫ</a></li>
+          <!-- <menu-poligon></menu-poligon> -->
+          
+          <div class="dropdown-content">
+            <ul class="content-items">
+              <li class="down-item"><a href="#">ДИКТОРЫ РОССИИ</a></li>
+              <li class="down-item"><a href="#">ДИКТОРЫ УКРАИНЫ</a></li>
+              <li class="down-item"><a href="#">ИНОСТРАННЫЕ ДИКТОРЫ</a></li>
+              <li class="down-item"><a href="#">ВОКАЛИСТЫ</a></li>
+              <li class="down-item"><a href="#">ПАРОДИСТЫ</a></li>
+              <li class="down-item"><a href="#">ДЕТСКИЕ ГОЛОСА</a></li>
+            </ul>
+          </div>
+        </li>
+      </div>
+
+      <li class="menu-item"><a href="audio.html"><img src="img/icons/menu-poligon2.svg" alt="" class="menu-poligon2">УСЛУГИ</a></li>
+      <li class="menu-item"><a href="pay.html">ОПЛАТА</a></li>
+      <li class="menu-item"><a href="contact.html">КОНТАКТЫ</a></li>
+    </ul>
+    <ul class="header-number">
+      <li class="number-city">Киев<span class="phone-number">+38 /044/ 545 77 13</span></li>
+      <li class="number-city">Москва <span class="phone-number">+7 /800/ 551 0 551</span></li>
+    </ul>
+    <div class="burger">
+      <div id="myNav" class="overlay">
+        <a class="closebtn" onclick="closeNav()">
+          <img src="img/icons/closebntsvg.svg" alt="">
+        </a>
+        <div class="overlay-content">
+          <div class="dropdown-burger">
+            <a class="for-droptmenu dropbtn-burger">
+              <svg class="menu-polygon-burger" width="16" height="18"
+                viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
                   stroke-width="1.5">
               </svg>
-              ДИКТОРЫ
-              <div class="dropdown-content">
-                <svg class="dropsvg" width="16" height="18" viewBox="0 0 16 18" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.98529 14.2265L9.98525 5.90892L1.7924 5.90889L9.98529 14.2265Z" stroke="#671627"
-                    stroke-width="1.5" />
-                </svg>
-                <ul class="content-items">
-                  <li class="down-item">ДИКТОРЫ РОССИИ</li>
-                  <li class="down-item">ДИКТОРЫ УКРАИНЫ</li>
-                  <li class="down-item">ИНОСТРАННЫЕ ДИКТОРЫ</li>
-                  <li class="down-item">ВОКАЛИСТЫ</li>
-                  <li class="down-item">ПАРОДИСТЫ</li>
-                  <li class="down-item">ДЕТСКИЕ ГОЛОСА</li>
-                </ul>
-              </div>
-            </li>
-          </div>
-    
-          <li onclick="window.location.href='/silaFM/audio-page/audio.html'" class="menu-item">
-            <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#671627"
-                stroke-width="1.5" />
-            </svg>
-            УСЛУГИ</li>
-          <li onclick="window.location.href='/silaFM/pay-page/pay.html'" class="menu-item">ОПЛАТА</li>
-          <li onclick="window.location.href='/silaFM/contact-page/contact.html'" class="menu-item">КОНТАКТЫ</li>
-        </ul>
-        <ul class="header-number">
-          <li class="number-city">Киев<span class="phone-number">+38 /044/ 545 77 13</span></li>
-          <li class="number-city">Москва <span class="phone-number">+7 /800/ 551 0 551</span></li>
-        </ul>
-        <div class="burger">
-          <div id="myNav" class="overlay">
-            <a class="closebtn" onclick="closeNav()">&#10006;</a>
-            <div class="overlay-content">
-              <div class="dropdown-burger">
-                <a class="for-droptmenu dropbtn-burger"><svg class="menu-polygon-burger" width="16" height="18"
-                    viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
-                      stroke-width="1.5">
-                  </svg>ДИКТОРЫ</a>
-                <div class="dropdown-content-burger">
-                  <a>ДИКТОРЫ РОССИИ</a>
-                  <a>ДИКТОРЫ УКРАИНЫ</a>
-                  <a>ИНОСТРАННЫЕ ДИКТОРЫ</a>
-                  <a>ВОКАЛИСТЫ</a>
-                  <a>ПАРОДИСТЫ</a>
-                  <a>ДЕТСКИЕ ГОЛОСА</a>
-                </div>
-              </div>
-              <a onclick="window.location.href='/silaFM/audio-page/audio.html'"  class="for-droptmenu"> <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
-                    stroke-width="1.5">
-                </svg>УСЛУГИ</a>
-              <a onclick="window.location.href='/silaFM/pay-page/pay.html'">ОПЛАТА</a>
-              <a onclick="window.location.href='/silaFM/contact-page/contact.html'">КОНТАКТЫ</a>
-    
-              <div class="contacts">
-                <p class="contact-elem">Киев<span class="phone-number">+38 /044/ 545 77 13</span></p>
-                <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span></p>
-              </div>
+              ДИКТОРЫ</a>
+            <div class="dropdown-content-burger">
+              <a href="#">ДИКТОРЫ РОССИИ</a>
+              <a href="#">ДИКТОРЫ УКРАИНЫ</a>
+              <a href="#">ИНОСТРАННЫЕ ДИКТОРЫ</a>
+              <a href="#">ВОКАЛИСТЫ</a>
+              <a href="#">ПАРОДИСТЫ</a>
+              <a href="#">ДЕТСКИЕ ГОЛОСА</a>
             </div>
           </div>
-          <p class="icon-menu" onclick="openNav()"><svg width="42" height="27" viewBox="0 0 32 17" fill="none"
+          <a href='audio.html' class="for-droptmenu"> <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <line x1="6" y1="1" x2="32" y2="1" stroke="#404040" stroke-width="2" />
-              <line x1="6" y1="8.27979" x2="32" y2="8.27979" stroke="#404040" stroke-width="2" />
-              <line y1="8.27979" x2="4" y2="8.27979" stroke="#A31734" stroke-width="2" />
-              <line x1="6" y1="15.5601" x2="32" y2="15.5601" stroke="#A31734" stroke-width="2" />
-              <line y1="1" x2="4" y2="1" stroke="#404040" stroke-width="2" />
-            </svg>
-          </p>
+              <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
+                stroke-width="1.5">
+            </svg>УСЛУГИ</a>
+          <a href='pay.html'>ОПЛАТА</a>
+          <a href='contact.html'>КОНТАКТЫ</a>
+
+          <div class="contacts">
+            <p class="contact-elem">Киев<span class="phone-number">+38 /044/ 545 77 13</span></p>
+            <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span><p>
+          </div>
         </div>
-      </header>
+      </div>
+      <p class="icon-menu" onclick="openNav()"><svg width="42" height="27" viewBox="0 0 32 17" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <line x1="6" y1="1" x2="32" y2="1" stroke="#404040" stroke-width="2" />
+          <line x1="6" y1="8.27979" x2="32" y2="8.27979" stroke="#404040" stroke-width="2" />
+          <line y1="8.27979" x2="4" y2="8.27979" stroke="#A31734" stroke-width="2" />
+          <line x1="6" y1="15.5601" x2="32" y2="15.5601" stroke="#A31734" stroke-width="2" />
+          <line y1="1" x2="4" y2="1" stroke="#404040" stroke-width="2" />
+        </svg>
+      </p>
+    </div>
+  </header>
      <section class="thank-page">
       <div  class="box-thanks-page">
         <hr class="hr-for-box hr-speakers">
@@ -219,7 +208,7 @@
       </footer>
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script>
+<!--<script>
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
   document.getElementById("myNav").style.height = "700px";
@@ -231,6 +220,7 @@ function closeNav() {
  
 
 }
-      </script> 
+      </script>-->
+      <script src="js/thank.js"></script>
 </body>
 </html>

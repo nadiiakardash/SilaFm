@@ -18,38 +18,33 @@
     <img class="menu-logo" src="img/SilaFM_logo.png" alt="logotip-Sila-FM">
     <ul class="menu">
       <div class="menu-dropdown">
-        <li onclick="window.location.href='/silaFM/speakers-page/speakers.html'" class="menu-item dropbtn">
-          <img src="img/icons/menu-poligons.svg" alt="">
+        <li class="menu-item dropbtn"><span class="triangle"></span><a href="speakers.html">ДИКТОРЫ</a></li>
           <!-- <menu-poligon></menu-poligon> -->
-          ДИКТОРЫ
+          
           <div class="dropdown-content">
-            <img src="img/icons/dropsvg.svg" alt="">
             <ul class="content-items">
-              <li class="down-item">ДИКТОРЫ РОССИИ</li>
-              <li class="down-item">ДИКТОРЫ УКРАИНЫ</li>
-              <li class="down-item">ИНОСТРАННЫЕ ДИКТОРЫ</li>
-              <li class="down-item">ВОКАЛИСТЫ</li>
-              <li class="down-item">ПАРОДИСТЫ</li>
-              <li class="down-item">ДЕТСКИЕ ГОЛОСА</li>
+              <li class="down-item"><a href="#">ДИКТОРЫ РОССИИ</a></li>
+              <li class="down-item"><a href="#">ДИКТОРЫ УКРАИНЫ</a></li>
+              <li class="down-item"><a href="#">ИНОСТРАННЫЕ ДИКТОРЫ</a></li>
+              <li class="down-item"><a href="#">ВОКАЛИСТЫ</a></li>
+              <li class="down-item"><a href="#">ПАРОДИСТЫ</a></li>
+              <li class="down-item"><a href="#">ДЕТСКИЕ ГОЛОСА</a></li>
             </ul>
           </div>
         </li>
       </div>
 
-      <li onclick="window.location.href='/silaFM/audio-page/audio.html'" class="menu-item">
-<img src="img/icons/menu-poligon2.svg" alt="" class="menu-poligon2">
-        УСЛУГИ</li>
-      <li onclick="window.location.href='/silaFM/pay-page/pay.html'" class="menu-item">ОПЛАТА</li>
-      <li onclick="window.location.href='/silaFM/contact-page/contact.html'" class="menu-item">КОНТАКТЫ</li>
+      <li class="menu-item"><span class="triangle"></span><a href="audio.html">УСЛУГИ</a></li>
+      <li class="menu-item"><a href="pay.html">ОПЛАТА</a></li>
+      <li class="menu-item"><a href="contact.html">КОНТАКТЫ</a></li>
     </ul>
     <ul class="header-number">
-      <li class="number-city">Киев<span class="phone-number">+38 /044/ 545 77 13</span></li>
-      <li class="number-city">Москва <span class="phone-number">+7 /800/ 551 0 551</span></li>
+      <li class="number-city">Киев<a href="+380445457713" class="phone-number">+38 /044/ 545 77 13</a></li>
+      <li class="number-city">Москва <a href="+78005510551" class="phone-number">+7 /800/ 551 0 551</a></li>
     </ul>
     <div class="burger">
       <div id="myNav" class="overlay">
         <a class="closebtn" onclick="closeNav()">
-          <img src="img/icons/closebntsvg.svg" alt="">
         </a>
         <div class="overlay-content">
           <div class="dropdown-burger">
@@ -61,36 +56,29 @@
               </svg>
               ДИКТОРЫ</a>
             <div class="dropdown-content-burger">
-              <a>ДИКТОРЫ РОССИИ</a>
-              <a>ДИКТОРЫ УКРАИНЫ</a>
-              <a>ИНОСТРАННЫЕ ДИКТОРЫ</a>
-              <a>ВОКАЛИСТЫ</a>
-              <a>ПАРОДИСТЫ</a>
-              <a>ДЕТСКИЕ ГОЛОСА</a>
+              <a href="#">ДИКТОРЫ РОССИИ</a>
+              <a href="#">ДИКТОРЫ УКРАИНЫ</a>
+              <a href="#">ИНОСТРАННЫЕ ДИКТОРЫ</a>
+              <a href="#">ВОКАЛИСТЫ</a>
+              <a href="#">ПАРОДИСТЫ</a>
+              <a href="#">ДЕТСКИЕ ГОЛОСА</a>
             </div>
           </div>
-          <a onclick="window.location.href='/silaFM/audio-page/audio.html'" class="for-droptmenu"> <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
+          <a href='audio.html' class="for-droptmenu"> <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
                 stroke-width="1.5">
             </svg>УСЛУГИ</a>
-          <a onclick="window.location.href='/silaFM/pay-page/pay.html'">ОПЛАТА</a>
-          <a  onclick="window.location.href='/silaFM/contact-page/contact.html'">КОНТАКТЫ</a>
+          <a href='pay.html'>ОПЛАТА</a>
+          <a href='contact.html'>КОНТАКТЫ</a>
 
           <div class="contacts">
             <p class="contact-elem">Киев<span class="phone-number">+38 /044/ 545 77 13</span></p>
-            <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span></p>
+            <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span><p>
           </div>
         </div>
       </div>
-      <p class="icon-menu" onclick="openNav()"><svg width="42" height="27" viewBox="0 0 32 17" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <line x1="6" y1="1" x2="32" y2="1" stroke="#404040" stroke-width="2" />
-          <line x1="6" y1="8.27979" x2="32" y2="8.27979" stroke="#404040" stroke-width="2" />
-          <line y1="8.27979" x2="4" y2="8.27979" stroke="#A31734" stroke-width="2" />
-          <line x1="6" y1="15.5601" x2="32" y2="15.5601" stroke="#A31734" stroke-width="2" />
-          <line y1="1" x2="4" y2="1" stroke="#404040" stroke-width="2" />
-        </svg>
+      <p class="icon-menu" onclick="openNav()"><span class="iconmenu"></span>
       </p>
     </div>
   </header>
@@ -107,24 +95,19 @@
           </svg>
         </button>
       </div>
-      <!-- <img class="home-img-sula" src="img/Сила.png" alt="СИЛА"> -->
+      <img class="home-img-sula" src="img/Сила.png" alt="СИЛА">
       <div id="slider-au" class="slider">
         <div class="slider-items">
           <p id="slider-elem1" class="slider-img1"><span class="slider-text">АУДИОРОЛИКИ</span></p>
         </div>
         <div id="slider-elem" class="sound">
-          <p class="slider-img2"><span id="gradient" class="slider-text gradient">ОЗВУЧКА ВИДЕО</span></p>
-        </div>
-        <div id="slider-elem3" class="slider-items">
-          <p class="slider-img1"><span class="slider-text">АУДИОРОЛИКИ</span></p>
+          <p class="slider-img2"><span class="slider-text">ОЗВУЧКА ВИДЕО</span></p>
         </div>
         <button onclick="nextSlider()" id="next-slider" class="btn-slider">
-        
-          <img src="img/icons/arrow-right.svg" alt="">
+
         </button>
         <button onclick="prevSlider()" id="prev-slider" class="btn-slider-prev">
 
-          <img class="prev-svg" src="img/icons/arrow-right.svg" alt="">
         </button>
       </div>
     </section>
@@ -136,18 +119,18 @@
         <div class="track-artist"></div>
       </div>
       <div class="buttons">
-        <div class="playpause-track" onclick="playpauseTrack()"><img src="img/play.png"></div>
+        <button id="play" class="play-track" data-sound="mp3/music1.mp3" onclick="playpauseTrack()"></button>
       </div>
       <div class="slider_container">
         <input type="range" id="range-player" min="1" max="100" value="100" class="seek_slider" onchange="seekTo()">
       </div>
       <div class="slider_container">
-        <img class="icon-volume" src="img/volume.png">
+        <div class="icon-volume"></div>
         <input type="range" min="1" max="100" value="99" id="rng" name="rng" class="volume_slider __range"
           onchange="setVolume()">
       </div>
       <div id="myAudio">
-        <div class="playrepeat-track" onclick="playTrackRepeat()"><img src="img/repeat.png"></div>
+        <button class="playrepeat-track" onclick="playTrackRepeat()"></button>
       </div>
     </section>
 
@@ -157,12 +140,11 @@
         <div class="modal">
           <a class="close-modal">
 
-            <img src="img/icons/modal-close-svg.svg" alt="">
           </a>
           <div class="modal-content">
             <h3 class="txt-chronomer">
 
-              <img src="img/icons/modal-clock.svg" alt="">
+              <span class="chrono-clock"></span>
               ХРОНОМЕР</h3>
             <p class="text-definition">Определение хронометража рекламного текста</p>
             <div class="chronomer-block">
@@ -176,25 +158,27 @@
               <div class="chronomer-element">
                 <p class="vocabulary-box">
 
-                  <img src="img/icons/modal-dictionary.svg" alt="" class="dictionary">
+                  <span class="dictionary"></span>
                   <span class="txt-vocabulary">РУССКИЙ СЛОВАРЬ</span>
-                  <img src="img/icons/arrow-right-small.svg" alt="" class="arr-right">
+                  <span class="arr-right"></span>
                 </p>
                 <p class="vocabulary-box2">
-                  <img src="img/icons/modal-dictionary.svg" alt="" class="dictionary">
+                  <span class="dictionary"></span>
                   <span class="txt-vocabulary">УКРАИНСКИЙ СЛОВАРЬ</span>
-                  <img src="img/icons/arrow-right-small.svg" alt="" class="arr-right">
+                  <span class="arr-right"></span>
                 </p>
               </div>
               <div class="chronomer-window">
                 <p class="copy-text">Скопируйте текст в окно. Удалите ремарки и коментарии</p>
                 <textarea class="input-paste-text" type="text" name="message"></textarea>
                 <button class="btn-clear">
-                 <img src="img/icons/modal-clear.svg" alt="">
-                
-                  <span>ОЧИСТИТЬ</span></button>
-                <button class="btn-general">ОПРЕДЕЛИТЬ СТРАНИЦЫ
-                  <img src="img/icons/modal-red-arrow.svg" alt="">
+                 <span class="trash"></span>
+                  <span class="cleartext">ОЧИСТИТЬ</span></button>
+                <button class="btn-general">ОПРЕДЕЛИТЬ СТРАНИЦЫ<svg class="btn-svg" width="8" height="15"
+                  viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.73931 2.65887L7.53919 8.62078L1.66678 14.3337L1.73931 2.65887Z" stroke="white"
+                    stroke-width="1.5" />
+                </svg>
                 </button>
                 <div class="chronomer-results">
                   <span class="min-chrono-txt">Минимальный хронометраж:</span>
@@ -215,7 +199,7 @@
           </a>
           <div class="modal-content-page">
             <h3 class="txt-chronomer">
-              <img src="img/icons/stacimetr.svg" alt="">
+              <span class="stacimetr"></span>
               Страницемер</h3>
             <p class="text-definition">Определение количества страниц текста</p>
             <div class="page-block">
@@ -223,9 +207,11 @@
 
               <div class="custom-select">
                 <select>
-                  <option value="0">Times New Roman</option>
-                  <option value="1">Arial</option>
-                  <option value="2">Courier New</option>
+
+                  <option value="0">-</option>
+                  <option value="1">Times New Roman</option>
+                  <option value="2">Arial</option>
+                  <option value="3">Courier New</option>
 
                 </select>
               </div>
@@ -233,9 +219,10 @@
               <div class="custom-select size">
                 <select>
 
-                  <option value="0">14</option>
+                  <option value="0">-</option>
                   <option value="1">12</option>
-                  <option value="2">18</option>
+                  <option value="2">14</option>
+                  <option value="3">18</option>
 
                 </select>
               </div>
@@ -264,11 +251,13 @@
                     коментарии</label></div>
                 <textarea class="input-paste-page" type="text" name="message"></textarea>
                 <button class="btn-clear">
-
-                  <img src="img/icons/modal-clear.svg" alt="">
-                  <span>ОЧИСТИТЬ</span></button>
-                <button class="btn-general btn-page">ОПРЕДЕЛИТЬ СТРАНИЦЫ
-                 <img src="img/icons/modal-red-arrow.svg" alt="">
+                  <span class="trash"></span>
+                   <span class="cleartext">ОЧИСТИТЬ</span></button>
+                <button class="btn-general btn-page">ОПРЕДЕЛИТЬ СТРАНИЦЫ<svg class="btn-svg" width="8" height="15"
+                  viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.73931 2.65887L7.53919 8.62078L1.66678 14.3337L1.73931 2.65887Z" stroke="white"
+                    stroke-width="1.5" />
+                </svg>
                 </button>
               </div>
             </div>
@@ -326,14 +315,14 @@
           <hr class="hr-for-box">
           <h3 class="box-txt">УСЛУГИ СТУДИИ</h3>
           <div class="box-items">
-            <li><a href="">Запись дикторов</a></li>
-            <li><a href="">Изготовление<br> аудиороликов</a></li>
-            <li><a href="">Озвучание видео</a></li>
-            <li><a href="">Создание сценариев</a></li>
-            <li><a href="">Вокальные аудиоролики</a></li>
-            <li><a href="">Джинглы</a></li>
-            <li><a href="">Закадровый перевод</a></li>
-            <li><a href="">Голосовое меню</a></li>
+            <li><a href="#">Запись дикторов</a></li>
+            <li><a href="#">Изготовление<br> аудиороликов</a></li>
+            <li><a href="#">Озвучание видео</a></li>
+            <li><a href="#">Создание сценариев</a></li>
+            <li><a href="#">Вокальные аудиоролики</a></li>
+            <li><a href="#">Джинглы</a></li>
+            <li><a href="#">Закадровый перевод</a></li>
+            <li><a href="#">Голосовое меню</a></li>
             <div id="btn-elem1" class="btn-forfirst">
               <svg class="box-svg" width="21" height="12" viewBox="0 0 21 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -348,14 +337,14 @@
           <hr class="hr-for-box">
           <h3 class="box-txt">Новые работы</h3>
           <div class="box-items">
-            <li>Осаго</li>
-            <li>БукиВеди</li>
-            <li>КулерКом</li>
-            <li>СТК</li>
-            <li>Вокальные аудиоролики</li>
-            <li>Звезда Столицы</li>
-            <li>“Экран”</li>
-            <li>Неотрак</li>
+            <li><a href="#">Осаго</a></li>
+            <li><a href="#">БукиВеди</a></li>
+            <li><a href="#">КулерКом</a></li>
+            <li><a href="#">СТК</a></li>
+            <li><a href="#">Вокальные аудиоролики</a></li>
+            <li><a href="#">Звезда Столицы</a></li>
+            <li><a href="#">“Экран”</a></li>
+            <li><a href="#">Неотрак</a></li>
             <div class="box-btn">
               <svg class="box-svg" width="21" height="12" viewBox="0 0 21 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -369,14 +358,14 @@
           <hr class="hr-for-box">
           <h3 class="box-txt">Новые дикторы </h3>
           <div class="box-items">
-            <li>Bruce Jenkins (EN)</li>
-            <li>Никитин Алексей (RU)</li>
-            <li>Peter Jones (EN)</li>
-            <li>Плёнкин Павел (RU)</li>
-            <li>Никитин Алексей (RU)</li>
-            <li>Ивасишина Елена (RU)</li>
-            <li>Власов Ярослав (UA)</li>
-            <li>Грицанюк Ольга (UA)</li>
+            <li><a href="#">Bruce Jenkins (EN)</a></li>
+            <li><a href="#">Никитин Алексей (RU)</a></li>
+            <li><a href="#">Peter Jones (EN)</a></li>
+            <li><a href="#">Плёнкин Павел (RU)</a></li>
+            <li><a href="#">Никитин Алексей (RU)</a></li>
+            <li><a href="#">Ивасишина Елена (RU)</a></li>
+            <li><a href="#">Власов Ярослав (UA)</a></li>
+            <li><a href="#">Грицанюк Ольга (UA)</a></li>
             <div class="box-btn">
               <svg class="box-svg" width="21" height="12" viewBox="0 0 21 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -390,14 +379,14 @@
           <hr class="hr-for-box">
           <h3 class="box-txt">ОзвучИВание видео</h3>
           <div class="box-items">
-            <li>Закадровый голос</li>
-            <li>Дубляж</li>
-            <li>Синхрон</li>
-            <li>Липсинг</li>
-            <li>Вокальные аудиоролики</li>
-            <li>Шумовое оформление</li>
-            <li>Финальное сведение</li>
-            <li>Озвучка маппингов</li>
+            <li><a href="#">Закадровый голос</a></li>
+            <li><a href="#">Дубляж</a></li>
+            <li><a href="#">Синхрон</a></li>
+            <li><a href="#">Липсинг</a></li>
+            <li><a href="#">Вокальные аудиоролики</a></li>
+            <li><a href="#">Шумовое оформление</a></li>
+            <li><a href="#">Финальное сведение</a></li>
+            <li><a href="#">Озвучка маппингов</a></li>
             <div class="box-btn">
               <svg class="box-svg" width="21" height="12" viewBox="0 0 21 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -411,8 +400,8 @@
     </section>
     <section class="about-us" style="margin-top: 0;">
       <div class="icon-message">
-<a href="contact.html">
-        <img src="img/icons/messenger.svg" alt="">
+      <a id="contact" href="contact.html">
+        <span class="messenger-logo"></span>
       </a>
       </div>
       <div id="showThird" class="box-about-us">
@@ -454,18 +443,23 @@
         <div class="box-about-element">
           <hr class="hr-for-slider">
           <p class="txt-about-us">О НАС</p>
-          <p class="info-about-us">Агентство Звука Сила.ФМ. Изготовление <b>аудиороликов, видеороликов,
+          <div class="about">
+          <p>Агентство Звука Сила.ФМ. Изготовление <b>аудиороликов, видеороликов,
               запись иностранных дикторов, озвучивание видеоигр, аудиогидов, радиороликов, запись дикторских голосов,
               озвучка видеорекламы, фильмов, анимации, корпоративного видео, запись аудиорекламы, радиорекламы.<br><br>
               А также создание
               сценариев, раскадровок, синопсисов, озвучание квестов, приложений, маппингов, документальных фильмов
             </b>etc.</p>
+          <p>Высокое качество звука, профессиональное оборудование, оригинальная звуковая
+          концепция и философия звука.
+          Проработанность заказов и тщательность исполнения.</p>
+          </div>
         </div>
-        <div class="box-about-element">
+        <!--<div class="box-about-element">
           <p class="info-about-last">Высокое качество звука, профессиональное оборудование, оригинальная звуковая
             концепция и философия звука.
             Проработанность заказов и тщательность исполнения.</p>
-        </div>
+        </div>-->
       </div>
     </section>
     <section class="foreign-speakers">
@@ -960,9 +954,9 @@
             Выходные: воскресенье</p>
           <hr>
           <h5>КОНТАКТЫ</h5>
-          <p class="text-element for-botton-icon">В Москве: +7(495) 545 45 13<br>
-            В России: +7(800) 551 0 551<br>
-            В Украине: +38(044) 545 77 13</p>
+          <p class="text-element for-botton-icon">В Москве: <a href="+74955454513">+7(495) 545 45 13</a><br>
+            В России: <a href="+78005510551">+7(800) 551 0 551</a><br>
+            В Украине: <a href="+380445457713">+38(044) 545 77 13</a></p>
           <div class="svg-boxes">
             <a href="">
             <svg width="22" height="19" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1025,7 +1019,7 @@
   </main>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
   <script src="js/revealator-master/fm.revealator.jquery.js"></script>
   <script src="js/index.js"></script>
