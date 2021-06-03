@@ -41,6 +41,20 @@ $(".custom-option").on("click", function() {
   $(this).parents(".custom-selects").removeClass("opened");
   $(this).parents(".custom-selects").find(".custom-select-trigger").text($(this).text());
 });
+
+function mouseOver() {
+  document.getElementById("demo").style.width = "98%";
+  document.getElementById("demo2").style.width = "98%";
+  document.getElementById("demo3").style.width = "98%";
+  document.getElementById("demo4").style.width = "98%";
+}
+function mouseOut() {
+  document.getElementById("demo").style.width = "27%";
+  document.getElementById("demo2").style.width = "27%";
+  document.getElementById("demo3").style.width = "27%";
+  document.getElementById("demo4").style.width = "27%";
+}
+
 //popup OnlineCalculator
 var elementtss = $('.modal-overlay-calculator, .modal-calculator');
 
@@ -158,8 +172,9 @@ window.onscroll = function () { scrollFunction() };
   
   }
 //first-items player
+let audio = document.querySelectorAll('.audio');
 let now_playing1 = document.querySelector(".now-playing1");
-let playpause_btn1 = document.querySelector(".playpause-track1");
+let playpause_btn1 = document.querySelector("#play1");
 let playrepeat_btn1 = document.querySelector(".playrepeat-track1");
 
 let seek_slider1 = document.querySelector(".seek_slider1");
@@ -171,19 +186,19 @@ let updateTimer1;
 let curr_track1 = document.createElement('audio');
 let repeat1 = document.createElement('audio');
 
-let track_list1 = [
-  {
-    path: "mp3/music1.mp3"
-  }
-];
+// let track_list1 = [
+//   {
+//     path: "mp3/music1.mp3"
+//   }
+// ];
 
 function loadTrack1(track_index1) {
   resetValues1();
-  curr_track1.src = track_list1[track_index1].path;
+  curr_track1.src = playpause_btn1.getAttribute("data-sound");
   curr_track1.load();
   updateTimer1 = setInterval(seekUpdate1, 1000);
-  
 }
+
 function resetValues1() {
   seek_slider1.value = 0;
 }
@@ -192,10 +207,13 @@ function playpauseTrack1() {
   if (!isPlaying1) playTrack1();
   else pauseTrack1();
 }
+
 function playTrack1() {
   curr_track1.play();
   isPlaying1 = true;
-  playpause_btn1.innerHTML = '<img src="img/table-stop.png">';
+  //playpause_btn1.innerHTML = '<img src="img/table-stop.png">';
+  playpause_btn1.classList.toggle("pause-table");
+  playpause_btn1.classList.toggle("play-table");
 }
 
 var repIcon = document.querySelector('.repeat')
@@ -219,7 +237,8 @@ playTrack1();
 function pauseTrack1() {
   curr_track1.pause();
   isPlaying1 = false;
-  playpause_btn1.innerHTML = '<img src="img/table-play.png">';
+  playpause_btn1.classList.toggle("pause-table");
+  playpause_btn1.classList.toggle("play-table");
 }
 
 function seekTo1() {
@@ -246,7 +265,7 @@ loadTrack1(track_index1);
 
   //second-items player
   let now_playing2 = document.querySelector(".now-playing2");
-  let playpause_btn2 = document.querySelector(".playpause-track2");
+  let playpause_btn2 = document.querySelector("#play2");
   let playrepeat_btn2 = document.querySelector(".playrepeat-track2");
   
   let seek_slider2 = document.querySelector(".seek_slider2");
@@ -258,15 +277,15 @@ loadTrack1(track_index1);
   let curr_track2 = document.createElement('audio');
   let repeat2 = document.createElement('audio');
   
-  let track_list2 = [
-    {
-      path: "mp3/music1.mp3"
-    }
-  ];
+  // let track_list2 = [
+  //   {
+  //     path: "mp3/music1.mp3"
+  //   }
+  // ];
   
   function loadTrack2(track_index2) {
     resetValues2();
-    curr_track2.src = track_list2[track_index2].path;
+    curr_track2.src = playpause_btn2.getAttribute("data-sound");
     curr_track2.load();
     updateTimer2 = setInterval(seekUpdate2, 1000);
   }
@@ -281,7 +300,9 @@ loadTrack1(track_index1);
   function playTrack2() {
     curr_track2.play();
     isPlaying2 = true;
-    playpause_btn2.innerHTML = '<img src="img/table-stop.png">';
+    //playpause_btn2.innerHTML = '<img src="img/table-stop.png">';
+    playpause_btn2.classList.toggle("pause-table");
+    playpause_btn2.classList.toggle("play-table");
   }
  
   var repIcon2 = document.querySelector('.repeat2')
@@ -305,7 +326,9 @@ loadTrack1(track_index1);
   function pauseTrack2() {
     curr_track2.pause();
     isPlaying2 = false;
-    playpause_btn2.innerHTML = '<img src="img/table-play.png">';
+//    playpause_btn2.innerHTML = '<img src="img/table-play.png">';
+    playpause_btn2.classList.toggle("pause-table");
+    playpause_btn2.classList.toggle("play-table");
   }
   
   function seekTo2() {
@@ -330,7 +353,7 @@ loadTrack1(track_index1);
 
    //third-items player
    let now_playing3 = document.querySelector(".now-playing3");
-   let playpause_btn3 = document.querySelector(".playpause-track3");
+   let playpause_btn3 = document.querySelector("#play3");
    let playrepeat_btn3 = document.querySelector(".playrepeat-track3");
    
    let seek_slider3 = document.querySelector(".seek_slider3");
@@ -342,15 +365,15 @@ loadTrack1(track_index1);
    let curr_track3 = document.createElement('audio');
    let repeat3= document.createElement('audio');
    
-   let track_list3 = [
-     {
-       path: "mp3/music1.mp3"
-     }
-   ];
+  //  let track_list3 = [
+  //    {
+  //      path: "mp3/music1.mp3"
+  //    }
+  //  ];
    
    function loadTrack3(track_index3) {
      resetValues3();
-     curr_track3.src = track_list3[track_index3].path;
+     curr_track3.src = playpause_btn3.getAttribute("data-sound");
      curr_track3.load();
      updateTimer3 = setInterval(seekUpdate3, 1000);
    }
@@ -365,7 +388,9 @@ loadTrack1(track_index1);
    function playTrack3() {
      curr_track3.play();
      isPlaying3 = true;
-     playpause_btn3.innerHTML = '<img src="img/table-stop.png">';
+     //playpause_btn3.innerHTML = '<img src="img/table-stop.png">';
+     playpause_btn3.classList.toggle("pause-table");
+     playpause_btn3.classList.toggle("play-table");
    }
   
    var repIcon3 = document.querySelector('.repeat3')
@@ -389,7 +414,9 @@ loadTrack1(track_index1);
    function pauseTrack3() {
      curr_track3.pause();
      isPlaying3 = false;
-     playpause_btn3.innerHTML = '<img src="img/table-play.png">';
+     //playpause_btn3.innerHTML = '<img src="img/table-play.png">';
+     playpause_btn3.classList.toggle("pause-table");
+     playpause_btn3.classList.toggle("play-table");
    }
    
    function seekTo3() {
@@ -414,7 +441,7 @@ loadTrack1(track_index1);
 
     //four-items player
     let now_playing4 = document.querySelector(".now-playing4");
-    let playpause_btn4 = document.querySelector(".playpause-track4");
+    let playpause_btn4 = document.querySelector("#play4");
     let playrepeat_btn4 = document.querySelector(".playrepeat-track4");
     
     let seek_slider4 = document.querySelector(".seek_slider4");
@@ -426,15 +453,15 @@ loadTrack1(track_index1);
     let curr_track4 = document.createElement('audio');
     let repeat4= document.createElement('audio');
     
-    let track_list4 = [
-      {
-        path: "mp3/music1.mp3"
-      }
-    ];
+    // let track_list4 = [
+    //   {
+    //     path: "mp3/music1.mp3"
+    //   }
+    // ];
     
     function loadTrack4(track_index4) {
       resetValues4();
-      curr_track4.src = track_list4[track_index4].path;
+      curr_track4.src = playpause_btn4.getAttribute("data-sound");
       curr_track4.load();
       updateTimer4 = setInterval(seekUpdate4, 1000);
     }
@@ -449,7 +476,9 @@ loadTrack1(track_index1);
     function playTrack4() {
       curr_track4.play();
       isPlaying4 = true;
-      playpause_btn4.innerHTML = '<img src="img/table-stop.png">';
+      //playpause_btn4.innerHTML = '<img src="img/table-stop.png">';
+      playpause_btn4.classList.toggle("pause-table");
+      playpause_btn4.classList.toggle("play-table");
     }
    
     var repIcon4 = document.querySelector('.repeat4')
@@ -467,7 +496,9 @@ loadTrack1(track_index1);
     function pauseTrack4() {
       curr_track4.pause();
       isPlaying4 = false;
-      playpause_btn4.innerHTML = '<img src="img/table-play.png">';
+      //playpause_btn4.innerHTML = '<img src="img/table-play.png">';
+      playpause_btn4.classList.toggle("pause-table");
+      playpause_btn4.classList.toggle("play-table");
     }
     
     function seekTo4() {
@@ -491,7 +522,7 @@ loadTrack1(track_index1);
     loadTrack4(track_index4);
     //five-items player
     let now_playing5 = document.querySelector(".now-playing5");
-    let playpause_btn5 = document.querySelector(".playpause-track5");
+    let playpause_btn5 = document.querySelector("#play5");
     let playrepeat_btn5 = document.querySelector(".playrepeat-track5");
     
     let seek_slider5 = document.querySelector(".seek_slider5");
@@ -503,15 +534,15 @@ loadTrack1(track_index1);
     let curr_track5 = document.createElement('audio');
     let repeat5= document.createElement('audio');
     
-    let track_list5 = [
-      {
-        path: "mp3/music1.mp3"
-      }
-    ];
+    // let track_list5 = [
+    //   {
+    //     path: "mp3/music1.mp3"
+    //   }
+    // ];
     
     function loadTrack5(track_index5) {
       resetValues5();
-      curr_track5.src = track_list5[track_index5].path;
+      curr_track5.src = playpause_btn5.getAttribute("data-sound");
       curr_track5.load();
       updateTimer5 = setInterval(seekUpdate5, 1000);
     }
@@ -526,7 +557,9 @@ loadTrack1(track_index1);
     function playTrack5() {
       curr_track5.play();
       isPlaying5 = true;
-      playpause_btn5.innerHTML = '<img src="img/table-stop.png">';
+      //playpause_btn5.innerHTML = '<img src="img/table-stop.png">';
+      playpause_btn5.classList.toggle("pause-table");
+      playpause_btn5.classList.toggle("play-table");
     }
    
     var repIcon5 = document.querySelector('.repeat5')
@@ -544,7 +577,9 @@ loadTrack1(track_index1);
     function pauseTrack5() {
       curr_track5.pause();
       isPlaying5 = false;
-      playpause_btn5.innerHTML = '<img src="img/table-play.png">';
+      //playpause_btn5.innerHTML = '<img src="img/table-play.png">';
+      playpause_btn5.classList.toggle("pause-table");
+      playpause_btn5.classList.toggle("play-table");
     }
     
     function seekTo5() {
@@ -569,7 +604,7 @@ loadTrack1(track_index1);
 
     //six-items player
     let now_playing6 = document.querySelector(".now-playing6");
-    let playpause_btn6 = document.querySelector(".playpause-track6");
+    let playpause_btn6 = document.querySelector("#play6");
     let playrepeat_btn6 = document.querySelector(".playrepeat-track6");
     
     let seek_slider6 = document.querySelector(".seek_slider6");
@@ -581,15 +616,15 @@ loadTrack1(track_index1);
     let curr_track6 = document.createElement('audio');
     let repeat6= document.createElement('audio');
     
-    let track_list6 = [
-      {
-        path: "mp3/music1.mp3"
-      }
-    ];
+    // let track_list6 = [
+    //   {
+    //     path: "mp3/music1.mp3"
+    //   }
+    // ];
     
     function loadTrack6(track_index6) {
       resetValues6();
-      curr_track6.src = track_list6[track_index6].path;
+      curr_track6.src = playpause_btn6.getAttribute("data-sound");
       curr_track6.load();
       updateTimer6 = setInterval(seekUpdate6, 1000);
     }
@@ -604,7 +639,9 @@ loadTrack1(track_index1);
     function playTrack6() {
       curr_track6.play();
       isPlaying6 = true;
-      playpause_btn6.innerHTML = '<img src="img/table-stop.png">';
+      //playpause_btn6.innerHTML = '<img src="img/table-stop.png">';
+      playpause_btn6.classList.toggle("pause-table");
+      playpause_btn6.classList.toggle("play-table");
     }
    
     var repIcon6 = document.querySelector('.repeat6')
@@ -622,7 +659,9 @@ loadTrack1(track_index1);
     function pauseTrack6() {
       curr_track6.pause();
       isPlaying6 = false;
-      playpause_btn6.innerHTML = '<img src="img/table-play.png">';
+      //playpause_btn6.innerHTML = '<img src="img/table-play.png">';
+      playpause_btn6.classList.toggle("pause-table");
+      playpause_btn6.classList.toggle("play-table");
     }
     
     function seekTo6() {
@@ -646,7 +685,7 @@ loadTrack1(track_index1);
     loadTrack6(track_index6);
     //seven-items player
     let now_playing7 = document.querySelector(".now-playing7");
-    let playpause_btn7 = document.querySelector(".playpause-track7");
+    let playpause_btn7 = document.querySelector("#play7");
     let playrepeat_btn7 = document.querySelector(".playrepeat-track7");
     
     let seek_slider7 = document.querySelector(".seek_slider7");
@@ -658,15 +697,15 @@ loadTrack1(track_index1);
     let curr_track7 = document.createElement('audio');
     let repeat7= document.createElement('audio');
     
-    let track_list7 = [
-      {
-        path: "mp3/music1.mp3"
-      }
-    ];
+    // let track_list7 = [
+    //   {
+    //     path: "mp3/music1.mp3"
+    //   }
+    // ];
     
     function loadTrack7(track_index7) {
       resetValues7();
-      curr_track7.src = track_list7[track_index7].path;
+      curr_track7.src = playpause_btn7.getAttribute("data-sound");
       curr_track7.load();
       updateTimer7 = setInterval(seekUpdate7, 1000);
     }
@@ -681,7 +720,9 @@ loadTrack1(track_index1);
     function playTrack7() {
       curr_track7.play();
       isPlaying7 = true;
-      playpause_btn7.innerHTML = '<img src="img/table-stop.png">';
+      //playpause_btn7.innerHTML = '<img src="img/table-stop.png">';
+      playpause_btn7.classList.toggle("pause-table");
+      playpause_btn7.classList.toggle("play-table");
     }
    
     var repIcon7 = document.querySelector('.repeat7')
@@ -699,7 +740,9 @@ loadTrack1(track_index1);
     function pauseTrack7() {
       curr_track7.pause();
       isPlaying7 = false;
-      playpause_btn7.innerHTML = '<img src="img/table-play.png">';
+      //playpause_btn7.innerHTML = '<img src="img/table-play.png">';
+      playpause_btn7.classList.toggle("pause-table");
+      playpause_btn7.classList.toggle("play-table");
     }
     
     function seekTo7() {
@@ -723,7 +766,7 @@ loadTrack1(track_index1);
     loadTrack7(track_index7);
         //eight-items player
         let now_playing8 = document.querySelector(".now-playing8");
-        let playpause_btn8 = document.querySelector(".playpause-track8");
+        let playpause_btn8 = document.querySelector("#play8");
         let playrepeat_btn8 = document.querySelector(".playrepeat-track8");
         
         let seek_slider8= document.querySelector(".seek_slider8");
@@ -735,15 +778,15 @@ loadTrack1(track_index1);
         let curr_track8 = document.createElement('audio');
         let repeat8= document.createElement('audio');
         
-        let track_list8 = [
-          {
-            path: "mp3/music1.mp3"
-          }
-        ];
+        // let track_list8 = [
+        //   {
+        //     path: "mp3/music1.mp3"
+        //   }
+        // ];
         
         function loadTrack8(track_index8) {
           resetValues8();
-          curr_track8.src = track_list8[track_index8].path;
+          curr_track8.src = playpause_btn8.getAttribute("data-sound");
           curr_track8.load();
           updateTimer8 = setInterval(seekUpdate8, 1000);
         }
@@ -758,7 +801,9 @@ loadTrack1(track_index1);
         function playTrack8() {
           curr_track8.play();
           isPlaying8 = true;
-          playpause_btn8.innerHTML = '<img src="img/table-stop.png">';
+          //playpause_btn8.innerHTML = '<img src="img/table-stop.png">';
+          playpause_btn8.classList.toggle("pause-table");
+          playpause_btn8.classList.toggle("play-table");
         }
        
         var repIcon8 = document.querySelector('.repeat8')
@@ -776,7 +821,9 @@ loadTrack1(track_index1);
         function pauseTrack8() {
           curr_track8.pause();
           isPlaying8 = false;
-          playpause_btn8.innerHTML = '<img src="img/table-play.png">';
+          //playpause_btn8.innerHTML = '<img src="img/table-play.png">';
+          playpause_btn8.classList.toggle("pause-table");
+          playpause_btn8.classList.toggle("play-table");
         }
         
         function seekTo8() {
@@ -801,7 +848,7 @@ loadTrack1(track_index1);
 
    //nine-items player
       let now_playing9 = document.querySelector(".now-playing9");
-      let playpause_btn9 = document.querySelector(".playpause-track9");
+      let playpause_btn9 = document.querySelector("#play9");
       let playrepeat_btn9 = document.querySelector(".playrepeat-track9");
       
       let seek_slider9= document.querySelector(".seek_slider9");
@@ -813,15 +860,15 @@ loadTrack1(track_index1);
       let curr_track9 = document.createElement('audio');
       let repeat9= document.createElement('audio');
       
-      let track_list9 = [
-        {
-          path: "mp3/music1.mp3"
-        }
-      ];
+      // let track_list9 = [
+      //   {
+      //     path: "mp3/music1.mp3"
+      //   }
+      // ];
       
       function loadTrack9(track_index9) {
         resetValues9();
-        curr_track9.src = track_list9[track_index9].path;
+        curr_track9.src = playpause_btn9.getAttribute("data-sound");
         curr_track9.load();
         updateTimer9 = setInterval(seekUpdate9, 1000);
       }
@@ -836,7 +883,9 @@ loadTrack1(track_index1);
       function playTrack9() {
         curr_track9.play();
         isPlaying9 = true;
-        playpause_btn9.innerHTML = '<img src="img/table-stop.png">';
+        //playpause_btn9.innerHTML = '<img src="img/table-stop.png">';
+        playpause_btn9.classList.toggle("pause-table");
+        playpause_btn9.classList.toggle("play-table");
       }
      
       var repIcon9 = document.querySelector('.repeat9')
@@ -854,7 +903,9 @@ loadTrack1(track_index1);
       function pauseTrack9() {
         curr_track9.pause();
         isPlaying9 = false;
-        playpause_btn9.innerHTML = '<img src="img/table-play.png">';
+        //playpause_btn9.innerHTML = '<img src="img/table-play.png">';
+        playpause_btn9.classList.toggle("pause-table");
+        playpause_btn9.classList.toggle("play-table");
       }
       
       function seekTo9() {
@@ -878,7 +929,7 @@ loadTrack1(track_index1);
       loadTrack9(track_index9);
 //ten items
 let now_playing10 = document.querySelector(".now-playing10");
-let playpause_btn10 = document.querySelector(".playpause-track10");
+let playpause_btn10 = document.querySelector("#play10");
 let playrepeat_btn10 = document.querySelector(".playrepeat-track10");
 
 let seek_slider10= document.querySelector(".seek_slider10");
@@ -890,15 +941,15 @@ let updateTimer10;
 let curr_track10 = document.createElement('audio');
 let repeat10= document.createElement('audio');
 
-let track_list10 = [
-  {
-    path: "mp3/music1.mp3"
-  }
-];
+// let track_list10 = [
+//   {
+//     path: "mp3/music1.mp3"
+//   }
+// ];
 
 function loadTrack10(track_index10) {
   resetValues10();
-  curr_track10.src = track_list10[track_index10].path;
+  curr_track10.src = playpause_btn10.getAttribute("data-sound");
   curr_track10.load();
   updateTimer10 = setInterval(seekUpdate10, 1000);
 }
@@ -913,7 +964,9 @@ function playpauseTrack10() {
 function playTrack10() {
   curr_track10.play();
   isPlaying10 = true;
-  playpause_btn10.innerHTML = '<img src="img/table-stop.png">';
+  //playpause_btn10.innerHTML = '<img src="img/table-stop.png">';
+  playpause_btn10.classList.toggle("pause-table");
+  playpause_btn10.classList.toggle("play-table");
 }
 
 var repIcon10 = document.querySelector('.repeat10')
@@ -931,7 +984,9 @@ function handleRepeat10() {
 function pauseTrack10() {
   curr_track10.pause();
   isPlaying10 = false;
-  playpause_btn10.innerHTML = '<img src="img/table-play.png">';
+  //playpause_btn10.innerHTML = '<img src="img/table-play.png">';
+  playpause_btn10.classList.toggle("pause-table");
+  playpause_btn10.classList.toggle("play-table");
 }
 
 function seekTo10() {
@@ -956,7 +1011,7 @@ loadTrack10(track_index10);
 
 //11 items
 let now_playing11 = document.querySelector(".now-playing11");
-let playpause_btn11 = document.querySelector(".playpause-track11");
+let playpause_btn11 = document.querySelector("#play11");
 let playrepeat_btn11 = document.querySelector(".playrepeat-track11");
 
 let seek_slider11= document.querySelector(".seek_slider11");
@@ -968,15 +1023,15 @@ let updateTimer11;
 let curr_track11 = document.createElement('audio');
 let repeat11= document.createElement('audio');
 
-let track_list11 = [
-  {
-    path: "mp3/music1.mp3"
-  }
-];
+// let track_list11 = [
+//   {
+//     path: "mp3/music1.mp3"
+//   }
+// ];
 
 function loadTrack11(track_index11) {
   resetValues11();
-  curr_track11.src = track_list11[track_index11].path;
+  curr_track11.src = playpause_btn11.getAttribute("data-sound");
   curr_track11.load();
   updateTimer11 = setInterval(seekUpdate11, 1000);
 }
@@ -991,7 +1046,9 @@ function playpauseTrack11() {
 function playTrack11() {
   curr_track11.play();
   isPlaying11 = true;
-  playpause_btn11.innerHTML = '<img src="img/table-stop.png">';
+  //playpause_btn11.innerHTML = '<img src="img/table-stop.png">';
+  playpause_btn11.classList.toggle("pause-table");
+  playpause_btn11.classList.toggle("play-table");
 }
 
 var repIcon11 = document.querySelector('.repeat11')
@@ -1009,7 +1066,9 @@ function handleRepeat11() {
 function pauseTrack11() {
   curr_track11.pause();
   isPlaying11 = false;
-  playpause_btn11.innerHTML = '<img src="img/table-play.png">';
+  //playpause_btn11.innerHTML = '<img src="img/table-play.png">';
+  playpause_btn11.classList.toggle("pause-table");
+  playpause_btn11.classList.toggle("play-table");
 }
 
 function seekTo11() {
@@ -1034,7 +1093,7 @@ loadTrack11(track_index11);
 
 //12items
 let now_playing12 = document.querySelector(".now-playing12");
-let playpause_btn12 = document.querySelector(".playpause-track12");
+let playpause_btn12 = document.querySelector("#play12");
 let playrepeat_btn12 = document.querySelector(".playrepeat-track12");
 
 let seek_slider12= document.querySelector(".seek_slider12");
@@ -1046,15 +1105,15 @@ let updateTimer12;
 let curr_track12 = document.createElement('audio');
 let repeat12= document.createElement('audio');
 
-let track_list12 = [
-  {
-    path: "mp3/music1.mp3"
-  }
-];
+// let track_list12 = [
+//   {
+//     path: "mp3/music1.mp3"
+//   }
+// ];
 
 function loadTrack12(track_index12) {
   resetValues12();
-  curr_track12.src = track_list12[track_index12].path;
+  curr_track12.src = playpause_btn12.getAttribute("data-sound");
   curr_track12.load();
   updateTimer12 = setInterval(seekUpdate12, 1000);
 }
@@ -1069,7 +1128,9 @@ function playpauseTrack12() {
 function playTrack12() {
   curr_track12.play();
   isPlaying12 = true;
-  playpause_btn12.innerHTML = '<img src="img/table-stop.png">';
+  //playpause_btn12.innerHTML = '<img src="img/table-stop.png">';
+  playpause_btn12.classList.toggle("pause-table");
+  playpause_btn12.classList.toggle("play-table");
 }
 
 var repIcon12 = document.querySelector('.repeat12')
@@ -1087,7 +1148,9 @@ function handleRepeat12() {
 function pauseTrack12() {
   curr_track12.pause();
   isPlaying12 = false;
-  playpause_btn12.innerHTML = '<img src="img/table-play.png">';
+  //playpause_btn12.innerHTML = '<img src="img/table-play.png">';
+  playpause_btn12.classList.toggle("pause-table");
+  playpause_btn12.classList.toggle("play-table");
 }
 
 function seekTo12() {
@@ -1110,248 +1173,248 @@ function seekUpdate12() {
 }
 loadTrack12(track_index12);
 
-function speakerHover(){
-  document.getElementById("speaker1").style.background = "#B6E1E8";
-  document.getElementById("speaker2").style.background = "#B6E1E8";
-  document.getElementById("speaker3").style.background = "#B6E1E8";
-  document.getElementById("speaker4").style.background = "#B6E1E8";
-  document.getElementById("speaker6").style.background = "#B6E1E8";
-  document.getElementById("speaker5").style.background = "#B6E1E8";
-  document.getElementById("speaker7").style.background = "#B6E1E8";
-  document.getElementById("speaker8").style.background = "#B6E1E8";
+// function speakerHover(){
+//   document.getElementById("speaker1").style.background = "#B6E1E8";
+//   document.getElementById("speaker2").style.background = "#B6E1E8";
+//   document.getElementById("speaker3").style.background = "#B6E1E8";
+//   document.getElementById("speaker4").style.background = "#B6E1E8";
+//   document.getElementById("speaker6").style.background = "#B6E1E8";
+//   document.getElementById("speaker5").style.background = "#B6E1E8";
+//   document.getElementById("speaker7").style.background = "#B6E1E8";
+//   document.getElementById("speaker8").style.background = "#B6E1E8";
 
-}
-function speakerOut(){
-  document.getElementById("speaker1").style.background = "white";
-  document.getElementById("speaker2").style.background = "white";
-  document.getElementById("speaker3").style.background = "white";
-  document.getElementById("speaker4").style.background = "white";
-  document.getElementById("speaker5").style.background = "white";
-  document.getElementById("speaker6").style.background = "white";
-  document.getElementById("speaker7").style.background = "white";
-  document.getElementById("speaker8").style.background = "white";
+// }
+// function speakerOut(){
+//   document.getElementById("speaker1").style.background = "white";
+//   document.getElementById("speaker2").style.background = "white";
+//   document.getElementById("speaker3").style.background = "white";
+//   document.getElementById("speaker4").style.background = "white";
+//   document.getElementById("speaker5").style.background = "white";
+//   document.getElementById("speaker6").style.background = "white";
+//   document.getElementById("speaker7").style.background = "white";
+//   document.getElementById("speaker8").style.background = "white";
 
-}
-function speakerHover2(){
-  document.getElementById("speaker1s").style.background = "#B6E1E8";
-  document.getElementById("speaker2s").style.background = "#B6E1E8";
-  document.getElementById("speaker3s").style.background = "#B6E1E8";
-  document.getElementById("speaker4s").style.background = "#B6E1E8";
-  document.getElementById("speaker6s").style.background = "#B6E1E8";
-  document.getElementById("speaker5s").style.background = "#B6E1E8";
-  document.getElementById("speaker7s").style.background = "#B6E1E8";
-  document.getElementById("speaker8s").style.background = "#B6E1E8";
-}
-function speakerOut2(){
-  document.getElementById("speaker1s").style.background = "white";
-  document.getElementById("speaker2s").style.background = "white";
-  document.getElementById("speaker3s").style.background = "white";
-  document.getElementById("speaker5s").style.background = "white";
-  document.getElementById("speaker6s").style.background = "white";
-  document.getElementById("speaker4s").style.background = "white";
-  document.getElementById("speaker7s").style.background = "white";
-  document.getElementById("speaker8s").style.background = "white";
-}
-function speakerHover3(){
-  document.getElementById("speaker1sp").style.background = "#B6E1E8";
-  document.getElementById("speaker2sp").style.background = "#B6E1E8";
-  document.getElementById("speaker3sp").style.background = "#B6E1E8";
-  document.getElementById("speaker4sp").style.background = "#B6E1E8";
-  document.getElementById("speaker6sp").style.background = "#B6E1E8";
-  document.getElementById("speaker5sp").style.background = "#B6E1E8";
-  document.getElementById("speaker7sp").style.background = "#B6E1E8";
-  document.getElementById("speaker8sp").style.background = "#B6E1E8";
-}
-function speakerOut3(){
-  document.getElementById("speaker1sp").style.background = "white";
-  document.getElementById("speaker2sp").style.background = "white";
-  document.getElementById("speaker3sp").style.background = "white";
-  document.getElementById("speaker5sp").style.background = "white";
-  document.getElementById("speaker6sp").style.background = "white";
-  document.getElementById("speaker4sp").style.background = "white";
-  document.getElementById("speaker7sp").style.background = "white";
-  document.getElementById("speaker8sp").style.background = "white";
-}
-function speakerHover4(){
-  document.getElementById("speaker1spe").style.background = "#B6E1E8";
-  document.getElementById("speaker2spe").style.background = "#B6E1E8";
-  document.getElementById("speaker3spe").style.background = "#B6E1E8";
-  document.getElementById("speaker4spe").style.background = "#B6E1E8";
-  document.getElementById("speaker6spe").style.background = "#B6E1E8";
-  document.getElementById("speaker5spe").style.background = "#B6E1E8";
-  document.getElementById("speaker7spe").style.background = "#B6E1E8";
-  document.getElementById("speaker8spe").style.background = "#B6E1E8";
-}
-function speakerOut4(){
-  document.getElementById("speaker1spe").style.background = "white";
-  document.getElementById("speaker2spe").style.background = "white";
-  document.getElementById("speaker3spe").style.background = "white";
-  document.getElementById("speaker5spe").style.background = "white";
-  document.getElementById("speaker6spe").style.background = "white";
-  document.getElementById("speaker4spe").style.background = "white";
-  document.getElementById("speaker7spe").style.background = "white";
-  document.getElementById("speaker8spe").style.background = "white";
-}
-function speakerHover5(){
-  document.getElementById("speaker1spea").style.background = "#B6E1E8";
-  document.getElementById("speaker2spea").style.background = "#B6E1E8";
-  document.getElementById("speaker3spea").style.background = "#B6E1E8";
-  document.getElementById("speaker4spea").style.background = "#B6E1E8";
-  document.getElementById("speaker6spea").style.background = "#B6E1E8";
-  document.getElementById("speaker5spea").style.background = "#B6E1E8";
-  document.getElementById("speaker7spea").style.background = "#B6E1E8";
-  document.getElementById("speaker8spea").style.background = "#B6E1E8";
-}
-function speakerOut5(){
-  document.getElementById("speaker1spea").style.background = "white";
-  document.getElementById("speaker2spea").style.background = "white";
-  document.getElementById("speaker3spea").style.background = "white";
-  document.getElementById("speaker5spea").style.background = "white";
-  document.getElementById("speaker6spea").style.background = "white";
-  document.getElementById("speaker4spea").style.background = "white";
-  document.getElementById("speaker7spea").style.background = "white";
-  document.getElementById("speaker8spea").style.background = "white";
-}
-function speakerHover6(){
-  document.getElementById("speakerelem1").style.background = "#B6E1E8";
-  document.getElementById("speakerelem2").style.background = "#B6E1E8";
-  document.getElementById("speakerelem3").style.background = "#B6E1E8";
-  document.getElementById("speakerelem4").style.background = "#B6E1E8";
-  document.getElementById("speakerelem5").style.background = "#B6E1E8";
-  document.getElementById("speakerelem6").style.background = "#B6E1E8";
-  document.getElementById("speakerelem7").style.background = "#B6E1E8";
-  document.getElementById("speakerelem8").style.background = "#B6E1E8";
-}
-function speakerOut6(){
-  document.getElementById("speakerelem1").style.background = "white";
-  document.getElementById("speakerelem2").style.background = "white";
-  document.getElementById("speakerelem3").style.background = "white";
-  document.getElementById("speakerelem4").style.background = "white";
-  document.getElementById("speakerelem5").style.background = "white";
-  document.getElementById("speakerelem6").style.background = "white";
-  document.getElementById("speakerelem7").style.background = "white";
-  document.getElementById("speakerelem8").style.background = "white";
-}
-function speakerHover7(){
-  document.getElementById("speakerelem1e").style.background = "#B6E1E8";
-  document.getElementById("speakerelem2e").style.background = "#B6E1E8";
-  document.getElementById("speakerelem3e").style.background = "#B6E1E8";
-  document.getElementById("speakerelem4e").style.background = "#B6E1E8";
-  document.getElementById("speakerelem5e").style.background = "#B6E1E8";
-  document.getElementById("speakerelem6e").style.background = "#B6E1E8";
-  document.getElementById("speakerelem7e").style.background = "#B6E1E8";
-  document.getElementById("speakerelem8e").style.background = "#B6E1E8";
-}
-function speakerOut7(){
-  document.getElementById("speakerelem1e").style.background = "white";
-  document.getElementById("speakerelem2e").style.background = "white";
-  document.getElementById("speakerelem3e").style.background = "white";
-  document.getElementById("speakerelem4e").style.background = "white";
-  document.getElementById("speakerelem5e").style.background = "white";
-  document.getElementById("speakerelem6e").style.background = "white";
-  document.getElementById("speakerelem7e").style.background = "white";
-  document.getElementById("speakerelem8e").style.background = "white";
-}
-function speakerHover8(){
-  document.getElementById("speakerelem1el").style.background = "#B6E1E8";
-  document.getElementById("speakerelem2el").style.background = "#B6E1E8";
-  document.getElementById("speakerelem3el").style.background = "#B6E1E8";
-  document.getElementById("speakerelem4el").style.background = "#B6E1E8";
-  document.getElementById("speakerelem5el").style.background = "#B6E1E8";
-  document.getElementById("speakerelem6el").style.background = "#B6E1E8";
-  document.getElementById("speakerelem7el").style.background = "#B6E1E8";
-  document.getElementById("speakerelem8el").style.background = "#B6E1E8";
-}
-function speakerOut8(){
-  document.getElementById("speakerelem1el").style.background = "white";
-  document.getElementById("speakerelem2el").style.background = "white";
-  document.getElementById("speakerelem3el").style.background = "white";
-  document.getElementById("speakerelem4el").style.background = "white";
-  document.getElementById("speakerelem5el").style.background = "white";
-  document.getElementById("speakerelem6el").style.background = "white";
-  document.getElementById("speakerelem7el").style.background = "white";
-  document.getElementById("speakerelem8el").style.background = "white";
-}
-function speakerHover9(){
-  document.getElementById("speakerelem1ele").style.background = "#B6E1E8";
-  document.getElementById("speakerelem2ele").style.background = "#B6E1E8";
-  document.getElementById("speakerelem3ele").style.background = "#B6E1E8";
-  document.getElementById("speakerelem4ele").style.background = "#B6E1E8";
-  document.getElementById("speakerelem5ele").style.background = "#B6E1E8";
-  document.getElementById("speakerelem6ele").style.background = "#B6E1E8";
-  document.getElementById("speakerelem7ele").style.background = "#B6E1E8";
-  document.getElementById("speakerelem8ele").style.background = "#B6E1E8";
-}
-function speakerOut9(){
-  document.getElementById("speakerelem1ele").style.background = "white";
-  document.getElementById("speakerelem2ele").style.background = "white";
-  document.getElementById("speakerelem3ele").style.background = "white";
-  document.getElementById("speakerelem4ele").style.background = "white";
-  document.getElementById("speakerelem5ele").style.background = "white";
-  document.getElementById("speakerelem6ele").style.background = "white";
-  document.getElementById("speakerelem7ele").style.background = "white";
-  document.getElementById("speakerelem8ele").style.background = "white";
-}
-function speakerHover10(){
-  document.getElementById("speakerelem1elem").style.background = "#B6E1E8";
-  document.getElementById("speakerelem2elem").style.background = "#B6E1E8";
-  document.getElementById("speakerelem3elem").style.background = "#B6E1E8";
-  document.getElementById("speakerelem4elem").style.background = "#B6E1E8";
-  document.getElementById("speakerelem5elem").style.background = "#B6E1E8";
-  document.getElementById("speakerelem6elem").style.background = "#B6E1E8";
-  document.getElementById("speakerelem7elem").style.background = "#B6E1E8";
-  document.getElementById("speakerelem8elem").style.background = "#B6E1E8";
-}
-function speakerOut10(){
-  document.getElementById("speakerelem1elem").style.background = "white";
-  document.getElementById("speakerelem2elem").style.background = "white";
-  document.getElementById("speakerelem3elem").style.background = "white";
-  document.getElementById("speakerelem4elem").style.background = "white";
-  document.getElementById("speakerelem5elem").style.background = "white";
-  document.getElementById("speakerelem6elem").style.background = "white";
-  document.getElementById("speakerelem7elem").style.background = "white";
-  document.getElementById("speakerelem8elem").style.background = "white";
-}
-function speakerHover11(){
-  document.getElementById("elemsp1").style.background = "#B6E1E8";
-  document.getElementById("elemsp2").style.background = "#B6E1E8";
-  document.getElementById("elemsp3").style.background = "#B6E1E8";
-  document.getElementById("elemsp4").style.background = "#B6E1E8";
-  document.getElementById("elemsp5").style.background = "#B6E1E8";
-  document.getElementById("elemsp6").style.background = "#B6E1E8";
-  document.getElementById("elemsp7").style.background = "#B6E1E8";
-  document.getElementById("elemsp8").style.background = "#B6E1E8";
-}
-function speakerOut11(){
-  document.getElementById("elemsp1").style.background = "white";
-  document.getElementById("elemsp2").style.background = "white";
-  document.getElementById("elemsp3").style.background = "white";
-  document.getElementById("elemsp4").style.background = "white";
-  document.getElementById("elemsp5").style.background = "white";
-  document.getElementById("elemsp6").style.background = "white";
-  document.getElementById("elemsp7").style.background = "white";
-  document.getElementById("elemsp8").style.background = "white";
-}
-function speakerHover12(){
-  document.getElementById("elemspe1").style.background = "#B6E1E8";
-  document.getElementById("elemspe2").style.background = "#B6E1E8";
-  document.getElementById("elemspe3").style.background = "#B6E1E8";
-  document.getElementById("elemspe4").style.background = "#B6E1E8";
-  document.getElementById("elemspe5").style.background = "#B6E1E8";
-  document.getElementById("elemspe6").style.background = "#B6E1E8";
-  document.getElementById("elemspe7").style.background = "#B6E1E8";
-  document.getElementById("elemspe8").style.background = "#B6E1E8";
-}
-function speakerOut12(){
-  document.getElementById("elemspe1").style.background = "white";
-  document.getElementById("elemspe2").style.background = "white";
-  document.getElementById("elemspe3").style.background = "white";
-  document.getElementById("elemspe4").style.background = "white";
-  document.getElementById("elemspe5").style.background = "white";
-  document.getElementById("elemspe6").style.background = "white";
-  document.getElementById("elemspe7").style.background = "white";
-  document.getElementById("elemspe8").style.background = "white";
-}
+// }
+// function speakerHover2(){
+//   document.getElementById("speaker1s").style.background = "#B6E1E8";
+//   document.getElementById("speaker2s").style.background = "#B6E1E8";
+//   document.getElementById("speaker3s").style.background = "#B6E1E8";
+//   document.getElementById("speaker4s").style.background = "#B6E1E8";
+//   document.getElementById("speaker6s").style.background = "#B6E1E8";
+//   document.getElementById("speaker5s").style.background = "#B6E1E8";
+//   document.getElementById("speaker7s").style.background = "#B6E1E8";
+//   document.getElementById("speaker8s").style.background = "#B6E1E8";
+// }
+// function speakerOut2(){
+//   document.getElementById("speaker1s").style.background = "white";
+//   document.getElementById("speaker2s").style.background = "white";
+//   document.getElementById("speaker3s").style.background = "white";
+//   document.getElementById("speaker5s").style.background = "white";
+//   document.getElementById("speaker6s").style.background = "white";
+//   document.getElementById("speaker4s").style.background = "white";
+//   document.getElementById("speaker7s").style.background = "white";
+//   document.getElementById("speaker8s").style.background = "white";
+// }
+// function speakerHover3(){
+//   document.getElementById("speaker1sp").style.background = "#B6E1E8";
+//   document.getElementById("speaker2sp").style.background = "#B6E1E8";
+//   document.getElementById("speaker3sp").style.background = "#B6E1E8";
+//   document.getElementById("speaker4sp").style.background = "#B6E1E8";
+//   document.getElementById("speaker6sp").style.background = "#B6E1E8";
+//   document.getElementById("speaker5sp").style.background = "#B6E1E8";
+//   document.getElementById("speaker7sp").style.background = "#B6E1E8";
+//   document.getElementById("speaker8sp").style.background = "#B6E1E8";
+// }
+// function speakerOut3(){
+//   document.getElementById("speaker1sp").style.background = "white";
+//   document.getElementById("speaker2sp").style.background = "white";
+//   document.getElementById("speaker3sp").style.background = "white";
+//   document.getElementById("speaker5sp").style.background = "white";
+//   document.getElementById("speaker6sp").style.background = "white";
+//   document.getElementById("speaker4sp").style.background = "white";
+//   document.getElementById("speaker7sp").style.background = "white";
+//   document.getElementById("speaker8sp").style.background = "white";
+// }
+// function speakerHover4(){
+//   document.getElementById("speaker1spe").style.background = "#B6E1E8";
+//   document.getElementById("speaker2spe").style.background = "#B6E1E8";
+//   document.getElementById("speaker3spe").style.background = "#B6E1E8";
+//   document.getElementById("speaker4spe").style.background = "#B6E1E8";
+//   document.getElementById("speaker6spe").style.background = "#B6E1E8";
+//   document.getElementById("speaker5spe").style.background = "#B6E1E8";
+//   document.getElementById("speaker7spe").style.background = "#B6E1E8";
+//   document.getElementById("speaker8spe").style.background = "#B6E1E8";
+// }
+// function speakerOut4(){
+//   document.getElementById("speaker1spe").style.background = "white";
+//   document.getElementById("speaker2spe").style.background = "white";
+//   document.getElementById("speaker3spe").style.background = "white";
+//   document.getElementById("speaker5spe").style.background = "white";
+//   document.getElementById("speaker6spe").style.background = "white";
+//   document.getElementById("speaker4spe").style.background = "white";
+//   document.getElementById("speaker7spe").style.background = "white";
+//   document.getElementById("speaker8spe").style.background = "white";
+// }
+// function speakerHover5(){
+//   document.getElementById("speaker1spea").style.background = "#B6E1E8";
+//   document.getElementById("speaker2spea").style.background = "#B6E1E8";
+//   document.getElementById("speaker3spea").style.background = "#B6E1E8";
+//   document.getElementById("speaker4spea").style.background = "#B6E1E8";
+//   document.getElementById("speaker6spea").style.background = "#B6E1E8";
+//   document.getElementById("speaker5spea").style.background = "#B6E1E8";
+//   document.getElementById("speaker7spea").style.background = "#B6E1E8";
+//   document.getElementById("speaker8spea").style.background = "#B6E1E8";
+// }
+// function speakerOut5(){
+//   document.getElementById("speaker1spea").style.background = "white";
+//   document.getElementById("speaker2spea").style.background = "white";
+//   document.getElementById("speaker3spea").style.background = "white";
+//   document.getElementById("speaker5spea").style.background = "white";
+//   document.getElementById("speaker6spea").style.background = "white";
+//   document.getElementById("speaker4spea").style.background = "white";
+//   document.getElementById("speaker7spea").style.background = "white";
+//   document.getElementById("speaker8spea").style.background = "white";
+// }
+// function speakerHover6(){
+//   document.getElementById("speakerelem1").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem2").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem3").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem4").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem5").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem6").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem7").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem8").style.background = "#B6E1E8";
+// }
+// function speakerOut6(){
+//   document.getElementById("speakerelem1").style.background = "white";
+//   document.getElementById("speakerelem2").style.background = "white";
+//   document.getElementById("speakerelem3").style.background = "white";
+//   document.getElementById("speakerelem4").style.background = "white";
+//   document.getElementById("speakerelem5").style.background = "white";
+//   document.getElementById("speakerelem6").style.background = "white";
+//   document.getElementById("speakerelem7").style.background = "white";
+//   document.getElementById("speakerelem8").style.background = "white";
+// }
+// function speakerHover7(){
+//   document.getElementById("speakerelem1e").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem2e").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem3e").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem4e").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem5e").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem6e").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem7e").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem8e").style.background = "#B6E1E8";
+// }
+// function speakerOut7(){
+//   document.getElementById("speakerelem1e").style.background = "white";
+//   document.getElementById("speakerelem2e").style.background = "white";
+//   document.getElementById("speakerelem3e").style.background = "white";
+//   document.getElementById("speakerelem4e").style.background = "white";
+//   document.getElementById("speakerelem5e").style.background = "white";
+//   document.getElementById("speakerelem6e").style.background = "white";
+//   document.getElementById("speakerelem7e").style.background = "white";
+//   document.getElementById("speakerelem8e").style.background = "white";
+// }
+// function speakerHover8(){
+//   document.getElementById("speakerelem1el").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem2el").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem3el").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem4el").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem5el").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem6el").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem7el").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem8el").style.background = "#B6E1E8";
+// }
+// function speakerOut8(){
+//   document.getElementById("speakerelem1el").style.background = "white";
+//   document.getElementById("speakerelem2el").style.background = "white";
+//   document.getElementById("speakerelem3el").style.background = "white";
+//   document.getElementById("speakerelem4el").style.background = "white";
+//   document.getElementById("speakerelem5el").style.background = "white";
+//   document.getElementById("speakerelem6el").style.background = "white";
+//   document.getElementById("speakerelem7el").style.background = "white";
+//   document.getElementById("speakerelem8el").style.background = "white";
+// }
+// function speakerHover9(){
+//   document.getElementById("speakerelem1ele").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem2ele").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem3ele").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem4ele").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem5ele").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem6ele").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem7ele").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem8ele").style.background = "#B6E1E8";
+// }
+// function speakerOut9(){
+//   document.getElementById("speakerelem1ele").style.background = "white";
+//   document.getElementById("speakerelem2ele").style.background = "white";
+//   document.getElementById("speakerelem3ele").style.background = "white";
+//   document.getElementById("speakerelem4ele").style.background = "white";
+//   document.getElementById("speakerelem5ele").style.background = "white";
+//   document.getElementById("speakerelem6ele").style.background = "white";
+//   document.getElementById("speakerelem7ele").style.background = "white";
+//   document.getElementById("speakerelem8ele").style.background = "white";
+// }
+// function speakerHover10(){
+//   document.getElementById("speakerelem1elem").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem2elem").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem3elem").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem4elem").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem5elem").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem6elem").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem7elem").style.background = "#B6E1E8";
+//   document.getElementById("speakerelem8elem").style.background = "#B6E1E8";
+// }
+// function speakerOut10(){
+//   document.getElementById("speakerelem1elem").style.background = "white";
+//   document.getElementById("speakerelem2elem").style.background = "white";
+//   document.getElementById("speakerelem3elem").style.background = "white";
+//   document.getElementById("speakerelem4elem").style.background = "white";
+//   document.getElementById("speakerelem5elem").style.background = "white";
+//   document.getElementById("speakerelem6elem").style.background = "white";
+//   document.getElementById("speakerelem7elem").style.background = "white";
+//   document.getElementById("speakerelem8elem").style.background = "white";
+// }
+// function speakerHover11(){
+//   document.getElementById("elemsp1").style.background = "#B6E1E8";
+//   document.getElementById("elemsp2").style.background = "#B6E1E8";
+//   document.getElementById("elemsp3").style.background = "#B6E1E8";
+//   document.getElementById("elemsp4").style.background = "#B6E1E8";
+//   document.getElementById("elemsp5").style.background = "#B6E1E8";
+//   document.getElementById("elemsp6").style.background = "#B6E1E8";
+//   document.getElementById("elemsp7").style.background = "#B6E1E8";
+//   document.getElementById("elemsp8").style.background = "#B6E1E8";
+// }
+// function speakerOut11(){
+//   document.getElementById("elemsp1").style.background = "white";
+//   document.getElementById("elemsp2").style.background = "white";
+//   document.getElementById("elemsp3").style.background = "white";
+//   document.getElementById("elemsp4").style.background = "white";
+//   document.getElementById("elemsp5").style.background = "white";
+//   document.getElementById("elemsp6").style.background = "white";
+//   document.getElementById("elemsp7").style.background = "white";
+//   document.getElementById("elemsp8").style.background = "white";
+// }
+// function speakerHover12(){
+//   document.getElementById("elemspe1").style.background = "#B6E1E8";
+//   document.getElementById("elemspe2").style.background = "#B6E1E8";
+//   document.getElementById("elemspe3").style.background = "#B6E1E8";
+//   document.getElementById("elemspe4").style.background = "#B6E1E8";
+//   document.getElementById("elemspe5").style.background = "#B6E1E8";
+//   document.getElementById("elemspe6").style.background = "#B6E1E8";
+//   document.getElementById("elemspe7").style.background = "#B6E1E8";
+//   document.getElementById("elemspe8").style.background = "#B6E1E8";
+// }
+// function speakerOut12(){
+//   document.getElementById("elemspe1").style.background = "white";
+//   document.getElementById("elemspe2").style.background = "white";
+//   document.getElementById("elemspe3").style.background = "white";
+//   document.getElementById("elemspe4").style.background = "white";
+//   document.getElementById("elemspe5").style.background = "white";
+//   document.getElementById("elemspe6").style.background = "white";
+//   document.getElementById("elemspe7").style.background = "white";
+//   document.getElementById("elemspe8").style.background = "white";
+// }
 
 $(document).ready(function(){
   $('.example-block-elem').click(function(){
@@ -1390,4 +1453,36 @@ $(document).ready(function() {
   // basket.onclick = function(){
   //   modalbasket.style.display = 'block';
   // }
+
+  function seemore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "EЩЕ";
+      moreText.style.display = "none";
+  
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "МЕНЬШЕ";
+      moreText.style.display = "inline";
+  
+    }
+  }
+
+  if(document.querySelector('.play-table')){
+    let playTest = document.querySelectorAll('.play-table')
+     
+    for(let j of playTest){
+      j.addEventListener('click', () => {
+        let pouseTest = document.querySelectorAll('.pause-table')
+        for(let i of pouseTest){
+          i.click()
+          j.click()
+        } 
+      })
+    }
+  }
   

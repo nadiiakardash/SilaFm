@@ -11,43 +11,28 @@
 
 <body>
   <header>
-    <img onclick="window.location.href='/silaFM/index.html'" class="menu-logo" src="img/SilaFM_logo.png" alt="logotip-Sila-FM">
+    <img class="menu-logo" src="img/SilaFM_logo.png" alt="logotip-Sila-FM">
     <ul class="menu">
       <div class="menu-dropdown">
-        <li onclick="window.location.href='/silaFM/speakers-page/speakers.html'" class="menu-item dropbtn">
-          <svg class="menu-polygon" width="16" height="18" viewBox="0 0 11 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#671627"
-              stroke-width="1.5">
-          </svg>
-          ДИКТОРЫ
+        <li class="menu-item dropbtn"><img src="img/icons/menu-poligons.svg" alt=""><a href="speakers.html">ДИКТОРЫ</a></li>
+          <!-- <menu-poligon></menu-poligon> -->
+          
           <div class="dropdown-content">
-            <svg class="dropsvg" width="16" height="18" viewBox="0 0 16 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.98529 14.2265L9.98525 5.90892L1.7924 5.90889L9.98529 14.2265Z" stroke="#671627"
-                stroke-width="1.5" />
-            </svg>
             <ul class="content-items">
-              <li class="down-item">ДИКТОРЫ РОССИИ</li>
-              <li class="down-item">ДИКТОРЫ УКРАИНЫ</li>
-              <li class="down-item">ИНОСТРАННЫЕ ДИКТОРЫ</li>
-              <li class="down-item">ВОКАЛИСТЫ</li>
-              <li class="down-item">ПАРОДИСТЫ</li>
-              <li class="down-item">ДЕТСКИЕ ГОЛОСА</li>
+              <li class="down-item"><a href="#">ДИКТОРЫ РОССИИ</a></li>
+              <li class="down-item"><a href="#">ДИКТОРЫ УКРАИНЫ</a></li>
+              <li class="down-item"><a href="#">ИНОСТРАННЫЕ ДИКТОРЫ</a></li>
+              <li class="down-item"><a href="#">ВОКАЛИСТЫ</a></li>
+              <li class="down-item"><a href="#">ПАРОДИСТЫ</a></li>
+              <li class="down-item"><a href="#">ДЕТСКИЕ ГОЛОСА</a></li>
             </ul>
           </div>
         </li>
       </div>
 
-      <li  class="menu-item active-page-col">
-        <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#671627"
-            stroke-width="1.5" />
-        </svg>
-        УСЛУГИ</li>
-      <li onclick="window.location.href='/silaFM/pay-page/pay.html'" class="menu-item">ОПЛАТА</li>
-      <li onclick="window.location.href='/silaFM/contact-page/contact.html'" class="menu-item">КОНТАКТЫ</li>
+      <li class="menu-item"><a href="audio.html"><img src="img/icons/menu-poligon2.svg" alt="" class="menu-poligon2">УСЛУГИ</a></li>
+      <li class="menu-item"><a href="pay.html">ОПЛАТА</a></li>
+      <li class="menu-item"><a href="contact.html">КОНТАКТЫ</a></li>
     </ul>
     <ul class="header-number">
       <li class="number-city">Киев<span class="phone-number">+38 /044/ 545 77 13</span></li>
@@ -55,36 +40,38 @@
     </ul>
     <div class="burger">
       <div id="myNav" class="overlay">
-        <a class="closebtn" onclick="closeNav()"><svg width="22" height="22" viewBox="0 0 22 22" fill="white" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21 2.17838L19.8216 1L11 9.82162L2.17838 1L1 2.17838L9.82162 11L1 19.8216L2.17838 21L11 12.1784L19.8216 21L21 19.8216L12.1784 11L21 2.17838Z" stroke-width="0.5"/>
-          </svg></a>
+        <a class="closebtn" onclick="closeNav()">
+          <img src="img/icons/closebntsvg.svg" alt="">
+        </a>
         <div class="overlay-content">
           <div class="dropdown-burger">
-            <a onclick="window.location.href='/silaFM/speakers-page/speakers.html'" class="for-droptmenu dropbtn-burger"><svg class="menu-polygon-burger" width="16" height="18"
+            <a class="for-droptmenu dropbtn-burger">
+              <svg class="menu-polygon-burger" width="16" height="18"
                 viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
                   stroke-width="1.5">
-              </svg>ДИКТОРЫ</a>
+              </svg>
+              ДИКТОРЫ</a>
             <div class="dropdown-content-burger">
-              <a>ДИКТОРЫ РОССИИ</a>
-              <a>ДИКТОРЫ УКРАИНЫ</a>
-              <a>ИНОСТРАННЫЕ ДИКТОРЫ</a>
-              <a>ВОКАЛИСТЫ</a>
-              <a>ПАРОДИСТЫ</a>
-              <a>ДЕТСКИЕ ГОЛОСА</a>
+              <a href="#">ДИКТОРЫ РОССИИ</a>
+              <a href="#">ДИКТОРЫ УКРАИНЫ</a>
+              <a href="#">ИНОСТРАННЫЕ ДИКТОРЫ</a>
+              <a href="#">ВОКАЛИСТЫ</a>
+              <a href="#">ПАРОДИСТЫ</a>
+              <a href="#">ДЕТСКИЕ ГОЛОСА</a>
             </div>
           </div>
-          <a class="for-droptmenu"> <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
+          <a href='audio.html' class="for-droptmenu"> <svg class="menu-polygon2" width="16" height="18" viewBox="0 0 11 12" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M9.98471 2.04347L9.98467 10.3611L1.79182 10.3611L9.98471 2.04347Z" stroke="#FEFEFF"
                 stroke-width="1.5">
             </svg>УСЛУГИ</a>
-          <a onclick="window.location.href='/silaFM/pay-page/pay.html'">ОПЛАТА</a>
-          <a onclick="window.location.href='/silaFM/contact-page/contact.html'" >КОНТАКТЫ</a>
+          <a href='pay.html'>ОПЛАТА</a>
+          <a href='contact.html'>КОНТАКТЫ</a>
 
           <div class="contacts">
             <p class="contact-elem">Киев<span class="phone-number">+38 /044/ 545 77 13</span></p>
-            <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span></p>
+            <p class="contact-elem">Москва <span class="phone-number">+7 /800/ 551 0 551</span><p>
           </div>
         </div>
       </div>

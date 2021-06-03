@@ -1,11 +1,11 @@
 
 $(document).ready(function(){
-  $("#menu").on("click", "a", function (event) {
-    event.preventDefault();
-    var id = $(this).attr('href'),
-        top = $(id).offset().top - 70;
-    $('body,html').animate({ scrollTop: top }, 1600);
-  });
+  // $("#menu").on("click", "a", function (event) {
+  //   event.preventDefault();
+  //   var id = $(this).attr('href'),
+  //       top = $(id).offset().top - 70;
+  //   $('body,html').animate({ scrollTop: top }, 1600);
+  // });
   
   $(".counter").counterUp({delay:10,time:1000})
   //popapChronometr
@@ -106,30 +106,30 @@ document.addEventListener("click", closeAllSelect);
     document.getElementById("base-block1").style.color= "#C7DEE1";
     document.getElementById("base-text1").style.color= "#C7DEE1";
     document.getElementById("btn-audio-page").style.color= "#C7DEE1";
-    document.getElementById("svg1").style.stroke= "#C7DEE1";
-    document.getElementById("base-svg1").style.display= "block";
+    document.getElementById("svg1").style.fill= "#C7DEE1";
+//    document.getElementById("base-svg1").style.display= "block";
   }
   function mouseOut1() {
     document.getElementById("base-block1").style.color = "#404263";
     document.getElementById("base-text1").style.color = "#404263";
     document.getElementById("btn-audio-page").style.color= "#404263";
-    document.getElementById("svg1").style.stroke= "#404263";
-    document.getElementById("base-svg1").style.display= "none";
+    // document.getElementById("svg1").style.stroke= "#404263";
+    // document.getElementById("base-svg1").style.display= "none";
   }
 
   function mouseOver2() {
     document.getElementById("base-blockk2").style.color= "#C7DEE1";
     document.getElementById("base-text2").style.color= "#C7DEE1";
     document.getElementById("btn-audio-page2").style.color= "#C7DEE1";
-    document.getElementById("svg2").style.stroke= "#C7DEE1";
-    document.getElementById("base-svg2").style.display= "block";
+    // document.getElementById("svg2").style.stroke= "#C7DEE1";
+    // document.getElementById("base-svg2").style.display= "block";
   }
   function mouseOut2() {
     document.getElementById("base-blockk2").style.color = "#404263";
     document.getElementById("base-text2").style.color = "#404263";
     document.getElementById("btn-audio-page2").style.color= "#404263";
-    document.getElementById("svg2").style.stroke= "#404263";
-    document.getElementById("base-svg2").style.display= "none";
+    // document.getElementById("svg2").style.stroke= "#404263";
+    // document.getElementById("base-svg2").style.display= "none";
   }
 function mouseOver() {
   document.getElementById("demo").style.width = "98%";
@@ -162,34 +162,49 @@ function closeNav() {
     document.getElementById("home-text").style.opacity = "1";
 
 }
-// for fixed left menu
-// window.onscroll = function () { scrollFunction() };
-// function scrollFunction() {
-//     if (document.documentElement.scrollTop > 800) {
-//         document.getElementById("menufixed").style.position = "fixed";
-//         document.getElementById("menufixed").style.marginTop = "-1100px";
-//         var mql = window.matchMedia('all and (min-height: 400px)');
-//         if (mql.matches) {
-//           document.getElementById("menufixed").style.marginTop = "-850px";
-//         } 
-//         var mql = window.matchMedia('all and (min-height: 600px)');
-//         if (mql.matches) {
-//           document.getElementById("menufixed").style.marginTop = "-1060px";
-//         } 
-//         var mql = window.matchMedia('all and (max-height: 667px)');
-//         if (mql.matches) {
-//           document.getElementById("menufixed").style.marginTop = "-1060px";
-//         } 
-//         var mql = window.matchMedia('all and (max-width: 470px)');
-//         if (mql.matches) {
-//           document.getElementById("menufixed").style.marginTop = "-790px";
-//         } 
-       
-//     } else {
-//         document.getElementById("menufixed").style.position = "absolute";
-//         document.getElementById("menufixed").style.marginTop = "0px";
-//     }
-// }
+//for fixed left menu
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 1050) {
+    document.getElementById("menufixed").style.position = "fixed";
+    document.getElementById("menufixed").style.marginTop = "-990px";
+    var mql = window.matchMedia('all and (min-height: 400px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-850px";
+    }
+    var mql = window.matchMedia('all and (min-height: 600px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-1060px";
+    }
+    var mql = window.matchMedia('all and (max-height: 667px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-1060px";
+    }
+    var mql = window.matchMedia('all and (max-width: 470px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-790px";
+    }
+  } else {
+    document.getElementById("menufixed").style.position = "absolute";
+    document.getElementById("menufixed").style.marginTop = "0px";
+  }
+ 
+  if (document.documentElement.scrollTop > 700) {
+    document.getElementById("show").style.opacity = "1";
+  } else {
+    document.getElementById("show").style.opacity = "0";
+  }
+  if (document.documentElement.scrollTop > 1500) {
+    document.getElementById("showThird").style.opacity = "1";
+  } else {
+    document.getElementById("showThird").style.opacity = "0";
+  }
+  if (document.documentElement.scrollTop > 2200) {
+    document.getElementById("showFour").style.opacity = "1";
+  } else {
+    document.getElementById("showFour").style.opacity = "0";
+  }
+}
 window.onscroll = function () { scrollFunction() };
   function scrollFunction() {
       if (document.documentElement.scrollTop > 750) {
@@ -229,7 +244,7 @@ window.onscroll = function () { scrollFunction() };
 
 //playlist
 let now_playing = document.querySelector(".now-playing");
-let playpause_btn = document.querySelector(".playpause-track");
+let playpause_btn = document.querySelector("#play");
 let playrepeat_btn = document.querySelector(".playrepeat-track");
 
 let seek_slider = document.querySelector(".seek_slider");
@@ -241,15 +256,15 @@ let updateTimer;
 let curr_track = document.createElement('audio');
 let repeat = document.createElement('audio');
 
-let track_list = [
-  {
-    path: "mp3/music1.mp3"
-  }
-];
+// let track_list = [
+//   {
+//     path: "mp3/music1.mp3"
+//   }
+// ];
 
 function loadTrack(track_index) {
   resetValues();
-  curr_track.src = track_list[track_index].path;
+  curr_track.src = playpause_btn.getAttribute("data-sound");
   curr_track.load();
   updateTimer = setInterval(seekUpdate, 1000);
 }
@@ -264,7 +279,9 @@ function playpauseTrack() {
 function playTrack() {
   curr_track.play();
   isPlaying = true;
-  playpause_btn.innerHTML = '<img src="img/icon-stop.png">';
+//  playpause_btn.innerHTML = '<img src="img/icon-stop.png">';
+  playpause_btn.classList.toggle("pause-track");
+  playpause_btn.classList.toggle("play-track");
 }
 function playTrackRepeat() {
 curr_track.loop=true;
@@ -281,7 +298,8 @@ playTrack();
 function pauseTrack() {
   curr_track.pause();
   isPlaying = false;
-  playpause_btn.innerHTML = '<img src="img/play.png">';
+  playpause_btn.classList.toggle("play-track");
+  playpause_btn.classList.toggle("pause-track");
 }
 
 function seekTo() {
@@ -330,7 +348,7 @@ loadTrack(track_index);
 
   //first-items player
 let now_playing1 = document.querySelector(".now-playing1");
-let playpause_btn1 = document.querySelector(".playpause-track1");
+let playpause_btn1 = document.querySelector("#play1");
 let playrepeat_btn1 = document.querySelector(".playrepeat-track1");
 
 let seek_slider1 = document.querySelector(".seek_slider1");
@@ -342,15 +360,15 @@ let updateTimer1;
 let curr_track1 = document.createElement('audio');
 let repeat1 = document.createElement('audio');
 
-let track_list1 = [
-  {
-    path: "mp3/music1.mp3"
-  }
-];
+// let track_list1 = [
+//   {
+//     path: "mp3/music1.mp3"
+//   }
+// ];
 
 function loadTrack1(track_index1) {
   resetValues1();
-  curr_track1.src = track_list1[track_index1].path;
+  curr_track1.src = playpause_btn1.getAttribute("data-sound");
   curr_track1.load();
   updateTimer1 = setInterval(seekUpdate1, 1000);
 }
@@ -365,7 +383,9 @@ function playpauseTrack1() {
 function playTrack1() {
   curr_track1.play();
   isPlaying1 = true;
-  playpause_btn1.innerHTML = '<img src="img/icon-stop.png">';
+//  playpause_btn.innerHTML = '<img src="img/icon-stop.png">';
+  playpause_btn1.classList.toggle("pause-track");
+  playpause_btn1.classList.toggle("play-track");
 }
 
 var repIcon = document.querySelector('.repeat')
@@ -389,7 +409,8 @@ playTrack1();
 function pauseTrack1() {
   curr_track1.pause();
   isPlaying1 = false;
-  playpause_btn1.innerHTML = '<img src="img/play.png">';
+  playpause_btn1.classList.toggle("pause-track");
+  playpause_btn1.classList.toggle("play-track");
 }
 
 function seekTo1() {
@@ -416,7 +437,7 @@ loadTrack1(track_index1);
 
   //second-items player
   let now_playing2 = document.querySelector(".now-playing2");
-  let playpause_btn2 = document.querySelector(".playpause-track2");
+  let playpause_btn2 = document.querySelector("#play2");
   let playrepeat_btn2 = document.querySelector(".playrepeat-track2");
   
   let seek_slider2 = document.querySelector(".seek_slider2");
@@ -428,15 +449,15 @@ loadTrack1(track_index1);
   let curr_track2 = document.createElement('audio');
   let repeat2 = document.createElement('audio');
   
-  let track_list2 = [
-    {
-      path: "mp3/music1.mp3"
-    }
-  ];
+  // let track_list2 = [
+  //   {
+  //     path: "mp3/music1.mp3"
+  //   }
+  // ];
   
   function loadTrack2(track_index2) {
     resetValues2();
-    curr_track2.src = track_list2[track_index2].path;
+    curr_track2.src = playpause_btn2.getAttribute("data-sound");
     curr_track2.load();
     updateTimer2 = setInterval(seekUpdate2, 1000);
   }
@@ -451,7 +472,9 @@ loadTrack1(track_index1);
   function playTrack2() {
     curr_track2.play();
     isPlaying2 = true;
-    playpause_btn2.innerHTML = '<img src="img/icon-stop.png">';
+    //playpause_btn2.innerHTML = '<img src="img/icon-stop.png">';
+    playpause_btn2.classList.toggle("pause-track");
+    playpause_btn2.classList.toggle("play-track");
   }
  
   var repIcon2 = document.querySelector('.repeat2')
@@ -475,7 +498,9 @@ loadTrack1(track_index1);
   function pauseTrack2() {
     curr_track2.pause();
     isPlaying2 = false;
-    playpause_btn2.innerHTML = '<img src="img/play.png">';
+    //playpause_btn2.innerHTML = '<img src="img/play.png">';
+    playpause_btn2.classList.toggle("pause-track");
+    playpause_btn2.classList.toggle("play-track");
   }
   
   function seekTo2() {
@@ -500,7 +525,7 @@ loadTrack1(track_index1);
 
    //third-items player
    let now_playing3 = document.querySelector(".now-playing3");
-   let playpause_btn3 = document.querySelector(".playpause-track3");
+   let playpause_btn3 = document.querySelector("#play3");
    let playrepeat_btn3 = document.querySelector(".playrepeat-track3");
    
    let seek_slider3 = document.querySelector(".seek_slider3");
@@ -512,15 +537,15 @@ loadTrack1(track_index1);
    let curr_track3 = document.createElement('audio');
    let repeat3= document.createElement('audio');
    
-   let track_list3 = [
-     {
-       path: "mp3/music1.mp3"
-     }
-   ];
+  //  let track_list3 = [
+  //    {
+  //      path: "mp3/music1.mp3"
+  //    }
+  //  ];
    
    function loadTrack3(track_index3) {
      resetValues3();
-     curr_track3.src = track_list3[track_index3].path;
+     curr_track3.src = playpause_btn3.getAttribute('data-sound');
      curr_track3.load();
      updateTimer3 = setInterval(seekUpdate3, 1000);
    }
@@ -535,7 +560,9 @@ loadTrack1(track_index1);
    function playTrack3() {
      curr_track3.play();
      isPlaying3 = true;
-     playpause_btn3.innerHTML = '<img src="img/icon-stop.png">';
+//     playpause_btn3.innerHTML = '<img src="img/icon-stop.png">';
+  playpause_btn3.classList.toggle("pause-track");
+  playpause_btn3.classList.toggle("play-track");
    }
   
    var repIcon3 = document.querySelector('.repeat3')
@@ -559,7 +586,9 @@ loadTrack1(track_index1);
    function pauseTrack3() {
      curr_track3.pause();
      isPlaying3 = false;
-     playpause_btn3.innerHTML = '<img src="img/play.png">';
+//     playpause_btn3.innerHTML = '<img src="img/play.png">';
+    playpause_btn3.classList.toggle("pause-track");
+    playpause_btn3.classList.toggle("play-track");
    }
    
    function seekTo3() {
@@ -584,7 +613,7 @@ loadTrack1(track_index1);
 
     //four-items player
     let now_playing4 = document.querySelector(".now-playing4");
-    let playpause_btn4 = document.querySelector(".playpause-track4");
+    let playpause_btn4 = document.querySelector("#play4");
     let playrepeat_btn4 = document.querySelector(".playrepeat-track4");
     
     let seek_slider4 = document.querySelector(".seek_slider4");
@@ -596,15 +625,15 @@ loadTrack1(track_index1);
     let curr_track4 = document.createElement('audio');
     let repeat4= document.createElement('audio');
     
-    let track_list4 = [
-      {
-        path: "mp3/music1.mp3"
-      }
-    ];
+    // let track_list4 = [
+    //   {
+    //     path: "mp3/music1.mp3"
+    //   }
+    // ];
     
     function loadTrack4(track_index4) {
       resetValues4();
-      curr_track4.src = track_list4[track_index4].path;
+      curr_track4.src = playpause_btn4.getAttribute("data-sound");
       curr_track4.load();
       updateTimer4 = setInterval(seekUpdate4, 1000);
     }
@@ -619,7 +648,9 @@ loadTrack1(track_index1);
     function playTrack4() {
       curr_track4.play();
       isPlaying4 = true;
-      playpause_btn4.innerHTML = '<img src="img/icon-stop.png">';
+//      playpause_btn4.innerHTML = '<img src="img/icon-stop.png">';
+      playpause_btn4.classList.toggle("pause-track");
+      playpause_btn4.classList.toggle("play-track");
     }
    
     var repIcon4 = document.querySelector('.repeat4')
@@ -637,7 +668,9 @@ loadTrack1(track_index1);
     function pauseTrack4() {
       curr_track4.pause();
       isPlaying4 = false;
-      playpause_btn4.innerHTML = '<img src="img/play.png">';
+      //playpause_btn4.innerHTML = '<img src="img/play.png">';
+      playpause_btn4.classList.toggle("pause-track");
+      playpause_btn4.classList.toggle("play-track");
     }
     
     function seekTo4() {
@@ -661,7 +694,7 @@ loadTrack1(track_index1);
     loadTrack4(track_index4);
     //five-items player
     let now_playing5 = document.querySelector(".now-playing5");
-    let playpause_btn5 = document.querySelector(".playpause-track5");
+    let playpause_btn5 = document.querySelector("#play5");
     let playrepeat_btn5 = document.querySelector(".playrepeat-track5");
     
     let seek_slider5 = document.querySelector(".seek_slider5");
@@ -673,15 +706,15 @@ loadTrack1(track_index1);
     let curr_track5 = document.createElement('audio');
     let repeat5= document.createElement('audio');
     
-    let track_list5 = [
-      {
-        path: "mp3/music1.mp3"
-      }
-    ];
+    // let track_list5 = [
+    //   {
+    //     path: "mp3/music1.mp3"
+    //   }
+    // ];
     
     function loadTrack5(track_index5) {
       resetValues5();
-      curr_track5.src = track_list5[track_index5].path;
+      curr_track5.src = playpause_btn5.getAttribute("data-sound");
       curr_track5.load();
       updateTimer5 = setInterval(seekUpdate5, 1000);
     }
@@ -696,7 +729,9 @@ loadTrack1(track_index1);
     function playTrack5() {
       curr_track5.play();
       isPlaying5 = true;
-      playpause_btn5.innerHTML = '<img src="img/icon-stop.png">';
+      //playpause_btn5.innerHTML = '<img src="img/icon-stop.png">';
+      playpause_btn5.classList.toggle("pause-track");
+      playpause_btn5.classList.toggle("play-track");
     }
    
     var repIcon5 = document.querySelector('.repeat5')
@@ -714,7 +749,9 @@ loadTrack1(track_index1);
     function pauseTrack5() {
       curr_track5.pause();
       isPlaying5 = false;
-      playpause_btn5.innerHTML = '<img src="img/play.png">';
+      //playpause_btn5.innerHTML = '<img src="img/play.png">';
+      playpause_btn5.classList.toggle("pause-track");
+      playpause_btn5.classList.toggle("play-track");
     }
     
     function seekTo5() {
@@ -739,7 +776,7 @@ loadTrack1(track_index1);
 
     //six-items player
     let now_playing6 = document.querySelector(".now-playing6");
-    let playpause_btn6 = document.querySelector(".playpause-track6");
+    let playpause_btn6 = document.querySelector("#play6");
     let playrepeat_btn6 = document.querySelector(".playrepeat-track6");
     
     let seek_slider6 = document.querySelector(".seek_slider6");
@@ -751,15 +788,15 @@ loadTrack1(track_index1);
     let curr_track6 = document.createElement('audio');
     let repeat6= document.createElement('audio');
     
-    let track_list6 = [
-      {
-        path: "mp3/music1.mp3"
-      }
-    ];
+    // let track_list6 = [
+    //   {
+    //     path: "mp3/music1.mp3"
+    //   }
+    // ];
     
     function loadTrack6(track_index6) {
       resetValues6();
-      curr_track6.src = track_list6[track_index6].path;
+      curr_track6.src = playpause_btn5.getAttribute("data-sound");
       curr_track6.load();
       updateTimer6 = setInterval(seekUpdate6, 1000);
     }
@@ -774,7 +811,9 @@ loadTrack1(track_index1);
     function playTrack6() {
       curr_track6.play();
       isPlaying6 = true;
-      playpause_btn6.innerHTML = '<img src="img/icon-stop.png">';
+      //playpause_btn6.innerHTML = '<img src="img/icon-stop.png">';
+      playpause_btn6.classList.toggle("pause-track");
+      playpause_btn6.classList.toggle("play-track");
     }
    
     var repIcon6 = document.querySelector('.repeat6')
@@ -792,7 +831,9 @@ loadTrack1(track_index1);
     function pauseTrack6() {
       curr_track6.pause();
       isPlaying6 = false;
-      playpause_btn6.innerHTML = '<img src="img/play.png">';
+      //playpause_btn6.innerHTML = '<img src="img/play.png">';
+      playpause_btn6.classList.toggle("pause-track");
+      playpause_btn6.classList.toggle("play-track");
     }
     
     function seekTo6() {
@@ -897,3 +938,53 @@ document.addEventListener('play', function(e){
       }
   }
 }, true);
+
+function seemore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "EЩЕ";
+    moreText.style.display = "none";
+
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "МЕНЬШЕ";
+    moreText.style.display = "inline";
+
+  }
+}
+
+if(document.querySelector('.play-track')){
+  let playTest = document.querySelectorAll('.play-track')
+   
+  for(let j of playTest){
+    j.addEventListener('click', () => {
+      let pouseTest = document.querySelectorAll('.pause-track')
+      for(let i of pouseTest){
+        i.click()
+        j.click()
+      } 
+    })
+  }
+}
+
+$(document).ready(function(){
+  $('.example-block-elem').click(function(){
+    var category = $(this).attr('id');
+   if(category == 'all'){
+     $('.playlist-element').hide();
+     setTimeout(function(){
+       $('.playlist-element').show();
+     }, 300);
+   }
+   else{
+     $('.playlist-element').hide();
+     setTimeout(function(){
+       $('.' + category).show();
+     }, 300);
+   }
+  })
+});

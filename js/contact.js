@@ -1,28 +1,31 @@
-var galleryRight = new Swiper('.image-slider',{
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
+// var galleryLeft = new Swiper('.persons-photo .swiper-container',{
+//   slidesPerView: 4,
+//   simulateTouch: false,
+//   gravCursor: false,
+//   slideToClickedSlide: true
+// });
+
+var galleryRight = new Swiper('.swiper-container',{
   slidesPerView: 1,
+  navigation: {
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next"
+  },
   pagination: {
-    el: '.right-slide-item'
+    el: '.swiper-pagination',
+    clickable: true,
+    type : 'custom',
+    bulletClass: 'swiper-pagination-img',
+    bulletActiveClass: 'swiper-pagination-active',
+    renderCustom: function (swiper, current, total) {
+      $('.swiper-pagination-img').removeClass('swiper-pagination-active');
+      $('.swiper-pagination-img:nth-child('+current+')').addClass('swiper-pagination-active');
+    }
   }
 });
-// var galleryLeft = new Swiper('.pagination-elem', {
-//   spaceBetween: 10,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   thumbs: {
-//     swiper: galleryRight
-//   }
-// });
-$('.images-slide').hover(function() {
-  $(this).find("img:first").fadeToggle();
-});
 
+// galleryLeft.controller.control = galleryRight;
+// galleryRight.controller.control = galleryLeft;
 
 $(document).ready(function(){
     $("#menu").on("click", "a", function (event) {
@@ -296,36 +299,47 @@ document.addEventListener("click", closeAllSelect);
 
   // for fixed left menu
   window.onscroll = function () { scrollFunction() };
-  function scrollFunction() {
-      if (document.documentElement.scrollTop > 750) {
-          document.getElementById("menufixed").style.position = "fixed";
-          document.getElementById("menufixed").style.marginTop = "-390px";
-          var mql = window.matchMedia('all and (max-height: 1522px)');
-          if (mql.matches) {
-            document.getElementById("menufixed").style.marginTop = "-450px";
-          } 
-          var mql = window.matchMedia('all and (max-height: 1322px)');
-          if (mql.matches) {
-            document.getElementById("menufixed").style.marginTop = "-560px";
-          } 
-          var mql = window.matchMedia('all and (max-height: 1104px)');
-          if (mql.matches) {
-            document.getElementById("menufixed").style.marginTop = "-660px";
-          } 
-          var mql = window.matchMedia('all and (max-height: 922px)');
-          if (mql.matches) {
-            document.getElementById("menufixed").style.marginTop = "-720px";
-          } 
-          var mql = window.matchMedia('all and (max-height: 601px)');
-          if (mql.matches) {
-            document.getElementById("menufixed").style.marginTop = "-790px";
-          } 
-         
-      } else {
-          document.getElementById("menufixed").style.position = "absolute";
-          document.getElementById("menufixed").style.marginTop = "0px";
-      }
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 1050) {
+    document.getElementById("menufixed").style.position = "fixed";
+    document.getElementById("menufixed").style.marginTop = "-990px";
+    var mql = window.matchMedia('all and (min-height: 400px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-850px";
+    }
+    var mql = window.matchMedia('all and (min-height: 600px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-1060px";
+    }
+    var mql = window.matchMedia('all and (max-height: 667px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-1060px";
+    }
+    var mql = window.matchMedia('all and (max-width: 470px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-790px";
+    }
+  } else {
+    document.getElementById("menufixed").style.position = "absolute";
+    document.getElementById("menufixed").style.marginTop = "0px";
   }
+ 
+  // if (document.documentElement.scrollTop > 700) {
+  //   document.getElementById("show").style.opacity = "1";
+  // } else {
+  //   document.getElementById("show").style.opacity = "0";
+  // }
+  // if (document.documentElement.scrollTop > 1500) {
+  //   document.getElementById("showThird").style.opacity = "1";
+  // } else {
+  //   document.getElementById("showThird").style.opacity = "0";
+  // }
+  // if (document.documentElement.scrollTop > 2200) {
+  //   document.getElementById("showFour").style.opacity = "1";
+  // } else {
+  //   document.getElementById("showFour").style.opacity = "0";
+  // }
+}
  
   
 
@@ -351,3 +365,21 @@ document.addEventListener("click", closeAllSelect);
         }
     }
 }, true);
+
+function seemore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "EЩЕ";
+    moreText.style.display = "none";
+
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "МЕНЬШЕ";
+    moreText.style.display = "inline";
+
+  }
+}

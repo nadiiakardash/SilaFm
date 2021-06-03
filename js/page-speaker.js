@@ -1,20 +1,20 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+// var slideIndex = 1;
+// showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+// }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   if (n > x.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = x.length}
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//   }
+//   x[slideIndex-1].style.display = "block";  
+// }
 
 document.addEventListener('play', function(e){
   var audios = document.getElementsByTagName('input');
@@ -32,13 +32,23 @@ document.addEventListener('play', function(e){
       }
   }
 }, true);
+
+function mouseOverbtn() {
+  document.getElementById("btn-elem1").style.opacity = "1";
+
+}
+function mouseOutbtn() {
+  document.getElementById("btn-elem1").style.opacity = "0";
+
+}
+
 $(document).ready(function(){
-    $("#menu").on("click", "a", function (event) {
-      event.preventDefault();
-      var id = $(this).attr('href'),
-          top = $(id).offset().top - 70;
-      $('body,html').animate({ scrollTop: top }, 1600);
-    });
+    // $("#menu").on("click", "a", function (event) {
+    //   event.preventDefault();
+    //   var id = $(this).attr('href'),
+    //       top = $(id).offset().top - 70;
+    //   $('body,html').animate({ scrollTop: top }, 1600);
+    // });
     
     $(".counter").counterUp({delay:10,time:1000})
     //popapChronometr
@@ -134,6 +144,9 @@ $(document).ready(function(){
     }
   }
   document.addEventListener("click", closeAllSelect);
+
+  
+
   //
     function mouseOver1() {
       document.getElementById("base-block1").style.color= "#C7DEE1";
@@ -235,7 +248,7 @@ $(document).ready(function(){
   
   //playlist
   let now_playing = document.querySelector(".now-playing");
-  let playpause_btn = document.querySelector(".playpause-track");
+  let playpause_btn = document.querySelector("#playspeaker");
   let playrepeat_btn = document.querySelector(".playrepeat-track");
   
   let seek_slider = document.querySelector(".seek_slider");
@@ -247,15 +260,15 @@ $(document).ready(function(){
   let curr_track = document.createElement('audio');
   let repeat = document.createElement('audio');
   
-  let track_list = [
-    {
-      path: "mp3/music1.mp3"
-    }
-  ];
+  // let track_list = [
+  //   {
+  //     path: "mp3/music1.mp3"
+  //   }
+  // ];
   
   function loadTrack(track_index) {
     resetValues();
-    curr_track.src = track_list[track_index].path;
+    curr_track.src = playpause_btn.getAttribute("data-sound");
     curr_track.load();
     updateTimer = setInterval(seekUpdate, 1000);
   }
@@ -270,7 +283,9 @@ $(document).ready(function(){
   function playTrack() {
     curr_track.play();
     isPlaying = true;
-    playpause_btn.innerHTML = '<img src="img/icon-stop.png">';
+//    playpause_btn.innerHTML = '<img src="img/icon-stop.png">';
+  playpause_btn.classList.toggle("pause-track");
+  playpause_btn.classList.toggle("play-track");
   }
   function playTrackRepeat() {
   curr_track.loop=true;
@@ -287,7 +302,9 @@ $(document).ready(function(){
   function pauseTrack() {
     curr_track.pause();
     isPlaying = false;
-    playpause_btn.innerHTML = '<img src="img/play.png">';
+//    playpause_btn.innerHTML = '<img src="img/play.png">';
+    playpause_btn.classList.toggle("pause-track");
+    playpause_btn.classList.toggle("play-track");
   }
   
   function seekTo() {
@@ -336,7 +353,7 @@ $(document).ready(function(){
   
     //first-items player
   let now_playing1 = document.querySelector(".now-playing1");
-  let playpause_btn1 = document.querySelector(".playpause-track1");
+  let playpause_btn1 = document.querySelector("#play1");
   let playrepeat_btn1 = document.querySelector(".playrepeat-track1");
   
   let seek_slider1 = document.querySelector(".seek_slider1");
@@ -348,15 +365,15 @@ $(document).ready(function(){
   let curr_track1 = document.createElement('audio');
   let repeat1 = document.createElement('audio');
   
-  let track_list1 = [
-    {
-      path: "mp3/music1.mp3"
-    }
-  ];
+  // let track_list1 = [
+  //   {
+  //     path: "mp3/music1.mp3"
+  //   }
+  // ];
   
   function loadTrack1(track_index1) {
     resetValues1();
-    curr_track1.src = track_list1[track_index1].path;
+    curr_track1.src = playpause_btn1.getAttribute("data-sound");
     curr_track1.load();
     updateTimer1 = setInterval(seekUpdate1, 1000);
   }
@@ -371,7 +388,9 @@ $(document).ready(function(){
   function playTrack1() {
     curr_track1.play();
     isPlaying1 = true;
-    playpause_btn1.innerHTML = '<img src="img/icon-stop.png">';
+//    playpause_btn1.innerHTML = '<img src="img/icon-stop.png">';
+    playpause_btn1.classList.toggle("pause-track");
+    playpause_btn1.classList.toggle("play-track");
   }
   
   var repIcon = document.querySelector('.repeat')
@@ -395,7 +414,9 @@ $(document).ready(function(){
   function pauseTrack1() {
     curr_track1.pause();
     isPlaying1 = false;
-    playpause_btn1.innerHTML = '<img src="img/play.png">';
+//    playpause_btn1.innerHTML = '<img src="img/play.png">';
+    playpause_btn1.classList.toggle("pause-track");
+    playpause_btn1.classList.toggle("play-track");
   }
   
   function seekTo1() {
@@ -1073,9 +1094,71 @@ document.addEventListener('play', function(e){
 
 //   });
 // })
-$(document).ready(function(){    
-  $(".example-wrapper").easySlider({
-      auto: true, 
-      continuous: true
-  });
-});
+// $(document).ready(function(){    
+//   $(".example-wrapper").easySlider({
+//       auto: true, 
+//       continuous: true
+//   });
+// });
+
+function seemore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "EЩЕ";
+    moreText.style.display = "none";
+
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "МЕНЬШЕ";
+    moreText.style.display = "inline";
+
+  }
+}
+
+// for fixed left menu
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 1050) {
+    document.getElementById("menufixed").style.position = "fixed";
+    document.getElementById("menufixed").style.marginTop = "-990px";
+    var mql = window.matchMedia('all and (min-height: 400px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-850px";
+    }
+    var mql = window.matchMedia('all and (min-height: 600px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-1060px";
+    }
+    var mql = window.matchMedia('all and (max-height: 667px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-1060px";
+    }
+    var mql = window.matchMedia('all and (max-width: 470px)');
+    if (mql.matches) {
+      document.getElementById("menufixed").style.marginTop = "-790px";
+    }
+  } else {
+    document.getElementById("menufixed").style.position = "absolute";
+    document.getElementById("menufixed").style.marginTop = "0px";
+  }
+ 
+  // if (document.documentElement.scrollTop > 700) {
+  //   document.getElementById("show").style.opacity = "1";
+  // } else {
+  //   document.getElementById("show").style.opacity = "0";
+  // }
+  // if (document.documentElement.scrollTop > 1500) {
+  //   document.getElementById("showThird").style.opacity = "1";
+  // } else {
+  //   document.getElementById("showThird").style.opacity = "0";
+  // }
+  // if (document.documentElement.scrollTop > 2200) {
+  //   document.getElementById("showFour").style.opacity = "1";
+  // } else {
+  //   document.getElementById("showFour").style.opacity = "0";
+  // }
+}
