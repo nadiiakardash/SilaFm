@@ -609,7 +609,7 @@ function scrollFunction() {
     }
     var mql = window.matchMedia('all and (max-width: 470px)');
     if (mql.matches) {
-      document.getElementById("menufixed").style.marginTop = "-790px";
+      document.getElementById("menufixed").style.marginTop = "-940px";
     }
   } else {
     document.getElementById("menufixed").style.position = "absolute";
@@ -668,15 +668,13 @@ function payAlphaout() {
 
 }
 function payVisaover() {
-  document.getElementById("svg-pay4master").style.display = "block";
-  document.getElementById("svg-pay4visa").style.display = "block";
+  document.getElementById("svg-pay4").style.display = "block";
 
 }
 function payVisaout() {
-  document.getElementById("svg-pay4visa").style.display = "none";
-  document.getElementById("svg-pay4master").style.display = "none";
-
+  document.getElementById("svg-pay4").style.display = "none";
 }
+
 function payPayPalover() {
   document.getElementById("svg-pay5").style.display = "block";
 
@@ -845,13 +843,11 @@ function payAlphaoutUk() {
 
 }
 function payVisaoverUk() {
-  document.getElementById("svg-pay4master-uk").style.display = "block";
-  document.getElementById("svg-pay4visa-uk").style.display = "block";
+  document.getElementById("svg-pay4-uk").style.display = "block";
 
 }
 function payVisaoutUk() {
-  document.getElementById("svg-pay4visa-uk").style.display = "none";
-  document.getElementById("svg-pay4master-uk").style.display = "none";
+  document.getElementById("svg-pay4-uk").style.display = "none";
 
 }
 function payPayPaloverUk() {
@@ -890,7 +886,7 @@ function paySelectQiwiUk() {
   document.getElementById("visa-uk").style.display = "none";
   document.getElementById("webmoney-uk").style.display = "none";
   document.getElementById("qiwi-uk").style.display = "block";
-  document.getElementById("qiwi-img-uk").style.width = "220px";
+  // document.getElementById("qiwi-img-uk").style.width = "220px";
 }
 
 function paySelectVisaUk() {

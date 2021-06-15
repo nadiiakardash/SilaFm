@@ -331,7 +331,7 @@
         width: 99%;
     }
     .base-btn-page {
-        margin-left: -10px;
+        /* margin-left: -10px; */
         font-size: 11px;
     }
     .base-btn-page svg {
@@ -355,7 +355,7 @@
         margin-left: 80px;
     } */
     .base-btn-page {
-        margin-left: -10px;
+        /* margin-left: -10px; */
         font-size: 10px;
     }
     .base-btn-page svg {
@@ -1110,7 +1110,7 @@
     .example-block-elem {
         line-height: 37px;
         font-size: 12px;
-        margin-left: 57px;
+        /* margin-left: 57px; */
     }
 }
 @media only screen and (max-width: 426px) {
@@ -1124,11 +1124,9 @@
     }
     .box-pages {
         width: 150px;
-        margin-left: 50px;
+        /* margin-left: 50px; */
     }
-    .playlist-element {
 
-    }
     .txt-visa-free {
         letter-spacing: normal;
         font-size: 14px;
@@ -1252,6 +1250,10 @@
         font-size: 12px;
         line-height: 18px;
         width: 94%;
+    }
+
+    .base-speakers {
+        padding: 0 40px;
     }
 }
 .txt-production {
@@ -1941,6 +1943,9 @@ th {
     /* .box-grapfic {
         width: 550px;
     } */
+    .speaker-box-text {
+        padding-left: 50px;
+    }
 }
 @media only screen and (max-width: 1009px) {
     /* .box-grapfic {
@@ -2099,6 +2104,7 @@ th {
         font-family: arial, sans-serif;
         border-collapse: collapse;
         width: 270px;
+        margin-top: 120px;
     }
     td,
     th {
@@ -2107,7 +2113,7 @@ th {
         font-size: 13px;
     }
     .btn-speaker {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 43px;
         width: 200px;
         height: 60px;
@@ -2120,12 +2126,18 @@ th {
         position: absolute;
         margin-top: 7px;
         margin-left: 9px;
+        width: 24px;
+        height: 24px;
     }
     .in-one-click {
         font-size: 15px;
     }
     .mesenger-icon {
         margin-top: 730px;
+    }
+
+    .make-older {
+        width: 288px;
     }
 }
 @media only screen and (max-width: 508px) {
@@ -2281,6 +2293,10 @@ th {
     .back-to-speakers {
         font-size: 13px;
         margin-left: 105px;
+    }
+
+    .make-older {
+        width: 236px;
     }
 }
 .voice-sound {
@@ -2786,10 +2802,6 @@ th {
     margin-left: 30px;
 }
 
-.container-page {
-    
-}
-
 .w3-content {
     margin: 0;
 }
@@ -2852,5 +2864,22 @@ th {
 
     .slider-content__item {
         margin-bottom: 20px;
+    }
+
+    #playspeaker {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .example-audio {
+        padding-left: 100px !important;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .bg-games-page {
+        padding-left: 20px;
     }
 }

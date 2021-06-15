@@ -35,7 +35,7 @@ $(document).ready(function(){
       $('body,html').animate({ scrollTop: top }, 1600);
     });
     
-    $(".counter").counterUp({delay:10,time:1000})
+    // $(".counter").counterUp({delay:10,time:1000})
     //popapChronometr
     var elements = $('.modal-overlay, .modal');
      
@@ -299,50 +299,48 @@ document.addEventListener("click", closeAllSelect);
 
   // for fixed left menu
   window.onscroll = function () { scrollFunction() };
-function scrollFunction() {
-  if (document.documentElement.scrollTop > 1050) {
-    document.getElementById("menufixed").style.position = "fixed";
-    document.getElementById("menufixed").style.marginTop = "-990px";
-    var mql = window.matchMedia('all and (min-height: 400px)');
-    if (mql.matches) {
-      document.getElementById("menufixed").style.marginTop = "-850px";
+  function scrollFunction() {
+    if (document.documentElement.scrollTop > 1050) {
+      document.getElementById("menufixed").style.position = "fixed";
+      document.getElementById("menufixed").style.marginTop = "-990px";
+      var mql = window.matchMedia('all and (min-height: 400px)');
+      if (mql.matches) {
+        document.getElementById("menufixed").style.marginTop = "-450px";
+      }
+      var mql = window.matchMedia('all and (min-height: 600px)');
+      if (mql.matches) {
+        document.getElementById("menufixed").style.marginTop = "-660px";
+      }
+      var mql = window.matchMedia('all and (max-height: 667px)');
+      if (mql.matches) {
+        document.getElementById("menufixed").style.marginTop = "-660px";
+      }
+      var mql = window.matchMedia('all and (max-width: 370px)');
+      if (mql.matches) {
+        document.getElementById("menufixed").style.marginTop = "-640px";
+      }
+    } else {
+      document.getElementById("menufixed").style.position = "absolute";
+      document.getElementById("menufixed").style.marginTop = "0px";
     }
-    var mql = window.matchMedia('all and (min-height: 600px)');
-    if (mql.matches) {
-      document.getElementById("menufixed").style.marginTop = "-1060px";
-    }
-    var mql = window.matchMedia('all and (max-height: 667px)');
-    if (mql.matches) {
-      document.getElementById("menufixed").style.marginTop = "-1060px";
-    }
-    var mql = window.matchMedia('all and (max-width: 470px)');
-    if (mql.matches) {
-      document.getElementById("menufixed").style.marginTop = "-790px";
-    }
-  } else {
-    document.getElementById("menufixed").style.position = "absolute";
-    document.getElementById("menufixed").style.marginTop = "0px";
+   
+    // if (document.documentElement.scrollTop > 700) {
+    //   document.getElementById("show").style.opacity = "1";
+    // } else {
+    //   document.getElementById("show").style.opacity = "0";
+    // }
+    // if (document.documentElement.scrollTop > 1500) {
+    //   document.getElementById("showThird").style.opacity = "1";
+    // } else {
+    //   document.getElementById("showThird").style.opacity = "0";
+    // }
+    // if (document.documentElement.scrollTop > 2200) {
+    //   document.getElementById("showFour").style.opacity = "1";
+    // } else {
+    //   document.getElementById("showFour").style.opacity = "0";
+    // }
   }
  
-  // if (document.documentElement.scrollTop > 700) {
-  //   document.getElementById("show").style.opacity = "1";
-  // } else {
-  //   document.getElementById("show").style.opacity = "0";
-  // }
-  // if (document.documentElement.scrollTop > 1500) {
-  //   document.getElementById("showThird").style.opacity = "1";
-  // } else {
-  //   document.getElementById("showThird").style.opacity = "0";
-  // }
-  // if (document.documentElement.scrollTop > 2200) {
-  //   document.getElementById("showFour").style.opacity = "1";
-  // } else {
-  //   document.getElementById("showFour").style.opacity = "0";
-  // }
-}
- 
-  
-
    //preloader
   //  function loadData() {
   //   return new Promise((resolve, reject) => {
